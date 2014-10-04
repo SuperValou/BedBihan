@@ -5,9 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Board
+    public class HexagonBuilder
     {
-        public IEnumerable<Hexagon> grid
+        public Woods woods
         {
             get
             {
@@ -18,7 +18,7 @@ namespace BedBihan
             }
         }
 
-        public Player bluePlayer
+        public Mountain mountain
         {
             get
             {
@@ -29,7 +29,7 @@ namespace BedBihan
             }
         }
 
-        public Player redPlayer
+        public Desert desert
         {
             get
             {
@@ -40,7 +40,7 @@ namespace BedBihan
             }
         }
 
-        public int coordinates
+        public Plain plain
         {
             get
             {
@@ -49,6 +49,31 @@ namespace BedBihan
             set
             {
             }
+        }
+    
+        public void createWoods()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void createPlain()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void createDesert()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void createMountain()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Hexagon createHexagon(String fieldType)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

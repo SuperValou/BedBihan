@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class ClassicBoardBuilder : BoardBuilder
     {
+        public void buildClassicBoard()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

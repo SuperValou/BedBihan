@@ -1,114 +1,145 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BedBihan.Square">
-    <Position X="8" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
-      <FileName>Square.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="FieldType" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Units" />
-    </ShowAsCollectionAssociation>
-  </Class>
+  <Comment CommentText="Pas bon.&#xD;&#xA;C'ets le patron Stratégie qui doit être utilisé pour les Boards.&#xD;&#xA;Le patron Builder est pour lancer une nouvelle partie ou en charger une existante">
+    <Position X="0.558" Y="0.5" Height="1.517" Width="1.7" />
+  </Comment>
   <Class Name="BedBihan.Elf">
-    <Position X="9.75" Y="5.5" Width="1.5" />
+    <Position X="12.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Orc">
-    <Position X="13.75" Y="5.5" Width="1.5" />
+    <Position X="16.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Orc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Dwarf">
-    <Position X="11.5" Y="5.5" Width="1.5" />
+    <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dwarf.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Board">
-    <Position X="8" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>Board.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Squares" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="BedBihan.Unit">
-    <Position X="10.5" Y="2.75" Width="3.25" />
+    <Position X="14.25" Y="1.5" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAECAAAAAAAAAAAAAAAAECAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAECAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Player">
-    <Position X="14.5" Y="0.5" Width="1.5" />
+    <Position X="11.25" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="BedBihan.GameCreator">
-    <Position X="2.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameCreator.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Builder" />
-    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="troops" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.BoardBuilder">
-    <Position X="2.5" Y="2" Width="1.5" />
+    <Position X="2.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>BoardBuilder.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="board" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.DemoBoardBuilder">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DemoBoardBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.SmallBoardBuilder">
-    <Position X="2.5" Y="3.75" Width="1.5" />
+    <Position X="2" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SmallBoardBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.ClassicBoardBuilder">
-    <Position X="4.25" Y="3.75" Width="1.5" />
+    <Position X="3.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ClassicBoardBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="14.5" Y="2.75" Width="1.5" />
+    <Position X="18" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="BedBihan.FieldType">
-    <Position X="8" Y="3.25" Width="1.5" />
+  <Class Name="BedBihan.Hexagon">
+    <Position X="7.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAgAAAAAgAAA=</HashCode>
-      <FileName>FieldType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
-  </Enum>
+  </Class>
+  <Class Name="BedBihan.Board">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="bluePlayer" />
+      <Property Name="redPlayer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="grid" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BedBihan.Woods">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Woods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.Mountain">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mountain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.Desert">
+    <Position X="8.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Desert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.Plain">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Plain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.HexagonBuilder">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAACAEJICCAAACAAAAA=</HashCode>
+      <FileName>HexagonBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="desert" />
+      <Property Name="mountain" />
+      <Property Name="plain" />
+      <Property Name="woods" />
+    </ShowAsAssociation>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

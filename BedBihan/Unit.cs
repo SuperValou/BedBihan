@@ -30,17 +30,6 @@ namespace BedBihan
             }
         }
 
-        public int[] movementCoeffs
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public void move()
         {
             throw new System.NotImplementedException();

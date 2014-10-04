@@ -7,5 +7,15 @@ namespace BedBihan
 {
     public abstract class BoardBuilder
     {
+        public Board board
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

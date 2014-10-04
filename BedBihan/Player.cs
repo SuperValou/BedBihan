@@ -7,5 +7,15 @@ namespace BedBihan
 {
     public class Player
     {
+        public IEnumerable<Unit> troops
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }
