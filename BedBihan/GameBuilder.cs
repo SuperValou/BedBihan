@@ -5,9 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class ClassicBoardBuilder : BoardBuilder
+    public abstract class GameBuilder
     {
-        public void buildClassicBoard()
+        public abstract Game buildGame()
         {
             throw new System.NotImplementedException();
         }

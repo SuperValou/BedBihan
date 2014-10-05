@@ -5,20 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Board
+    public class Game
     {
-        public IEnumerable<Hexagon> grid
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Player bluePlayer
+        public IBoard board
         {
             get
             {
@@ -40,7 +29,7 @@ namespace BedBihan
             }
         }
 
-        public int coordinates
+        public Player bluePlayer
         {
             get
             {

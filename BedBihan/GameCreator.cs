@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public class GameCreator
     {
-        public BoardBuilder Builder
+        public GameBuilder gameBuilder
         {
             get
             {
