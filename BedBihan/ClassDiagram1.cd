@@ -39,7 +39,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="18" Y="3.25" Width="1.5" />
+    <Position X="17" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
@@ -101,8 +101,8 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="board" />
-      <Property Name="bluePlayer" />
       <Property Name="redPlayer" />
+      <Property Name="bluePlayer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.DemoBoard">
@@ -114,18 +114,10 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.ClassicBoard">
-    <Position X="3.5" Y="2.5" Width="1.5" />
+    <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>ClassicBoard.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="BedBihan.SmallBoard">
-    <Position X="2" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>SmallBoard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -159,6 +151,14 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameBuilder.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.SmallBoard">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>SmallBoard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="BedBihan.IBoard">
     <Position X="2.5" Y="1" Width="1.5" />
