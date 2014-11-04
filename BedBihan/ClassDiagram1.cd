@@ -24,7 +24,7 @@
   <Class Name="BedBihan.Unit">
     <Position X="14.25" Y="3.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAECAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAIAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,49 +39,49 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="17" Y="1.5" Width="1.5" />
+    <Position X="17.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Hexagon">
-    <Position X="6.5" Y="4" Width="1.5" />
+    <Position X="7.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAgAQAAEAAAAAAAgAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Woods">
-    <Position X="4.25" Y="5.5" Width="1.5" />
+    <Position X="5.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Woods.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Mountain">
-    <Position X="5.75" Y="5.5" Width="1.5" />
+    <Position X="6.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Mountain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Desert">
-    <Position X="7.25" Y="5.5" Width="1.5" />
+    <Position X="8.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Desert.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Plain">
-    <Position X="8.75" Y="5.5" Width="1.5" />
+    <Position X="9.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Plain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.HexagonBuilder">
-    <Position X="6.5" Y="7" Width="1.5" />
+    <Position X="7.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAACAEJICCAAACAAAAA=</HashCode>
       <FileName>HexagonBuilder.cs</FileName>
@@ -122,7 +122,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.GameCreator">
-    <Position X="7.25" Y="1.75" Width="1.5" />
+    <Position X="8.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameCreator.cs</FileName>
@@ -132,28 +132,28 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.NewGameBuilder">
-    <Position X="9.25" Y="3.25" Width="1.5" />
+    <Position X="10.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NewGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.SavedGameBuilder">
-    <Position X="10.75" Y="3.25" Width="1.5" />
+    <Position X="11.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SavedGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.GameBuilder">
-    <Position X="10" Y="1.75" Width="1.5" />
+    <Position X="11" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.SmallBoard">
-    <Position X="2.25" Y="3.25" Width="1.5" />
+    <Position X="2.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>SmallBoard.cs</FileName>
