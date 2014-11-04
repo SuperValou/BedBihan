@@ -40,10 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassicBoard.cs" />
+    <Compile Include="Colour.cs" />
     <Compile Include="DemoBoard.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="Dwarf.cs" />
     <Compile Include="Elf.cs" />
+    <Compile Include="Field.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameBuilder.cs" />
     <Compile Include="GameCreator.cs" />

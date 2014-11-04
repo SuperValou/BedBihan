@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public abstract class Hexagon
     {
-        public int field  // plutot un enum que des int ?
+        public Field field
         {
             get
             {
@@ -33,14 +33,9 @@ namespace BedBihan
 
         public bool isFree()
         {
-            return units.Length == 0;
+            return this.units.Length ==0 ;
         }
 
-        // return the color of the units on this hexagon
-        public int color()
-        {
-            return units[0].color;
-        }
 
         public Unit selectBestUnit()
         {

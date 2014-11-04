@@ -9,7 +9,7 @@ namespace BedBihan
     {
         // -- properties --
 
-        public int color
+        public Colour colour
         {
             get
             {
@@ -82,38 +82,31 @@ namespace BedBihan
         void moveOn (Hexagon hexagon)
         {
             this.movementPoints -= this.costOfMovementOn(hexagon.field);
-            if (!hexagon.isFree() && hexagon.color() != this.color)
+            if ( ! hexagon.isFree() && hexagon.units[0].colour != this.colour)
             {
                 this.fightAgainst(hexagon.selectBestUnit());
-                if (hexagon.isFree())
-                {
-                    hexagon.addUnit(this);
-                    // this.previousHexagon.removeUnit(this); ?
-                }
             }
+            // if victory update hexagon machin
         }
   
   
         // return cost of movement
-        public int costOfMovementOn(int field)
-        {
-            return 1;
-        }
+        public abstract int costOfMovementOn(Field field);
 
 
         // manage fights
         void fightAgainst(Unit defender)
         {
             Random random = new Random();
-            double fightNumber = 3 + random.NextDouble() * (2+ Math.Max(this.lifePoints, defender.lifePoints)); // à vérifier mais là on s'en branle
+            double fightNumber = 3 + random.NextDouble() * (2+ Math.Max(this.lifePoints, defender.lifePoints)); // calcul à vérifier mais là on s'en branle
             while (fightNumber > 0)
             {
-                double chanceOfVictory = 0.5*(this.color / defender.defense);
+                double chanceOfVictory = 0.5*(this.attack / defender.defense);
                 double godDecision = random.NextDouble();
                 if (chanceOfVictory > godDecision)
                 // attacker wins
                 {
-                    defender.lifePoints -= this.lifePoints * (this.lifePoints / this.lifeMax);
+                    defender.lifePoints -= this.attack * (this.lifePoints / this.lifeMax);
                     if (defender.lifePoints < 0)
                     {
                         fightNumber = 0;
