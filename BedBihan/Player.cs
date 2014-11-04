@@ -7,6 +7,18 @@ namespace BedBihan
 {
     public class Player
     {
+        public Colour colour
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+
         public IEnumerable<Unit> troops
         {
             get

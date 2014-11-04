@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class Orc : Unit
     {
+        public override int costOfMovementOn(Field field)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

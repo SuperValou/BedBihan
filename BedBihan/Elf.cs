@@ -17,5 +17,10 @@ namespace BedBihan
             {
             }
         }
+
+        public override int costOfMovementOn(Field field)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -3,37 +3,43 @@
   <Class Name="BedBihan.Elf">
     <Position X="12.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Orc">
     <Position X="16.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Orc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Dwarf">
     <Position X="14.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dwarf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Unit">
     <Position X="14.25" Y="3.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAABAIAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
+      <HashCode>EAABAIAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="colour" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Player">
     <Position X="15" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="colour" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="troops" />
     </ShowAsCollectionAssociation>
@@ -46,11 +52,15 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Hexagon">
-    <Position X="7.5" Y="3.75" Width="1.5" />
+    <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAgAQAAEAAAAAAAgAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="field" />
+      <Property Name="units" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Woods">
     <Position X="5.25" Y="6.75" Width="1.5" />
@@ -170,5 +180,19 @@
       <Property Name="grid" />
     </ShowAsCollectionAssociation>
   </Interface>
+  <Enum Name="BedBihan.Colour">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Colour.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BedBihan.Field">
+    <Position X="10.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAgAAAAAgAAA=</HashCode>
+      <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
