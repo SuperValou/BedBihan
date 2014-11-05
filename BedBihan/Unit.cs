@@ -31,6 +31,17 @@ namespace BedBihan
             }
         }
 
+        public Coordinates coordinates
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public int lifeMax
         {
             get
@@ -79,20 +90,26 @@ namespace BedBihan
         // -- methods --
 
         // move the current unit and engage fight
-        void moveOn (Hexagon hexagon)
+        void moveOn (Coordinates coord)
         {
-            this.movementPoints -= this.costOfMovementOn(hexagon.field);
-            if ( ! hexagon.isFree() && hexagon.units[0].colour != this.colour)
-            {
-                this.fightAgainst(hexagon.selectBestUnit());
-            }
-            // if victory update hexagon machin
+            /*
+             *  this.movementPoints -= this.costOfMovementOn();
+             *  Units[] caca = Game.Equals(coord);
+             *  caca[0].colour == this.colour then ok
+             *  else fight against selectBestUnit(caca)
+             *  */
+                     
         }
   
   
         // return cost of movement
         public abstract int costOfMovementOn(Field field);
 
+        // slect best unit
+        public Unit selectBestDefensiveUnit(Unit[] list)
+        {
+            return null;
+        }
 
         // manage fights
         void fightAgainst(Unit defender)
@@ -125,6 +142,14 @@ namespace BedBihan
                     }
                 }
             }
+        }
+
+
+        // return number of point generate by the presense of the unit on the case.
+        public int generatePoint()
+        {
+            // switch en fct du type de case
+            return 0;
         }
 
         // destroy the current unit

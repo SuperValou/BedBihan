@@ -29,5 +29,36 @@ namespace BedBihan
             {
             }
         }
+
+        public IEnumerable<Unit> points
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public void playTurn()
+        {
+            /*
+             * for each unit
+             * move
+             */
+        }
+
+        public void updatePoint()
+        {
+            /*
+             * res = 0;
+             * for each unit u {
+             *     res += u.generatePoint
+             *     }
+             */     
+        }
+
+
     }
 }

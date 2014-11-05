@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ClassicBoard.cs" />
     <Compile Include="Colour.cs" />
+    <Compile Include="Coordinates.cs" />
     <Compile Include="DemoBoard.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="Dwarf.cs" />

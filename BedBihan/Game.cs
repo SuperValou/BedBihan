@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Game
+    public static class Game
     {
         public IBoard board
         {
@@ -17,6 +17,29 @@ namespace BedBihan
             {
             }
         }
+
+        public int nbTourMax
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public int nbTour
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
 
         public Player redPlayer
         {
@@ -39,5 +62,51 @@ namespace BedBihan
             {
             }
         }
+
+        public void nextTurn()
+        {
+            /*
+             * Compter les points
+             *
+             */
+        }
+
+        public void playGame()
+        {
+            /*
+             * while(nbTour == nbTourmax || UnseulJoueurLeft() )
+             *    for each (List.joueur.play j)
+             *      j.playturn();
+             *      j alive ? 
+             *     }
+             *   for each (List.joueur.play j){
+             *     Update j.point
+             *   }
+             *    game.nextTurn();
+             * }      
+             *    
+             */
+        }
+            
+        
+        // changer
+        public static Unit[] getUnitsOn(Coordinates coord)
+        {
+            /*
+            Unit[] list;
+            for each (List.Joueurs lj)
+            {
+                for each (List lj.troop )
+                {
+                    if (troop.coordinate == coord)
+                        list.add(troops[i]);
+                }
+            }
+              */
+            return null;
+        }
+
+
+
     }
 }

@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BedBihan.Elf">
-    <Position X="12.75" Y="6.5" Width="1.5" />
+    <Position X="12.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Orc">
-    <Position X="16.75" Y="6.5" Width="1.5" />
+    <Position X="16.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Orc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Dwarf">
-    <Position X="14.5" Y="6.5" Width="1.5" />
+    <Position X="14.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dwarf.cs</FileName>
@@ -24,17 +24,18 @@
   <Class Name="BedBihan.Unit">
     <Position X="14.25" Y="3.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>EAABAIAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
+      <HashCode>EAABAIAAAAAAAAAAAAAgAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="colour" />
+      <Property Name="coordinates" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Player">
     <Position X="15" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>EAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -45,7 +46,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="17.75" Y="3.25" Width="1.5" />
+    <Position X="17.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
@@ -54,12 +55,11 @@
   <Class Name="BedBihan.Hexagon">
     <Position X="7.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAgAQAAEAAAAAAAgAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="field" />
-      <Property Name="units" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Woods">
@@ -104,9 +104,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Game">
-    <Position X="10" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQACAAEEAAAAAAIAgAAAAAAAAAAAAIAAAAAABAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -132,7 +132,12 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.GameCreator">
-    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Position X="8" Y="1.75" Width="1.5" />
+    <AssociationLine Name="gameBuilder" Type="BedBihan.GameBuilder">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.19" Y="0.611" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameCreator.cs</FileName>
@@ -156,7 +161,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.GameBuilder">
-    <Position X="11" Y="1.75" Width="1.5" />
+    <Position X="11.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameBuilder.cs</FileName>
@@ -170,6 +175,13 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Struct Name="BedBihan.Coordinates">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Coordinates.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Interface Name="BedBihan.IBoard">
     <Position X="2.5" Y="1" Width="1.5" />
     <TypeIdentifier>
