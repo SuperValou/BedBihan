@@ -162,6 +162,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="7c327c96-2fdc-4711-90d7-345ec5d5b814"
+            isDerived="false"
+            sourceEndRoleName="Joueur"
+            targetEndRoleName="Choisir son peuple"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
+              LastKnownName="Choisir son peuple"
+              LastKnownLocation="CreateGame.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fda9382-a08b-4fa6-8ebb-f41f82c81bba"
+                  name="Joueur"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65fe3abd-d039-437d-b411-9abd7756db8f"
+                  name="Choisir son peuple"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -245,29 +284,6 @@
         name="Choisir la taille de  la carte"
         isAbstract="false"
         isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="ed260b60-4090-4f8b-beda-9d313c1edf1e">
-            <useCaseMoniker
-              Id="ca8b331e-3e81-4cc1-bc8a-5da909cc8c72"
-              LastKnownName="Choisir taille démo"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-          <extend
-            Id="ea686c7a-efc3-4acf-9d62-511350c7e862">
-            <useCaseMoniker
-              Id="903a48c5-9f4c-4ed3-8d38-878d1269c923"
-              LastKnownName="Choisir taille petite"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-          <extend
-            Id="662157c2-2c06-495b-abe4-eb2e498f50aa">
-            <useCaseMoniker
-              Id="b9ef049a-d781-4c36-8d90-d22c93aa2b8f"
-              LastKnownName="Choisir taille normale"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-        </extendedCases>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -282,6 +298,16 @@
         name="Choisir taille démo"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="eae23d99-c544-4157-86d4-695ef00d7c35"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
+              LastKnownName="Choisir la taille de  la carte"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -296,6 +322,16 @@
         name="Choisir taille petite"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="906caaf8-6190-49e1-a45e-aee248e02406"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
+              LastKnownName="Choisir la taille de  la carte"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -310,6 +346,16 @@
         name="Choisir taille normale"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d0c7ca9f-9e22-451f-b40f-03682ebf0eb0"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
+              LastKnownName="Choisir la taille de  la carte"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -324,29 +370,6 @@
         name="Choisir son peuple"
         isAbstract="false"
         isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="8be3059f-b3bc-44f1-8722-44c8c10dbfd1">
-            <useCaseMoniker
-              Id="1af4164d-7948-4a22-a766-fae1a8c5520a"
-              LastKnownName="Choisir Elfe"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-          <extend
-            Id="afa5d3a2-e29f-4a34-bce8-608b4e85263a">
-            <useCaseMoniker
-              Id="e7eb25c3-542e-4f0a-a7cb-a61d2bbf68ba"
-              LastKnownName="Choisir Orc"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-          <extend
-            Id="68a05908-47dc-4ab1-b478-9584c3986633">
-            <useCaseMoniker
-              Id="0c5df550-95f3-4b25-ace0-e2bc27f7556c"
-              LastKnownName="Choisir Nain"
-              LastKnownLocation="CreateGame.uml" />
-          </extend>
-        </extendedCases>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -375,6 +398,16 @@
         name="Choisir Elfe"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e0a16ca0-7812-41f1-a8a2-643ada1a69e8"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
+              LastKnownName="Choisir son peuple"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -389,6 +422,16 @@
         name="Choisir Orc"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e5e2e422-a858-43e5-8f53-b09369c4bcc7"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
+              LastKnownName="Choisir son peuple"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -403,6 +446,16 @@
         name="Choisir Nain"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0406827c-0d4e-4e46-a586-79cd31ee93d0"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
+              LastKnownName="Choisir son peuple"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
         <subjects>
           <subsystemMoniker
             Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
@@ -416,14 +469,7 @@
         Id="4a3f5849-c2d6-48a3-ad33-be9fea4c9702"
         name="Lancer la partie"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
