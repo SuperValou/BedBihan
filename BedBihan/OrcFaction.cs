@@ -5,11 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public enum Field
+    public class OrcFaction : Faction
     {
-        Desert,
-        Mountain,
-        Plain,
-        Woods
     }
 }

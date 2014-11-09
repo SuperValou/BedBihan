@@ -7,16 +7,6 @@ namespace BedBihan
 {
     public class Player
     {
-        public Colour colour
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
         public IEnumerable<Unit> points
         {
@@ -40,6 +30,17 @@ namespace BedBihan
             }
         }
 
+        public String pseudo
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void playTurn()
         {
             /*
@@ -48,15 +49,6 @@ namespace BedBihan
              */
         }
 
-        public void updatePoint()
-        {
-            /*
-             * res = 0;
-             * for each unit u {
-             *     res += u.generatePoint
-             *     }
-             */     
-        }
 
 
     }
