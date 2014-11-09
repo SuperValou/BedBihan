@@ -105,10 +105,10 @@
       <FileName>HexagonTextureBuilder.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="desert" />
-      <Property Name="mountain" />
-      <Property Name="plain" />
       <Property Name="woods" />
+      <Property Name="mountain" />
+      <Property Name="desert" />
+      <Property Name="plain" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Game">
@@ -199,8 +199,8 @@
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="fieldType" />
       <Property Name="texture" />
+      <Property Name="fieldType" />
       <Property Name="coordinates" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
@@ -240,16 +240,6 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OrcFaction.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="BedBihan.BedBihan">
-    <Position X="18.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BedBihan.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="gameCreator" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.FactionFactory">
     <Position X="23.75" Y="7" Width="2" />

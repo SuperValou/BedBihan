@@ -43,6 +43,7 @@ namespace BedBihan
             }
         }
 
+
         public int defense
         {
             get

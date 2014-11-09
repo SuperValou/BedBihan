@@ -76,10 +76,14 @@
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
     <None Include="SequenceDiagram1.sequencediagram" />
+    <None Include="Sequence_turn.sequencediagram" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SequenceDiagram1.sequencediagram.layout">
       <DependentUpon>SequenceDiagram1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence_turn.sequencediagram.layout">
+      <DependentUpon>Sequence_turn.sequencediagram</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

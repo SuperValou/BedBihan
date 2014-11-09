@@ -116,6 +116,16 @@
               </interactionOperand>
             </operands>
           </combinedFragment>
+          <operandOccurrenceSpecification Id="5386cd01-d50b-4342-916d-1f074fbdeeb6" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="426111c5-bff6-4dcc-b99b-8ef81251c03b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="aafb1c54-1e88-4894-89fa-750c347ce97c" LastKnownName="Battle" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="7eba6d68-dfef-4307-9c19-21b66befd452" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="abdd0e37-e227-496d-9306-0332e3127907" LastKnownName="BlueUnit" />
@@ -124,16 +134,6 @@
           <operandOccurrenceSpecification Id="6eaeba8f-86f4-4834-999e-d2e1f9a94941" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="7c90f881-4083-4fff-b4d7-b28579cdc7fc" LastKnownName="RedUnit" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="426111c5-bff6-4dcc-b99b-8ef81251c03b" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="aafb1c54-1e88-4894-89fa-750c347ce97c" LastKnownName="Battle" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="5386cd01-d50b-4342-916d-1f074fbdeeb6" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
             </covered>
           </operandOccurrenceSpecification>
           <behaviorExecutionSpecification Id="00d8d579-9548-4121-b811-5e7479391a72" name="BehaviorExecutionSpecification">
@@ -305,6 +305,16 @@
               <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
             </covered>
           </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="f2d221fc-7e95-4b9e-82df-bfbcc13696bb" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="7c90f881-4083-4fff-b4d7-b28579cdc7fc" LastKnownName="RedUnit" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="5cb2d0f1-41f8-4a47-81e2-11ec843bfddb" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="aafb1c54-1e88-4894-89fa-750c347ce97c" LastKnownName="Battle" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="0504cccc-96cc-4736-9479-8de15b5a8a6d" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="abdd0e37-e227-496d-9306-0332e3127907" LastKnownName="BlueUnit" />
@@ -313,16 +323,6 @@
           <operandOccurrenceSpecification Id="a5c417f7-a656-4ba1-8704-d1b3dd00c6fd" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="5cb2d0f1-41f8-4a47-81e2-11ec843bfddb" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="aafb1c54-1e88-4894-89fa-750c347ce97c" LastKnownName="Battle" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="f2d221fc-7e95-4b9e-82df-bfbcc13696bb" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="7c90f881-4083-4fff-b4d7-b28579cdc7fc" LastKnownName="RedUnit" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="9b5c7bb1-da7b-48cc-9e1d-1a676d165f0d" name="OperandOccurrenceSpecification">
@@ -345,6 +345,11 @@
               <lifelineMoniker Id="7c90f881-4083-4fff-b4d7-b28579cdc7fc" LastKnownName="RedUnit" />
             </covered>
           </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="eb570ba7-e6fb-455b-93a4-00f1dba278ba" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
+            </covered>
+          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="09e9b67a-4d97-444c-b41c-6003f66928df" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="aafb1c54-1e88-4894-89fa-750c347ce97c" LastKnownName="Battle" />
@@ -353,11 +358,6 @@
           <operandOccurrenceSpecification Id="f0f0bb60-bbaf-4232-91f1-ba91a3ed128e" name="OperandOccurrenceSpecification">
             <covered>
               <lifelineMoniker Id="abdd0e37-e227-496d-9306-0332e3127907" LastKnownName="BlueUnit" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="eb570ba7-e6fb-455b-93a4-00f1dba278ba" name="OperandOccurrenceSpecification">
-            <covered>
-              <lifelineMoniker Id="0e55dd9b-41f3-4f63-9cef-abb1cca87e6a" LastKnownName="Hexagon" />
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="3c465845-4e5a-4545-bca0-6fc352a73b9d" name="OperandOccurrenceSpecification">
