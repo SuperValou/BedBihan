@@ -145,7 +145,7 @@ namespace BedBihan
         }
 
 
-        // return number of point generate by the presense of the unit on the case.
+        // return number of point generateArmy by the presense of the unit on the case.
         public int generatePoint()
         {
             // switch en fct du type de case

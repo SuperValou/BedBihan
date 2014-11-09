@@ -18,7 +18,7 @@ namespace BedBihan
             }
         }
 
-        public int nbTourMax
+        public int MaxTurnNumber
         {
             get
             {
@@ -29,7 +29,7 @@ namespace BedBihan
             }
         }
 
-        public int nbTour
+        public int CurrentTurn
         {
             get
             {

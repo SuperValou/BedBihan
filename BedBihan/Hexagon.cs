@@ -5,9 +5,14 @@ using System.Text;
 
 namespace BedBihan
 {
-    public abstract class Hexagon
+    public abstract class HexagonTexture
     {
-        public Field field
+
+    }
+
+    public class Hexagon
+    {
+        public HexagonTexture texture
         {
             get
             {
@@ -18,5 +23,37 @@ namespace BedBihan
             }
         }
 
+        public Field fieldType
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public System.Collections.Generic.IEnumerable<Unit> listOfUnits
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public Coordinates coordinates
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

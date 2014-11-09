@@ -12,7 +12,7 @@ namespace BedBihan
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Hexagon> grid
+        public Hexagon grid
         {
             get
             {

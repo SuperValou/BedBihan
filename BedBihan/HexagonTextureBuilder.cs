@@ -5,9 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class HexagonBuilder
+    public class HexagonTextureBuilder
     {
-        public Woods woods
+        public WoodsTexture woods
         {
             get
             {
@@ -18,7 +18,7 @@ namespace BedBihan
             }
         }
 
-        public Mountain mountain
+        public MountainTexture mountain
         {
             get
             {
@@ -29,7 +29,7 @@ namespace BedBihan
             }
         }
 
-        public Desert desert
+        public DesertTexture desert
         {
             get
             {
@@ -40,7 +40,7 @@ namespace BedBihan
             }
         }
 
-        public Plain plain
+        public PlainTexture plain
         {
             get
             {
@@ -51,27 +51,27 @@ namespace BedBihan
             }
         }
     
-        public void createWoods()
+        public void loadWoods()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createPlain()
+        public void loadPlain()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createDesert()
+        public void loadDesert()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createMountain()
+        public void loadMountain()
         {
             throw new System.NotImplementedException();
         }
 
-        public Hexagon createHexagon(String fieldType)
+        public HexagonTexture loadHexagon(String fieldType)
         {
             throw new System.NotImplementedException();
         }

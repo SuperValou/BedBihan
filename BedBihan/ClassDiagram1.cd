@@ -1,30 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Strategy">
+    <Position X="1.145" Y="1.536" Height="0.322" Width="0.801" />
+  </Comment>
+  <Comment CommentText="Flyweight">
+    <Position X="5.307" Y="12.697" Height="0.322" Width="0.801" />
+  </Comment>
+  <Comment CommentText="Builder">
+    <Position X="10.477" Y="1.745" Height="0.322" Width="0.801" />
+  </Comment>
+  <Comment CommentText="Factory">
+    <Position X="19.376" Y="7.848" Height="0.322" Width="0.801" />
+  </Comment>
+  <Comment CommentText="Abstract factory">
+    <Position X="16.276" Y="4.15" Height="0.291" Width="1.355" />
+  </Comment>
   <Class Name="BedBihan.Elf">
-    <Position X="12.75" Y="7" Width="1.5" />
+    <Position X="14.25" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Orc">
-    <Position X="16.75" Y="7" Width="1.5" />
+    <Position X="18.25" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Orc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Dwarf">
-    <Position X="14.5" Y="7" Width="1.5" />
+    <Position X="16" Y="9.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dwarf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Unit">
-    <Position X="14.25" Y="3.25" Width="3.25" />
+    <Position X="15.75" Y="5.5" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>EAABAIAAAAAAAAAAAAAgAEAAAAAAAACAAAAAAmAQAAI=</HashCode>
+      <HashCode>EAABAIAAAAAAAAAAAAAgAEAAAAAAAACAAAAAQmAQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -35,78 +50,73 @@
   <Class Name="BedBihan.Player">
     <Position X="15" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAAA=</HashCode>
+      <HashCode>EIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="colour" />
+      <Property Name="faction" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="troops" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="17.75" Y="3" Width="1.5" />
+    <Position X="19.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>UnitFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Hexagon">
-    <Position X="7.5" Y="4.25" Width="1.5" />
+  <Class Name="BedBihan.HexagonTexture">
+    <Position X="6.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="field" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="BedBihan.Woods">
-    <Position X="5.25" Y="6.75" Width="1.5" />
+  <Class Name="BedBihan.WoodsTexture">
+    <Position X="4.25" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Woods.cs</FileName>
+      <FileName>WoodsTexture.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Mountain">
-    <Position X="6.75" Y="6.75" Width="1.5" />
+  <Class Name="BedBihan.MountainTexture">
+    <Position X="5.75" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Mountain.cs</FileName>
+      <FileName>MountainTexture.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Desert">
-    <Position X="8.25" Y="6.75" Width="1.5" />
+  <Class Name="BedBihan.DesertTexture">
+    <Position X="7.25" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Desert.cs</FileName>
+      <FileName>DesertTexture.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Plain">
-    <Position X="9.75" Y="6.75" Width="1.5" />
+  <Class Name="BedBihan.PlainTexture">
+    <Position X="8.75" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Plain.cs</FileName>
+      <FileName>PlainTexture.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.HexagonBuilder">
-    <Position X="7.5" Y="8.25" Width="1.5" />
+  <Class Name="BedBihan.HexagonTextureBuilder">
+    <Position X="6.25" Y="12.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAACAEJICCAAACAAAAA=</HashCode>
-      <FileName>HexagonBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAAAAgAAAAAAAAAiAABAACAgAAAAAAA=</HashCode>
+      <FileName>HexagonTextureBuilder.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="woods" />
-      <Property Name="mountain" />
       <Property Name="desert" />
+      <Property Name="mountain" />
       <Property Name="plain" />
+      <Property Name="woods" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Game">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQACAAEEAAAAAAIAgAAAAAAAAAAAAIAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAACAAEEAAAAABIAgAAgAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -132,10 +142,10 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.GameCreator">
-    <Position X="8" Y="1.75" Width="1.5" />
+    <Position X="8.25" Y="3.25" Width="1.5" />
     <AssociationLine Name="gameBuilder" Type="BedBihan.GameBuilder">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="2.19" Y="0.611" />
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.126" Y="0.083" Height="0.182" Width="1.065" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -175,8 +185,36 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="BedBihan.Hexagon">
+    <Position X="6.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAgAAAAAAAAAgQAAAAAAAAAAAA=</HashCode>
+      <FileName>Hexagon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="fieldType" />
+      <Property Name="texture" />
+      <Property Name="coordinates" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="listOfUnits" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BedBihan.Faction">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Faction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="people" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="troops" />
+    </ShowAsCollectionAssociation>
+  </Class>
   <Struct Name="BedBihan.Coordinates">
-    <Position X="18.75" Y="4.75" Width="1.5" />
+    <Position X="10.25" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>Coordinates.cs</FileName>
@@ -188,22 +226,29 @@
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
       <FileName>IBoard.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
+    <ShowAsAssociation>
       <Property Name="grid" />
-    </ShowAsCollectionAssociation>
+    </ShowAsAssociation>
   </Interface>
   <Enum Name="BedBihan.Colour">
-    <Position X="16.75" Y="1.5" Width="1.5" />
+    <Position X="21.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Colour.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="BedBihan.Field">
-    <Position X="10.75" Y="8.25" Width="1.5" />
+    <Position X="2.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAgAAAAAgAAA=</HashCode>
       <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BedBihan.People">
+    <Position X="19.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAA=</HashCode>
+      <FileName>People.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

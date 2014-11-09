@@ -18,8 +18,7 @@ namespace BedBihan
             }
         }
 
-
-        public IEnumerable<Unit> troops
+        public IEnumerable<Unit> points
         {
             get
             {
@@ -30,7 +29,7 @@ namespace BedBihan
             }
         }
 
-        public IEnumerable<Unit> points
+        public Faction faction
         {
             get
             {

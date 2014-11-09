@@ -7,7 +7,13 @@ namespace BedBihan
 {
     public class SmallBoard : IBoard
     {
-        public IEnumerable<Hexagon> grid
+
+        public void buildBoard()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Hexagon grid
         {
             get
             {
@@ -17,11 +23,6 @@ namespace BedBihan
             {
                 throw new NotImplementedException();
             }
-        }
-
-        public void buildBoard()
-        {
-            throw new NotImplementedException();
         }
     }
 }

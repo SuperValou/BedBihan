@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Woods : Hexagon
+    public class PlainTexture : HexagonTexture
     {
     }
 }

@@ -7,12 +7,12 @@ namespace BedBihan
 {
     public interface IBoard
     {
-        IEnumerable<Hexagon> grid
+        Hexagon grid
         {
             get;
             set;
         }
-    
+             
         void buildBoard();
     }
 }
