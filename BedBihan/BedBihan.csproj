@@ -39,14 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BedBihan.cs" />
     <Compile Include="ClassicBoard.cs" />
-    <Compile Include="Colour.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="DemoBoard.cs" />
     <Compile Include="DesertTexture.cs" />
     <Compile Include="Dwarf.cs" />
+    <Compile Include="DwarfFaction.cs" />
     <Compile Include="Elf.cs" />
+    <Compile Include="ElfFaction.cs" />
     <Compile Include="Faction.cs" />
+    <Compile Include="FactionFactory.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameBuilder.cs" />
@@ -57,6 +60,7 @@
     <Compile Include="MountainTexture.cs" />
     <Compile Include="NewGameBuilder.cs" />
     <Compile Include="Orc.cs" />
+    <Compile Include="OrcFaction.cs" />
     <Compile Include="People.cs" />
     <Compile Include="PlainTexture.cs" />
     <Compile Include="Player.cs" />

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class UnitFactory
+    public static class UnitFactory
     {
         public void createElf()
         {

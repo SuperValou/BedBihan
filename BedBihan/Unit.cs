@@ -9,29 +9,8 @@ namespace BedBihan
     {
         // -- properties --
 
-        public Colour colour
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        } // blue or red (plutôt un enum plutot qu'un int en fait non ?)
 
         public int lifePoints
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Coordinates coordinates
         {
             get
             {
@@ -86,30 +65,39 @@ namespace BedBihan
             }
         }
 
+        public IEnumerable<int> costsOfMovement
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public People people
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
 
         // -- methods --
 
         // move the current unit and engage fight
-        void moveOn (Coordinates coord)
+        abstract void moveOn (Hexagon hexagon)
         {
-            /*
-             *  this.movementPoints -= this.costOfMovementOn();
-             *  Units[] caca = Game.Equals(coord);
-             *  caca[0].colour == this.colour then ok
-             *  else fight against selectBestUnit(caca)
-             *  */
+            
                      
         }
-  
-  
-        // return cost of movement
-        public abstract int costOfMovementOn(Field field);
 
-        // slect best unit
-        public Unit selectBestDefensiveUnit(Unit[] list)
-        {
-            return null;
-        }
+
 
         // manage fights
         void fightAgainst(Unit defender)
@@ -145,17 +133,15 @@ namespace BedBihan
         }
 
 
-        // return number of point generateArmy by the presense of the unit on the case.
-        public int generatePoint()
-        {
-            // switch en fct du type de case
-            return 0;
-        }
-
         // destroy the current unit
         void destroy()
         {
 
+        }
+
+        public abstract int getCostOfMovementOn(Field field)
+        {
+            throw new System.NotImplementedException();
         }
 
 

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Elf : Unit
+    public static class FactionFactory
     {
-        public override int getCostOfMovementOn(Field field)
+        public void createArmy (People people)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }

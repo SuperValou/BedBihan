@@ -40,8 +40,7 @@ namespace BedBihan
             }
         }
 
-
-        public Player redPlayer
+        public static IEnumerable<Player> Players
         {
             get
             {
@@ -52,18 +51,7 @@ namespace BedBihan
             }
         }
 
-        public Player bluePlayer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public void nextTurn()
+        public void endTurn()
         {
             /*
              * Compter les points
@@ -71,7 +59,7 @@ namespace BedBihan
              */
         }
 
-        public void playGame()
+        public void launchGame()
         {
             /*
              * while(nbTour == nbTourmax || UnseulJoueurLeft() )
@@ -87,24 +75,24 @@ namespace BedBihan
              *    
              */
         }
-            
-        
-        // changer
-        public static Unit[] getUnitsOn(Coordinates coord)
+
+        public static void endGame()
         {
-            /*
-            Unit[] list;
-            for each (List.Joueurs lj)
-            {
-                for each (List lj.troop )
-                {
-                    if (troop.coordinate == coord)
-                        list.add(troops[i]);
-                }
-            }
-              */
-            return null;
+            throw new System.NotImplementedException();
         }
+
+        public static void launchTurn()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public static void updatePlayerPoints(Player player)
+        {
+            throw new System.NotImplementedException();
+        }
+
+
+        // changer
 
 
 

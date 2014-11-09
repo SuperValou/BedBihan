@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Faction
+    public abstract class Faction
     {
         public People people
         {
@@ -27,11 +27,6 @@ namespace BedBihan
             set
             {
             }
-        }
-    
-        public void generateArmy()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

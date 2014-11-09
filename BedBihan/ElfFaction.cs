@@ -5,9 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public enum Colour
+    public class ElfFaction : Faction
     {
-        Red,
-        Blue
     }
 }

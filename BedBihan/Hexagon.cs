@@ -55,5 +55,15 @@ namespace BedBihan
             {
             }
         }
+
+        public void calculatePoints()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Unit selectBestUnit()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
