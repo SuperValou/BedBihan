@@ -44,7 +44,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
-              LastKnownName="Choisir la taille de  la carte"
+              LastKnownName="Select map"
               LastKnownLocation="CreateGame.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -93,7 +93,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="0aa77341-84d2-4bed-8050-3e3d8e050737"
-              LastKnownName="Choisir nom de joueur"
+              LastKnownName="Enter pseudonyme"
               LastKnownLocation="CreateGame.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -152,45 +152,6 @@
                 <memberEnd
                   Id="fe6dc2e0-0b33-4778-b734-f0fb8d667ad0"
                   name="Joueur"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="7c327c96-2fdc-4711-90d7-345ec5d5b814"
-            isDerived="false"
-            sourceEndRoleName="Joueur"
-            targetEndRoleName="Choisir son peuple"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
-              LastKnownName="Choisir son peuple"
-              LastKnownLocation="CreateGame.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6fda9382-a08b-4fa6-8ebb-f41f82c81bba"
-                  name="Joueur"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="65fe3abd-d039-437d-b411-9abd7756db8f"
-                  name="Choisir son peuple"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -281,188 +242,65 @@
     <packageHasNamedElement>
       <useCase
         Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
-        name="Choisir la taille de  la carte"
+        name="Select map"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="ca8b331e-3e81-4cc1-bc8a-5da909cc8c72"
-        name="Choisir taille démo"
+        name="Select Demo map"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="eae23d99-c544-4157-86d4-695ef00d7c35"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
-              LastKnownName="Choisir la taille de  la carte"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="903a48c5-9f4c-4ed3-8d38-878d1269c923"
-        name="Choisir taille petite"
+        name="Select Small map"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="906caaf8-6190-49e1-a45e-aee248e02406"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
-              LastKnownName="Choisir la taille de  la carte"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="b9ef049a-d781-4c36-8d90-d22c93aa2b8f"
         name="Choisir taille normale"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="d0c7ca9f-9e22-451f-b40f-03682ebf0eb0"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="79f9da95-e2f7-4270-a8a9-0b38cb9d81a9"
-              LastKnownName="Choisir la taille de  la carte"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
-        name="Choisir son peuple"
+        name="Select people"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="0aa77341-84d2-4bed-8050-3e3d8e050737"
-        name="Choisir nom de joueur"
+        name="Enter pseudonyme"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="1af4164d-7948-4a22-a766-fae1a8c5520a"
-        name="Choisir Elfe"
+        name="Select Elves"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="e0a16ca0-7812-41f1-a8a2-643ada1a69e8"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
-              LastKnownName="Choisir son peuple"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="e7eb25c3-542e-4f0a-a7cb-a61d2bbf68ba"
-        name="Choisir Orc"
+        name="Select Orcs"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="e5e2e422-a858-43e5-8f53-b09369c4bcc7"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
-              LastKnownName="Choisir son peuple"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="0c5df550-95f3-4b25-ace0-e2bc27f7556c"
-        name="Choisir Nain"
+        name="Select Dwarves"
         isAbstract="false"
-        isLeaf="false">
-        <generalsInternal>
-          <generalization
-            Id="0406827c-0d4e-4e46-a586-79cd31ee93d0"
-            isSubstitutable="false">
-            <useCaseMoniker
-              Id="89ae4183-017d-4b7d-9ec8-c88ce1982258"
-              LastKnownName="Choisir son peuple"
-              LastKnownLocation="CreateGame.uml" />
-          </generalization>
-        </generalsInternal>
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -470,6 +308,568 @@
         name="Lancer la partie"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="19b1b3db-8ad8-4ac7-9590-817d12210ef5"
+        name="Player"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5aa8c936-3a13-4aee-8b4e-c1dedcea5159"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Start new game"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="64559448-c3d6-4ac7-af92-2fe63f9fd94b"
+              LastKnownName="Start new game"
+              LastKnownLocation="CreateGame.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04f1186c-052d-41cc-87d3-a2d082812fb7"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="09dc8fc2-41c5-432e-b319-61b7b32ba5fb"
+                  name="Start new game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2fa70e51-6df9-4c1a-9782-56d7ff36137b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Load saved game"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2eaabdcf-ef06-445d-b143-a0febdf8140c"
+              LastKnownName="Load saved game"
+              LastKnownLocation="CreateGame.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13920028-ce40-41d9-bbd1-b99b25cea412"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff45a62b-a394-4221-ac1e-23fe27d025c3"
+                  name="Load saved game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="318555c9-e565-49a6-ac97-453908e6a25a"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Change settings"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a383ca6c-cffa-4ffd-92d8-a77d6dc986fc"
+              LastKnownName="Change settings"
+              LastKnownLocation="CreateGame.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3eb46b3a-ef86-40a2-98cf-a3134bc0bc97"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ca76f69-fc30-4095-85f3-e4bca5a7ee16"
+                  name="Change settings"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="72ae5900-36d1-499e-9198-d17341fc3974"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Exit BedBihan"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="18b675ee-eb10-416d-919b-08abe002ae86"
+              LastKnownName="Exit BedBihan"
+              LastKnownLocation="CreateGame.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5952346d-b7a6-4e77-ae3b-bff6b8d89c52"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="25d3ca40-7b91-4b5f-a9ee-0572a2243b18"
+                  name="Exit BedBihan"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8623cd42-79fa-47e4-bd80-712898cc1c2a"
+        name="Select Classic map"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f6cd197-ad28-4ed7-adac-17a2e5f9662b"
+        name="Enter pseudonyme"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64559448-c3d6-4ac7-af92-2fe63f9fd94b"
+        name="Start new game"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a3fc792d-b54f-4ecf-b327-ad2acfab4fcd">
+            <useCaseMoniker
+              Id="015d3562-ec16-4b9a-8a6b-77870105b6ab"
+              LastKnownName="Select people"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+          <include
+            Id="cdf53482-9a5a-4c1e-ba1b-292b9c47c02f">
+            <useCaseMoniker
+              Id="4f6cd197-ad28-4ed7-adac-17a2e5f9662b"
+              LastKnownName="Enter pseudonyme"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+          <include
+            Id="23579fad-d5ea-4ee8-8463-8be2e3e07221">
+            <useCaseMoniker
+              Id="9299b87a-ff9d-4841-b7f4-28f5e638c098"
+              LastKnownName="Select map"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+          <include
+            Id="48e83bd6-29eb-455e-8d2a-2f26c1dfe3a0">
+            <useCaseMoniker
+              Id="7e2dd663-902d-47df-8d14-0765f8068cf4"
+              LastKnownName="Launch game"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2eaabdcf-ef06-445d-b143-a0febdf8140c"
+        name="Load saved game"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cfa756f9-30cf-447a-9bec-a9b7fd926746">
+            <useCaseMoniker
+              Id="0d30c7e1-d355-43b3-807e-25e1dbea5695"
+              LastKnownName="Select file"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+          <include
+            Id="8fc4eea8-0b84-4102-9535-01592d05e3c0">
+            <useCaseMoniker
+              Id="7e2dd663-902d-47df-8d14-0765f8068cf4"
+              LastKnownName="Launch game"
+              LastKnownLocation="CreateGame.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d30c7e1-d355-43b3-807e-25e1dbea5695"
+        name="Select file"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="81bc4add-af58-4ec8-b74e-e97964acacec"
+        name="Enter pseudonyme1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="015d3562-ec16-4b9a-8a6b-77870105b6ab"
+        name="Select people"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b81be55c-c472-45fc-b610-9b5d814baf5f"
+        name="Select Dwarves"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="86260fe5-9244-404b-bcf2-47150a2c3ecb"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="015d3562-ec16-4b9a-8a6b-77870105b6ab"
+              LastKnownName="Select people"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b63bfe52-7f7d-4925-bfd1-40187980d0a3"
+        name="Select Elves"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="1468d4a9-9d18-40d9-8d58-86cacadd4262"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="015d3562-ec16-4b9a-8a6b-77870105b6ab"
+              LastKnownName="Select people"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="59cf3149-1c98-4b8d-9933-15ad31ea70aa"
+        name="Select Orcs"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="394a0076-c1a4-46d2-8a26-b7e55bacbd1f"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="015d3562-ec16-4b9a-8a6b-77870105b6ab"
+              LastKnownName="Select people"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9299b87a-ff9d-4841-b7f4-28f5e638c098"
+        name="Select map"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b8f2787-6967-48e4-a942-9b13c4303af2"
+        name="Select Small map"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="3762eabb-8d0f-4691-9e38-e252af2e14c3"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="9299b87a-ff9d-4841-b7f4-28f5e638c098"
+              LastKnownName="Select map"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c21604bd-c4fe-4200-a567-9b5b54798de8"
+        name="Select Demo map"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0b57f370-b6ae-4487-8c3c-3e5a78a469df"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="9299b87a-ff9d-4841-b7f4-28f5e638c098"
+              LastKnownName="Select map"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a364b959-c008-4cec-8710-cc8a4f20bc78"
+        name="Select Classic map"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="9a1705f9-1128-48f7-b386-b34a91de62cf"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="9299b87a-ff9d-4841-b7f4-28f5e638c098"
+              LastKnownName="Select map"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a383ca6c-cffa-4ffd-92d8-a77d6dc986fc"
+        name="Change settings"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="18b675ee-eb10-416d-919b-08abe002ae86"
+        name="Exit BedBihan"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e2dd663-902d-47df-8d14-0765f8068cf4"
+        name="Launch game"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0dcaa83c-a46a-4a6f-b861-6a57b9938b0d"
+        name="Red player"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7e066100-d323-4208-9952-ff7309ca3f09"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="19b1b3db-8ad8-4ac7-9590-817d12210ef5"
+              LastKnownName="Player"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3d69cc95-cac5-481f-8575-19ca9f4f3690"
+        name="Blue player"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="2bc57674-cd3b-4cb7-b88a-81d49bf4bc47"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="19b1b3db-8ad8-4ac7-9590-817d12210ef5"
+              LastKnownName="Player"
+              LastKnownLocation="CreateGame.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="47f2dabf-354d-472f-b8b5-44b3374d21ca"
+        name="File error"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d2180b36-d67d-42e0-9654-54212f877b66"
+        name="File not found"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e11d9429-176a-49be-9202-84d301277928">
+            <useCaseMoniker
+              Id="0d30c7e1-d355-43b3-807e-25e1dbea5695"
+              LastKnownName="Select file"
+              LastKnownLocation="CreateGame.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
+            LastKnownName="Bedbihan"
+            LastKnownLocation="CreateGame.uml" />
+        </subjects>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

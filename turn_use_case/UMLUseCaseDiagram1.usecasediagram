@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="41a3a8d9-4e1d-40b7-a766-32dd53e413e7" name="UMLUseCaseDiagram1" linkedPackageId="de5032bf-8bcc-4472-8734-0674ade455f8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e078ffb6-a02f-42fe-935d-0132eb140e39">
+      <profileInstance Id="fc6650dd-53d2-415c-a8bd-c2602126b853" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f7fbf59c-ad62-49e2-98ce-cc618aa7b2bf">
+      <profileInstance Id="bf15ec3f-dd7e-47a1-a0e9-a68da3fa2b5e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ac995a87-e9b9-4887-9afb-71c4f5af837e" name="Current player" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fed951d0-2f96-4d8b-bd1c-513e106b961a" />
+        <targetEnds>
+          <association Id="ea7d002e-488d-41c4-80f5-a949b3e694bf" isDerived="false" sourceEndRoleName="Current player" targetEndRoleName="End turn" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="90c3b85a-86ba-48d5-b8a3-431c74f513e4" LastKnownName="End turn" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1765c7af-b5fc-49da-b1fc-ee76344da637" name="Current player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a8e78c3-adb5-4bab-9cfc-5d4ac587011b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="636b85b6-e451-4246-9f97-c44f5a690e3a" name="End turn" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3294bcae-d18c-40e6-8346-0ff5e94407cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2461ab05-b6c5-44c6-ad30-21332440f6ad" />
+          </association>
+          <association Id="92e16602-1e97-402f-ae29-fd0d88002af6" isDerived="false" sourceEndRoleName="Current player" targetEndRoleName="Surrender" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d527a014-0531-41a1-94cd-6390a416f160" LastKnownName="Surrender" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2bf8c758-d226-48f1-a912-1dfb494f8781" name="Current player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3f5fbb7f-740c-4e10-8e59-58cd94af8264" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2183a180-820e-4dbc-b96b-2c292f1c7372" name="Surrender" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3dcbb36b-c38b-48c7-abfb-1a2970c2d3ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="09847c08-bf56-4924-b4b2-ae2efd65e1fd" />
+          </association>
+          <association Id="4322eec3-ab71-437a-91c5-ad95ce035a4c" isDerived="false" sourceEndRoleName="Current player" targetEndRoleName="Pause game" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b44d27fd-154b-4af9-98f1-1e1d4424473a" LastKnownName="Pause game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="070e7fda-5cb2-4c5f-a7fd-f314dee88717" name="Current player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7857f2fd-7a1f-47cc-a3e4-ad5d02f3f5da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a998f8fc-bae2-44b0-ae12-108cc5cf6b09" name="Pause game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e6b524be-82ec-4b9d-aa20-0a44eb2ee5e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1c02df21-36c0-4d26-97c0-441da7862ae9" />
+          </association>
+          <association Id="f7a82fff-6f2f-4d68-81b0-4b0dbe2bd07c" isDerived="false" sourceEndRoleName="Current player" targetEndRoleName="Select hexagon" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e63f5ed-77b8-4472-bee1-2764306ab12a" LastKnownName="Select hexagon" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b085b548-7507-4fc6-a4db-b8ef84fd8dec" name="Current player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94c4aa9e-6f8d-4b79-bea3-b22f1983f058" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b036bfa1-833e-4f26-a215-8b70a94f9651" name="Select hexagon" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d70c6426-ca1b-40c7-9d3f-139654816bde" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="48634ebf-028c-41b4-9d92-1a814d0a4ae1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" name="Turn" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a47a5f3f-45ad-4e57-a39e-273518ab2cfb" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="b44d27fd-154b-4af9-98f1-1e1d4424473a" name="Pause game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aed81c46-f59f-46aa-92bc-4dcee3d2d494" />
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="90c3b85a-86ba-48d5-b8a3-431c74f513e4" name="End turn" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c72a7c70-ba38-4725-ae17-4ea0e81699c1" />
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3360a00c-c247-4ac4-9499-80e88270f2b4" name="Select unit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="747858b5-cc64-4fab-9c23-e404be882b59" />
+        <extendedCases>
+          <extend Id="7bfc834d-5bab-4195-bd8e-ea1ff205762e">
+            <useCaseMoniker Id="6e63f5ed-77b8-4472-bee1-2764306ab12a" LastKnownName="Select hexagon" />
+            <elementDefinition Id="0b9196ff-24ca-45a4-bb5b-572336ed2812" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d527a014-0531-41a1-94cd-6390a416f160" name="Surrender" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d00b631d-279a-4959-bc77-07237d17cf54" />
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9f2ab35b-49c7-47d0-a109-bd94fb88acd6" name="Save game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46fca9ff-bf2c-407d-a5b7-1b81b31d9654" />
+        <extendedCases>
+          <extend Id="0bb67f0e-8cc8-4c0b-8ae0-c2feaefd9ea7">
+            <useCaseMoniker Id="b44d27fd-154b-4af9-98f1-1e1d4424473a" LastKnownName="Pause game" />
+            <elementDefinition Id="7ba490e8-f4f1-4098-b5b8-f00938da2940" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c0427a67-5168-456a-a486-7e040abb76b4" name="Resume game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8453f777-f220-4f19-a6ea-f95fdf79d990" />
+        <extendedCases>
+          <extend Id="a13fab3c-0b7e-4e1d-a103-785db74fffb0">
+            <useCaseMoniker Id="b44d27fd-154b-4af9-98f1-1e1d4424473a" LastKnownName="Pause game" />
+            <elementDefinition Id="8a17992a-1a47-464a-97e5-0cde5bc88581" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="69aa2523-c04c-4528-ab41-d14ed41ffbe5" name="Quit game" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="311f2509-bb89-4217-a3bd-1ccc4c536610" />
+        <extendedCases>
+          <extend Id="de990c26-cc90-4773-a44f-0280218939b0">
+            <useCaseMoniker Id="b44d27fd-154b-4af9-98f1-1e1d4424473a" LastKnownName="Pause game" />
+            <elementDefinition Id="dcd5d062-8cfe-4a94-bb19-9a898ded8e26" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6e63f5ed-77b8-4472-bee1-2764306ab12a" name="Select hexagon" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88aba51b-7059-4e22-94a6-c18ce0202d93" />
+        <additions>
+          <include Id="28bcc869-9bbf-4e38-be43-2f5fc50bec74">
+            <useCaseMoniker Id="0b505b15-a070-4cc2-a192-9174ddc8c027" LastKnownName="Get informations" />
+            <elementDefinition Id="3eba9f09-aa67-47b5-87ef-6de9a7b36c03" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="26ce17f9-aff0-45a5-b5bd-39d307617bf4" name="Move" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc2c2256-defa-4a81-b568-06e43876acd8" />
+        <extendedCases>
+          <extend Id="5424271d-9cd2-48fa-8814-a4c9772a0ab6">
+            <useCaseMoniker Id="3360a00c-c247-4ac4-9499-80e88270f2b4" LastKnownName="Select unit" />
+            <elementDefinition Id="f126751d-3ab9-4306-a261-67ab4e85dd87" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4b244db7-464f-449f-84e9-aa8b283a3970" name="Skip turn" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14cb634f-7bdd-4b04-8e9b-3becce0c55dd" />
+        <extendedCases>
+          <extend Id="3eed364b-7978-4211-b272-da21f33fdda7">
+            <useCaseMoniker Id="3360a00c-c247-4ac4-9499-80e88270f2b4" LastKnownName="Select unit" />
+            <elementDefinition Id="f7b23501-77b9-4d79-b3bf-6de0ca5fdbd2" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="daa194c3-0ae9-4a42-95f8-d495f2390fb9" name="Fight" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5868809f-1739-4f2f-94e5-ccdaeac48713" />
+        <extendedCases>
+          <extend Id="3264fbc3-3586-48e7-bca6-1211bab704c8">
+            <useCaseMoniker Id="26ce17f9-aff0-45a5-b5bd-39d307617bf4" LastKnownName="Move" />
+            <elementDefinition Id="731f0b4e-258e-4da1-9999-fbbadb7194b3" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0b505b15-a070-4cc2-a192-9174ddc8c027" name="Get informations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="890ac66a-35d9-4226-95db-0c6bcc4bfdd0" />
+        <subjects>
+          <subsystemMoniker Id="a74e508a-e0d5-41be-8bb9-6b5ab49e6497" LastKnownName="Turn" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="de5032bf-8bcc-4472-8734-0674ade455f8" name="turn_use_case">
+    <elementDefinition Id="1ed82133-6d9c-457c-9a38-c7644c809147" />
+  </package>
+</useCaseModelRoot>
