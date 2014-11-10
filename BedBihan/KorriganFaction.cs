@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class DwarfFaction : Faction
+    public class KorriganFaction : Faction
     {
     }
 }

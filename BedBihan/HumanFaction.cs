@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class OrcFaction : Faction
+    public class HumanFaction : Faction
     {
     }
 }

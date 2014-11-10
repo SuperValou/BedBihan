@@ -7,7 +7,7 @@ namespace BedBihan
 
 
 {
-    public class Humain : Unit
+    public class Korrigan : Unit
     {
 
         public int nbKill

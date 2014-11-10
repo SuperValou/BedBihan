@@ -22,18 +22,18 @@
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Orc">
+  <Class Name="BedBihan.Human">
     <Position X="29" Y="14" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Orc.cs</FileName>
+      <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Humain">
+  <Class Name="BedBihan.Korrigan">
     <Position X="27" Y="14" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Dwarf.cs</FileName>
+      <FileName>Korrigan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Unit">
@@ -218,11 +218,11 @@
       <Property Name="troops" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="BedBihan.DwarfFaction">
+  <Class Name="BedBihan.KorriganFaction">
     <Position X="24.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DwarfFaction.cs</FileName>
+      <FileName>KorriganFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.ElfFaction">
@@ -232,11 +232,11 @@
       <FileName>ElfFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.OrcFaction">
+  <Class Name="BedBihan.HumanFaction">
     <Position X="28" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>OrcFaction.cs</FileName>
+      <FileName>HumanFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.FactionFactory">
@@ -280,7 +280,7 @@
   <Enum Name="BedBihan.People">
     <Position X="29.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAQAAAA=</HashCode>
       <FileName>People.cs</FileName>
     </TypeIdentifier>
   </Enum>

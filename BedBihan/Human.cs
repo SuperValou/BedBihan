@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class Orc : Unit
+    public class Human : Unit
     {
         public override int getCostOfMovementOn(Field field)
         {

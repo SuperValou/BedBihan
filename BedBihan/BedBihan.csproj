@@ -44,8 +44,8 @@
     <Compile Include="Coordinates.cs" />
     <Compile Include="DemoBoard.cs" />
     <Compile Include="DesertTexture.cs" />
-    <Compile Include="Dwarf.cs" />
-    <Compile Include="DwarfFaction.cs" />
+    <Compile Include="Korrigan.cs" />
+    <Compile Include="KorriganFaction.cs" />
     <Compile Include="Elf.cs" />
     <Compile Include="ElfFaction.cs" />
     <Compile Include="Faction.cs" />
@@ -59,8 +59,8 @@
     <Compile Include="IBoard.cs" />
     <Compile Include="MountainTexture.cs" />
     <Compile Include="NewGameBuilder.cs" />
-    <Compile Include="Orc.cs" />
-    <Compile Include="OrcFaction.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="HumanFaction.cs" />
     <Compile Include="People.cs" />
     <Compile Include="PlainTexture.cs" />
     <Compile Include="Player.cs" />

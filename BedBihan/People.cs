@@ -7,8 +7,8 @@ namespace BedBihan
 {
     public enum People
     {
-        Dwarf,
         Elf,
-        Orc
+        Human,
+        Korrigan
     }
 }
