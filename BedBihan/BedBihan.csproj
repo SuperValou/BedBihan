@@ -75,10 +75,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="GameUntilWin.sequencediagram" />
     <None Include="SequenceDiagram1.sequencediagram" />
     <None Include="Sequence_turn.sequencediagram" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GameUntilWin.sequencediagram.layout">
+      <DependentUpon>GameUntilWin.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SequenceDiagram1.sequencediagram.layout">
       <DependentUpon>SequenceDiagram1.sequencediagram</DependentUpon>
     </EmbeddedResource>
