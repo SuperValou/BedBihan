@@ -1,26 +1,28 @@
 \section{Modélisation}
 
-	L'analyse préalable nous permet à présent d'avoir une vision plus précise des fonctionnalités de notre programme en vue de réaliser son diagramme de classe. Pour simplifier la modélisation et permettre une plus grande modularité de nos classes nous avons voulu utiliser un maximum des patrons de conceptions. 
+	L'analyse préalable nous permet à présent d'avoir une vision plus précise des fonctionnalités de notre programme en vue de réaliser son diagramme de classe. Pour simplifier la modélisation et permettre une plus grande modularité de nos classes nous avons voulu utiliser un maximum de patrons de conceptions. 
 
 	\subsection{patron de Conception}
 
 		\subsubsection{Monteur : création d'une partie}
 
-		\textbf{Bedbihan} permet aux joueurs de jouer différentes type de parties. Ainsi il existe différentes manières de construire une partie en fonction du type désiré. Néanmoins ces créations passent par des étapes similaires : création de la carte, créations des unités, etc. C'est pourquoi sur  la création de la partie est assurée par le patron de conception \textbf{Monteur}. Ce patron de conception nous permet de séparer la conception de l'objet \emph{Game} de sa représentation. Comme indiqué la sur la FIGURE \ref{fig:builder}, la création de la partie sera dirigé par le \emph{GameCreator} qui utilisera le monteur adéquat en fonction de la situation. Ainsi d'une part on minimise le code en évitant des répétitions et de l'autre on gagne en flexibilité : il sera facile de créer un type de partie différent. 
-
-		\begin{figure}[h]
+				\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=0.5\textwidth]{figure/builder.png}
+			\includegraphics[width=0.8\textwidth]{figure/builder.png}
 		\end{center}
 		\caption{Création de la partie : patron de conception Monteur}
 		\label{fig:builder}
 	\end{figure}
 
+		\textbf{Bedbihan} permet aux joueurs de jouer différentes type de parties. Ainsi il existe différentes manières de construire une partie en fonction du type désiré. Néanmoins ces créations passent par des étapes similaires : création de la carte, créations des unités, etc. C'est pourquoi sur  la création de la partie est assurée par le patron de conception \textbf{Monteur}. Ce patron de conception nous permet de séparer la conception de l'objet \emph{Game} de sa représentation. Comme indiqué la sur la FIGURE \ref{fig:builder}, la création de la partie sera dirigé par le \emph{GameCreator} qui utilisera le monteur adéquat en fonction de la situation. Ainsi d'une part on minimise le code en évitant des répétitions et de l'autre on gagne en flexibilité : il sera facile de créer un type de partie différent. 
+
+
+
 		\subsubsection{Fabrique : création de différents peuples}
 
 		\begin{figure}[h]
 			\begin{center}
-				\includegraphics[width=0.5\textwidth]{figure/factory.png}
+				\includegraphics[width=0.8\textwidth]{figure/factory.png}
 			\end{center}
 			\caption{Création des unités : patron de conception Factory}
 			\label{fig:strategy}
@@ -30,7 +32,16 @@
 
 
 
-		\subsubsection{Poids-Mouche : gestion des cases}
+		\subsubsection{Poids-mouche : gestion des cases}
+
+		la classe \emph{Game} posséde un plateau \emph{IBoard}. Celui-ci est composé de case \emph{Hexagone}. Or un plateau de type normale contient 225 cases. Ceci impliquerais donc une forte consomation mémoire si chacune de ses cases devait exister en mémoire. C'est pourquoi nous utilisons ici le patron de conception \textbf{Poids-mouche}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{figure/flyweight}
+			\end{center}
+			\caption{Gestion des cases : patron de conception Poids-mouche}
+			\label{fig:planif}
+		\end{figure}
 
 		\subsubsection{Stratégie : création des différents type de carte}
 
