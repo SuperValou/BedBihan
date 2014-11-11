@@ -7,19 +7,10 @@ namespace BedBihan
 {
     public static class UnitFactory
     {
-        public void createElf()
+        public void createUnit(String TypeUnit)
         {
             throw new System.NotImplementedException();
         }
 
-        public void createHuman()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void createKorrigan()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
