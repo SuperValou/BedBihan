@@ -12,12 +12,12 @@ namespace BedBihan
             throw new System.NotImplementedException();
         }
 
-        public void createOrc()
+        public void createHuman()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createDwarf()
+        public void createKorrigan()
         {
             throw new System.NotImplementedException();
         }

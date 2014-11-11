@@ -10,17 +10,6 @@ namespace BedBihan
     public class Korrigan : Unit
     {
 
-        public int nbKill
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public override int getCostOfMovementOn(Field field)
         {
             throw new NotImplementedException();

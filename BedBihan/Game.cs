@@ -51,6 +51,28 @@ namespace BedBihan
             }
         }
 
+        public static int unitSelected
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public static int Property
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void endTurn()
         {
             /*
@@ -87,6 +109,11 @@ namespace BedBihan
         }
 
         public static void updatePlayerPoints(Player player)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public static IEnumerable<Unit> getUnitsOn(Coordinates coord)
         {
             throw new System.NotImplementedException();
         }

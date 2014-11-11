@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public struct Coordinates
     {
-        public int x;
-        public int y;
+        int x;
+        int y;
     }
 }

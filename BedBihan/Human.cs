@@ -7,6 +7,17 @@ namespace BedBihan
 {
     public class Human : Unit
     {
+        public int killsNb
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+    
         public override int getCostOfMovementOn(Field field)
         {
             throw new NotImplementedException();

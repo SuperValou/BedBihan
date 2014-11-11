@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class ElfFaction : Faction
     {
+        public override void createArmy()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -6,30 +6,6 @@
       <actorMoniker Id="fe95910d-ed3c-48cf-a0a4-6e8746e046db" LastKnownName="Player" />
       <relativeChildShapes />
     </actorShape>
-    <actorShape Id="03cea848-1828-4185-9081-e48d1b86a4c6" absoluteBounds="1.625, 7.125, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="90202483-532c-4af5-a859-aff66ca422ab" LastKnownName="Red player" />
-      <relativeChildShapes />
-    </actorShape>
-    <useCaseGeneralizationConnector edgePoints="[(2.125 : 7.19642857142857); (2.5 : 6.92857142857143)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
-      <generalizationMoniker Id="6737ff86-8088-42b7-81fb-192f5a21a074" />
-      <relativeChildShapes />
-      <nodes>
-        <actorShapeMoniker Id="03cea848-1828-4185-9081-e48d1b86a4c6" />
-        <actorShapeMoniker Id="ab12dec3-147f-4b0d-b725-687402c99018" />
-      </nodes>
-    </useCaseGeneralizationConnector>
-    <actorShape Id="ae17f401-e613-4900-9c1c-3386308a699e" absoluteBounds="1.625, 6.125, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="ffd69982-6f09-4250-9091-0fbdee5298b2" LastKnownName="Blue player" />
-      <relativeChildShapes />
-    </actorShape>
-    <useCaseGeneralizationConnector edgePoints="[(2.125 : 6.48214285714286); (2.5 : 6.64285714285714)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
-      <generalizationMoniker Id="cea03ebc-71ea-411e-a4c8-29b207a6e27a" />
-      <relativeChildShapes />
-      <nodes>
-        <actorShapeMoniker Id="ae17f401-e613-4900-9c1c-3386308a699e" />
-        <actorShapeMoniker Id="ab12dec3-147f-4b0d-b725-687402c99018" />
-      </nodes>
-    </useCaseGeneralizationConnector>
     <SubsystemShape Id="91db53e2-d694-4b07-9418-b2dea6d03cf3" absoluteBounds="3.875, 1.25, 6.25, 7.5" customColor="White">
       <subsystemMoniker Id="142a20a9-276d-4364-a498-dc6b7e0a7d3b" LastKnownName="Bedbihan" />
       <nestedChildShapes>
@@ -87,10 +63,6 @@
         </useCaseShape>
         <useCaseShape Id="f98f188b-708b-42f9-bae1-1febde6acc81" absoluteBounds="4.875, 8, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
           <useCaseMoniker Id="28cf921e-b198-4b49-af3d-6c9501e136c5" LastKnownName="Exit BedBihan" />
-          <relativeChildShapes />
-        </useCaseShape>
-        <useCaseShape Id="8a7edd1f-0248-41e6-80a8-fae83312c29b" absoluteBounds="4.875, 5.125, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-          <useCaseMoniker Id="cc964057-5954-435f-acce-9272016e9744" LastKnownName="Launch game" />
           <relativeChildShapes />
         </useCaseShape>
         <useCaseShape Id="c3395222-c031-45f9-a699-9c472c1ff20f" absoluteBounds="9, 6.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
@@ -211,25 +183,6 @@
         <useCaseShapeMoniker Id="f98f188b-708b-42f9-bae1-1febde6acc81" />
       </nodes>
     </useCaseAssociationConnector>
-    <includeConnector edgePoints="[(5.375 : 4.25); (5.375 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
-      <includeMoniker Id="a98b23f6-d153-4a65-b096-1f3ec413174a" />
-      <relativeChildShapes />
-      <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.875, 4.6875, 0.52439594268798828, 0.14800345897674561" shapeFieldName="NameDecorator" />
-      </moveableDecoratorHostShapes>
-      <nodes>
-        <useCaseShapeMoniker Id="da09e499-013d-41c2-8e1a-b66482a22263" />
-        <useCaseShapeMoniker Id="8a7edd1f-0248-41e6-80a8-fae83312c29b" />
-      </nodes>
-    </includeConnector>
-    <includeConnector edgePoints="[(5.375 : 6.25); (5.375 : 5.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
-      <includeMoniker Id="2cb20636-f275-441c-b520-108eba34b2ce" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="223b036f-dbca-4463-93b4-8e2ab006bcf9" />
-        <useCaseShapeMoniker Id="8a7edd1f-0248-41e6-80a8-fae83312c29b" />
-      </nodes>
-    </includeConnector>
     <extendConnector edgePoints="[(9 : 6.5); (7.875 : 6.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="c9864765-6bb3-44c8-b002-dd5125229407" />
       <relativeChildShapes />

@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class KorriganFaction : Faction
     {
+        public override void createArmy()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

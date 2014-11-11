@@ -796,14 +796,7 @@
         Id="7e2dd663-902d-47df-8d14-0765f8068cf4"
         name="Launch game"
         isAbstract="false"
-        isLeaf="false">
-        <subjects>
-          <subsystemMoniker
-            Id="9f2c6e0f-6a5a-4547-9e5b-c02261a7b2e6"
-            LastKnownName="Bedbihan"
-            LastKnownLocation="CreateGame.uml" />
-        </subjects>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
