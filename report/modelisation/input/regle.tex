@@ -1,0 +1,85 @@
+
+	\section{les régles du jeu}
+
+	\subsection{Principes et But du Jeu}
+	Il s’agit d’un jeu tour-par-tour où chaque joueur dirige un peuple. Le but du jeu est de gérer des
+	unités sur une carte pour obtenir le plus de points possible à la fin d’un certain nombre de tours.
+	Pour ce faire, chaque joueur commence avec des unités placés sur une même case de la carte. Il doit
+	ensuite les repartir au mieux sur la carte. Le placement de chaque unité sur les cases rapporte plus
+	ou moins de points (par défaut une case rapporte 1 point, des bonus et des malus sont possibles, cf.
+	la description des peuples). Les unités d’un joueur peuvent également attaquer les unités d’un autre
+	joueur pour détruire des unités (limitant ainsi l’acquisition de points de l’adversaire) et occuper
+	une case de la carte. Les points sont recomptés à la fin de chaque tour pour que tous les joueurs
+	connaissent leur nombre courant de points ainsi que celui de leurs adversaires. Le jeu se déroule sur
+	une carte du monde sur laquelle les unités se déplacent.
+
+
+	\subsection{Règles du Jeu }
+
+
+	\subsection{Les peuples }
+
+	Il existe trois peuples Elf, Humain et Korrigan ayant des caractéristiques très différentes influant sur les
+	stratégies de jeu :
+	\begin{itemize}
+		\item Elf
+		\begin{itemize}
+			\item Le coût de déplacement sur une case Forêt est divisé par deux. 
+			\item Le coût de déplacement sur une case Désert est multiplié par deux.
+			\item Une unité Elf a 50\% de chance de se replier lors d’un combat (provoqué ou subit) perdu devant normalement conduire à la destruction de l’unité : l’unité survie avec 1 point de 	vie.
+		\end{itemize}
+		\item Humain
+		\begin{itemize}
+			\item Le coût de déplacement sur une case Plaine est divisé par deux.
+			\item Une unité Orc n’acquière aucun point sur les cases de type Forêt
+			\item Lorsqu’une unité Orc détruit une autre unité, elle possède alors 1 point de bonus permanent. Cet effet est cumulable et est lié à chaque unité (i.e. si l’unité ayant le bonus meurt, le bonus disparaît).
+		\end{itemize}
+		\item Korrigan
+		\begin{itemize}
+			\item Le coût de déplacement sur une case Plaine est divisé par deux.
+			\item Une unité Nain n’acquière aucun point sur les cases Plaine.
+			\item Lorsqu’elle se trouve sur une case Montagne, une unité Nain a la capacité de se déplacer sur n’importe quelle case montage de la carte à condition qu’elle ne soit pas occupée par une unité adverse.
+		\end{itemize}
+	\end{itemize}
+
+	À chaque tour, toutes unités peuvent être déplacées et attaquer. Par défaut (c.-à-d. hors bonus),chaque unité possède un point de mouvement ce qui correspond à un déplacement normal (bonus ou malus 	exclus). Cela signifie qu’une même unité peut se déplacer ou attaquer plusieurs par tour grâce à ses bonus. Chaque unité possède 2 d’attaque, 1 de défense et 5 points de vie. Les unités ne récupèrent pas leurs points de vie à la fin d’un tour.
+
+
+	\subsection{La Carte du Monde}
+	La carte du monde se compose de cases hexagonales. Il existe différents types de case : plaine,	désert, montagne, forêt. Par défaut, une case rapporte 1 point. Une carte doit contenir le même nombre de cases de chaque type (pour ne pas avantager un peuple). Nous vous fournissons des	images pour chaque type de cases. Si vous avez le temps et si vous le souhaiter, vous pouvez faire vos propres cases.
+
+	La carte sera créée en début de partie de manière aléatoire.
+
+	Il existe 3 types de cartes :
+	\begin{itemize}
+		\item Démo : 2 joueurs, 4x4 cases, 5 tours, 4 unités par peuples.
+		\item Petite : 2 joueurs, 10x10 cases, 20 tours, 6 unités par peuples.
+		\item Normale : 2 joueurs, 14x14 cases, 30 tours, 8 unités par peuples.
+	\end{itemize}
+
+	\subsection{Les Combats}
+	
+	Le fonctionnement des combats ressemble plus à celui du jeu Civilization qu’à celui de Small World.
+	Pour qu’une unité puisse lancer une attaque contre une unité d’un autre peuple, elles doivent se situées sur des cases juxtaposées. Lorsqu’une unité attaque une case contenant plusieurs unités, la meilleure unité défensive est choisie. Un combat se compose d’un certain nombre d’attaques. Ce	nombre est choisi aléatoirement à l’engagement (entre 3 et le nombre de points de vie de l’unité ayant le plus de points de vie + 2 points). Le combat s’arrête lorsque ce nombre est atteint ou lorsque l’une ou autre des unités n’a plus de vie. Chaque combat calcul les probabilités de perte d’une vie de l’attaquant. Par exemple, Si l’attaquant a 4 en attaque et l’attaqué a 4 en défense	(en tenant compte des bonus de terrain et du nombre de points de vie restant), l’attaquant à 50\% de (mal-)chance de perde une vie. S’il a 3 att. contre 4 déf., le rapport de force est de 75\% : 3/4= 25\%, 25\% de 50\% = 12.5\%, 50\%+12.5\%=62.5\% chance pour l’attaquant de perdre une vie.Explications du calcul : par défaut 2 unités égales ont 50\% de gagner. Puisque dans le cas présent	un écart de 25\% est constaté entre les deux unités, il est nécessaire de pondérer le 50\% par ces 25\% ce qui donne 62.5\% contre 37.5\%. S’il a 4 att. contre 2 déf., le taux baisse à 25\% (2/4 = 50\%, 50\%	de 50\% = 25\%, 25\%+50\% = 75\% pour l’attaqué, 100\%-75\%=25\% pour l’attaquant). Évidemment,	lorsque l’attaquant gagne cela signifie que l’adversaire perd un point de vie.	Les points de vie entrent en compte dans le calcul des probabilités : si une unité attaquante ayant	4 en attaque possède 50\% de sa vie, alors son attaque sera au final de 4*50\% = 2. L’unité attaquée suit le même calcul pour sa défense.
+
+	À la fin d’un combat gagné par l’attaquant et si la case du vaincu ne contient plus d’unité, l’attaquant se déplace automatiquement sur cette case. Cela coûte alors le coût d’un déplacement (bonus et malus inclus). Le même calcul s’applique lorsque l’unité attaquante ne détruit pas l’unité adverse.	Cela signifie qu’une unité qui vient d’attaquer peut très bien se déplacer ensuite si elle possède les points de déplacement nécessaires. Lorsqu’un joueur n’a plus d’unité, il est éliminé. Lorsqu’il ne reste plus qu’un seul joueur dans une partie, celui-ci a gagner. Une unité ne regagne pas ses points de vie d’un tour à un autre.
+	
+	\subsection{La vue}
+	La carte, ses ressources, les unités de tous peuples sont visibles par tous les joueurs. Le jeu doit
+	permettre de voir la carte du dessus (vue plateau) contrairement à beaucoup de jeux fournissant
+	une vue isométrique.
+	
+	\subsection{Début de Partie}
+	Au début du jeu, chaque joueur choisi son peuple. Chaque peuple débute la partie avec toutes ses
+	unités sur la même case de la carte choisi de manière à ce que les joueurs ne soient pas trop proche.
+	L’ordre de jeu est choisie aléatoirement en début de partie. Les joueurs jouent chacun leur tour sur
+	leur même ordinateur. Deux joueurs ne peuvent sélectionner le même peuple.
+	
+	\subsection{Tour de jeu}
+	Lorsqu’un joueur peut jouer (c.-à-d. une fois par tour), il peut déplacer toutes ses unités suivant
+	leur nombre de déplacements (un déplacement sur une case coûte un point de déplacement). Il est possible pour chaque unité de passer son tour (généralement par le biais de la touche espace
+	). Une nunité peut engager un combat s’il lui reste assez de points pour se déplacer sur la case visée (bonus inclus). Par exemple, si une unité A veut en attaquer une autre B	se trouvant sur une case C, si le coût de déplacement de A sur C coûte 0,5 grâce à un bonus, alors A peut attaquer s’il elle lui reste au moins 0,5 de déplacement.	
+
+	Lorsqu’un joueur a fini son tour, il clique sur le bouton correspondant ("Fin tour"). C’est alors au
+	joueur suivant de commencer son tour. La partie se termine lorsque le nombre de tours prédéfini
+	en début de partie à été effectué, ou lorsqu’il ne reste qu’un seul joueur sur le plateau.
