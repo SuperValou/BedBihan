@@ -88,6 +88,17 @@ namespace BedBihan
             }
         }
 
+        public Coordinates coordinates
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
 
         // -- methods --
 

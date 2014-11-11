@@ -101,10 +101,6 @@
             <useCaseMoniker Id="62f71edc-1f68-4466-8f09-9a7493b29b93" LastKnownName="Select map" />
             <elementDefinition Id="23579fad-d5ea-4ee8-8463-8be2e3e07221" />
           </include>
-          <include Id="a98b23f6-d153-4a65-b096-1f3ec413174a">
-            <useCaseMoniker Id="cc964057-5954-435f-acce-9272016e9744" LastKnownName="Launch game" />
-            <elementDefinition Id="48e83bd6-29eb-455e-8d2a-2f26c1dfe3a0" />
-          </include>
         </additions>
         <subjects>
           <subsystemMoniker Id="142a20a9-276d-4364-a498-dc6b7e0a7d3b" LastKnownName="Bedbihan" />
@@ -118,10 +114,6 @@
           <include Id="8893bd70-7946-46bd-abba-1ca03d0883b4">
             <useCaseMoniker Id="60828a81-b665-454a-a2f8-5ed3e81cde42" LastKnownName="Select file" />
             <elementDefinition Id="cfa756f9-30cf-447a-9bec-a9b7fd926746" />
-          </include>
-          <include Id="2cb20636-f275-441c-b520-108eba34b2ce">
-            <useCaseMoniker Id="cc964057-5954-435f-acce-9272016e9744" LastKnownName="Launch game" />
-            <elementDefinition Id="8fc4eea8-0b84-4102-9535-01592d05e3c0" />
           </include>
         </additions>
         <subjects>
@@ -253,36 +245,6 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase Id="cc964057-5954-435f-acce-9272016e9744" name="Launch game" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="7e2dd663-902d-47df-8d14-0765f8068cf4" />
-        <subjects>
-          <subsystemMoniker Id="142a20a9-276d-4364-a498-dc6b7e0a7d3b" LastKnownName="Bedbihan" />
-        </subjects>
-      </useCase>
-    </packageHasNamedElement>
-    <useCaseModelRootHasTypes>
-      <actor Id="90202483-532c-4af5-a859-aff66ca422ab" name="Red player" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="0dcaa83c-a46a-4a6f-b861-6a57b9938b0d" />
-        <generalsInternal>
-          <generalization Id="6737ff86-8088-42b7-81fb-192f5a21a074" isSubstitutable="false">
-            <actorMoniker Id="fe95910d-ed3c-48cf-a0a4-6e8746e046db" LastKnownName="Player" />
-            <elementDefinition Id="7e066100-d323-4208-9952-ff7309ca3f09" />
-          </generalization>
-        </generalsInternal>
-      </actor>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <actor Id="ffd69982-6f09-4250-9091-0fbdee5298b2" name="Blue player" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="3d69cc95-cac5-481f-8575-19ca9f4f3690" />
-        <generalsInternal>
-          <generalization Id="cea03ebc-71ea-411e-a4c8-29b207a6e27a" isSubstitutable="false">
-            <actorMoniker Id="fe95910d-ed3c-48cf-a0a4-6e8746e046db" LastKnownName="Player" />
-            <elementDefinition Id="2bc57674-cd3b-4cb7-b88a-81d49bf4bc47" />
-          </generalization>
-        </generalsInternal>
-      </actor>
-    </useCaseModelRootHasTypes>
     <packageHasNamedElement>
       <useCase Id="3c117a5e-598c-411f-889d-a1fbfd38ffb1" name="File not found" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d2180b36-d67d-42e0-9654-54212f877b66" />

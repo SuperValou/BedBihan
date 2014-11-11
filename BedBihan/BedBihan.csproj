@@ -41,42 +41,45 @@
   <ItemGroup>
     <Compile Include="BedBihan.cs" />
     <Compile Include="ClassicBoard.cs" />
+    <Compile Include="ClassicGameBuilder.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="DemoBoard.cs" />
-    <Compile Include="DesertTexture.cs" />
+    <Compile Include="DemoGameBuilder.cs" />
+    <Compile Include="Desert.cs" />
+    <Compile Include="HexagonFactory.cs" />
     <Compile Include="Korrigan.cs" />
     <Compile Include="KorriganFaction.cs" />
     <Compile Include="Elf.cs" />
     <Compile Include="ElfFaction.cs" />
     <Compile Include="Faction.cs" />
-    <Compile Include="FactionFactory.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameBuilder.cs" />
     <Compile Include="GameCreator.cs" />
     <Compile Include="Hexagon.cs" />
-    <Compile Include="HexagonTextureBuilder.cs" />
     <Compile Include="IBoard.cs" />
-    <Compile Include="MountainTexture.cs" />
+    <Compile Include="Mountain.cs" />
     <Compile Include="NewGameBuilder.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="HumanFaction.cs" />
     <Compile Include="People.cs" />
-    <Compile Include="PlainTexture.cs" />
+    <Compile Include="Plain.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PseudoCode.cs" />
     <Compile Include="SavedGameBuilder.cs" />
     <Compile Include="SmallBoard.cs" />
     <Compile Include="SmallBoardBuilder.cs" />
+    <Compile Include="SmallGameBuilder.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitFactory.cs" />
-    <Compile Include="WoodsTexture.cs" />
+    <Compile Include="Woods.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
     <None Include="GameUntilWin.sequencediagram" />
     <None Include="SequenceDiagram1.sequencediagram" />
+    <None Include="SequenceDiagram2.sequencediagram" />
     <None Include="Sequence_turn.sequencediagram" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SequenceDiagram1.sequencediagram.layout">
       <DependentUpon>SequenceDiagram1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SequenceDiagram2.sequencediagram.layout">
+      <DependentUpon>SequenceDiagram2.sequencediagram</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sequence_turn.sequencediagram.layout">
       <DependentUpon>Sequence_turn.sequencediagram</DependentUpon>
