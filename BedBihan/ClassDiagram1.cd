@@ -12,6 +12,9 @@
   <Comment CommentText="Factory">
     <Position X="30.59" Y="12.991" Height="0.322" Width="0.801" />
   </Comment>
+  <Comment CommentText="j'ai un bug ici, il trouve pas le code la classe&#xD;&#xA;">
+    <Position X="17.257" Y="11.319" Height="0.75" Width="1.7" />
+  </Comment>
   <Class Name="BedBihan.Elf">
     <Position X="25" Y="14" Width="2.25" />
     <TypeIdentifier>
