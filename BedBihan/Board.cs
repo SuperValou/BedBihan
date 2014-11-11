@@ -5,24 +5,31 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class SmallBoard : IBoard
+    public class Board
     {
 
-        public void buildBoard()
+        Hexagon grid
         {
-            throw new NotImplementedException();
+            get;
+            set;
         }
 
-        public Hexagon grid
+
+        public StrategyBoard Strategy
         {
             get
             {
-                throw new NotImplementedException();
+                throw new System.NotImplementedException();
             }
             set
             {
-                throw new NotImplementedException();
             }
         }
+
+        public void setStrategy()
+        {
+        }
+
+
     }
 }

@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public static class Game
     {
-        public IBoard board
+        public Board board
         {
             get
             {
