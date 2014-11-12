@@ -45,31 +45,50 @@
 		\end{itemize}
 
 	\subsection{Unités}
-	Chaque unité possède des points de vie, des points de déplacement, des points d'attaque et des points de défense. Les points de vie représentent la santé de l'unité : plus ceux-ci sont élevés, plus l'unité peut attaquer ou se défendre efficacement (voir Sous-section \ref{sec:combats}). Lorsque les points de vie d'une unité atteint 0, cette dernière est détruite. Ces points de vie ne se régénèrent pas d'un tour à l'autre.
+	Chaque unité possède des points de vie, des points de déplacement, des points d'attaque et des points de défense. Les points de vie représentent la santé de l'unité : plus ceux-ci sont élevés, plus l'unité attaquera ou se défendra efficacement (voir Sous-section \ref{sec:combats}). Lorsque les points de vie d'une unité atteignent 0, cette dernière est détruite. Ces points de vie ne se régénèrent pas d'un tour à l'autre.
 	
-	Les points d'attaque représentent la force brute d'une unité lorsqu'elle en attaque une autre.  Plus ceux-ci sont élevés, plus l'unité infligera de dégâts à l'adversaire. De la même façon, les points de défense représentent la résistance d'une unité face à une attaque : plus ceux-ci sont élevés, et moins l'unité perdra de points de vie dans un combat. 
+	Les points d'attaque représentent la force brute d'une unité lorsqu'elle en attaque une autre.  Plus ceux-ci sont élevés, plus l'unité infligera de dégâts à l'adversaire. De la même façon, les points de défense représentent la capacité d'une unité à se défendre : plus ceux-ci sont élevés, et plus l'unité sera susceptible de résister aux attaques. 
 	
-	Les points de déplacement, quant à eux, représentent la capacité de mouvement d'une unité à travers la carte. Plus ces points sont élevés, plus l'unité pourra se déplacer loin lors d'un tour (en tenant compte des bonus et malus dûs aux types de terrain, propres à chaque peuple). Ces points de déplacement sont restaurés d'un tour à l'autre.
+	Les points de déplacement, quant à eux, représentent la capacité de mouvement d'une unité à travers la carte. Plus ces points sont élevés, plus l'unité pourra se déplacer loin lors d'un tour. Ces points de déplacement sont restaurés d'un tour à l'autre.
 	
 	\subsection{Déroulement d'un tour}
 	Lorsque vient le tour d'un joueur, celui-ci peut bouger chacune de ses unités tant qu'elles ont suffisamment de points de déplacement. Par défaut, se déplacer d'une case coûte 1 point de déplacement. Une unité peut également passer son tour.
 	
 	Lorsqu'une unité tente de se déplacer sur une case sur laquelle se trouve une ou plusieurs unités ennemies, un certain nombre de combat s'engagent (voir Sous-section \ref{sec:combats}). Une fois les combats terminés, si toutes les unités adverses ont été détruites, l'unité se déplace effectivement sur la case, en consommant le nombre de points de déplacement nécessaire. Si au moins une unité ennemie est encore en vie, l'unité alliée reste sur sa case actuelle mais consomme malgré tout le même nombre de points de déplacement.
 	
-	Ainsi, une unité peut attaquer et se déplacer autant de fois que le permet son nombre de points de déplacement. Lorsqu'un joueur a fini de déplacer toutes ses unités, c'est au joueur suivant de commencer son tour, et ainsi de suite.
+	Ainsi, lors d'un tour, une unité peut attaquer et se déplacer autant de fois que le permet son nombre de points de déplacement. Lorsqu'un joueur a terminé de déplacer toutes ses unités, c'est au tour du joueur suivant, et ainsi de suite.
 
 	\subsection{Combats}
 	\label{subsec:combats}
 	Un combat a lieu lorsqu'une unité tente de se déplacer sur une case occupée par l'ennemi. Une unité attaque seule et ne peut attaquer qu'une seule unité adverse à la fois : dans le cas où plusieurs unités ennemies se situent sur la même case, c'est l'unité adverse ayant la défense la plus élevée qui est affrontée.
 	
-	Un combat se compose d’un certain nombre d’attaques. Ce	nombre est choisi aléatoirement à l’engagement : il varie entre 3 et le nombre de points de vie de l’unité avec le plus de points de vie + 2. Le combat s’arrête lorsque ce nombre est atteint, ou que l'une des unité est détruite. 
+	\paragraph{}
+	Un combat se compose d’un certain nombre d’affrontements. Ce nombre est choisi aléatoirement au début du combat selon la formule suivante : \[ NombreAffrontements = random(3,2+max(PVattaquant, PVattaqué)). \]
 	
-	À chaque attaque, un calcul de probabilités de perte de points de vie est effectué. Par exemple, si l’unité attaquante a 3 en attaque et l’unité défensive 4 en défense, l’attaquant à 75\% de chance de perde des points de vie --- le rapport de force étant de 3/4. Inversement, l'attaqué n'a que 25\% de chance de perdre des points de vie. Au contraire, si l'attaquant possède 4 en attaque contre 1 en défense, l'attaquant n'a que Les points de vie entrent en compte dans le calcul des probabilités : si une unité attaquante ayant	4 en attaque possède 50\% de sa vie, alors son attaque sera au final de 4*50\% = 2. L’unité attaquée suit le même calcul pour sa défense.
+	À chaque affrontement, un calcul de probabilités de victoire de l'une ou l'autre unité est effectué. Si l'attaque de l'attaquant est supérieure à la défense de l'attaqué, la formule est la suivante :
+	\[ probaVictoireAttaquant = 1-(0.5*defense/attaque) \]
+	
+	Par exemple, une unité avec 2 en attaque faisant face à une unité ayant 1 en défense possède 75\% de chances de gagner à chaque affrontement --- et donc d'infliger des dégats à chaque fois. Inversement, l'unité attaquée n'a que 25\% de chances de gagner l'affrontement, et donc de se défendre.
+	
+	Si toutefois l'attaque de l'attaquant est inférieure à la défense de l'attaqué, la formule est alors celle-ci :
+	\[ probaVictoireAttaquant = 0.5*attaque/defense \]
 
-	À la fin d’un combat gagné par l’attaquant et si la case du vaincu ne contient plus d’unité, l’attaquant se déplace automatiquement sur cette case. Cela coûte alors le coût d’un déplacement (bonus et malus inclus). Le même calcul s’applique lorsque l’unité attaquante ne détruit pas l’unité adverse.	Cela signifie qu’une unité qui vient d’attaquer peut très bien se déplacer ensuite si elle possède les points de déplacement nécessaires. Lorsqu’un joueur n’a plus d’unité, il est éliminé. Lorsqu’il ne reste plus qu’un seul joueur dans une partie, celui-ci a gagner. Une unité ne regagne pas ses points de vie d’un tour à un autre.
+	Par exemple, une unité avec 3 en attaque faisant face à une unité ayant 4 en défense possède 37.5\% de chances de gagner chaque affrontement. L'unité défensive possède donc 62.5\% de chances de se défendre et d'infliger des dégats à l'attaquant.
 	
+	\paragraph{}
+	Si l'unité attaquante remporte la victoire lors d'un affrontement, elle inflige des dégâts à l'unité défensive selon la formule suivante :
+	\[ DégâtsInfligés = PVattaquant*attaque \]
 	
+	Par exemple, une unité ayant 3 points de vie avec 2 en attaque fera perdre 6 points de vie à une unité adverse lors d'un affrontement remporté.
 	
+	Si, au contraire, l'attaqué remporte la victoire lors d'un affrontement, l'attaquant subit des dégâts :
+	\[ DégâtsSubits = PVattaqué*defense \]
 
+	Par exemple, une unité avec 4 en défense possédant 3 point de vie fera perdre 12 points de vie à un attaquant si ce dernier perd un affrontement.
+	
+	\paragraph{}
+	Le combat se termine lorsque le nombre d'affrontements est atteint, ou que l'une des deux unités est détruite. 
+	
+	
 	
 	
