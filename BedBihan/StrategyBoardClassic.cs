@@ -5,12 +5,11 @@ using System.Text;
 
 namespace BedBihan
 {
-    public static class UnitFactory
+    public class StrategyBoardClassic : StrategyBoard
     {
-        public void createUnit(String TypeUnit)
+        public void buildBoard()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
-
     }
 }

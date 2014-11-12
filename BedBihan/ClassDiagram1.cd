@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Strategy">
-    <Position X="9.31" Y="4.964" Height="0.322" Width="0.801" />
+    <Position X="9.93" Y="5.259" Height="0.322" Width="0.801" />
   </Comment>
   <Comment CommentText="Flyweight">
     <Position X="11.111" Y="9.469" Height="0.322" Width="0.801" />
@@ -62,7 +62,7 @@
   <Class Name="BedBihan.UnitFactory">
     <Position X="30.25" Y="10.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAQAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>UnitFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -96,12 +96,6 @@
   </Class>
   <Class Name="BedBihan.Game">
     <Position X="18" Y="3.25" Width="2.25" />
-    <AssociationLine Name="board" Type="BedBihan.IBoard" FixedToPoint="true">
-      <Path>
-        <Point X="18" Y="5" />
-        <Point X="12.75" Y="5" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAIAAAAAAEAAAAAABAAQACgAAQAgAAAAIBAAAQAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
@@ -113,19 +107,19 @@
       <Property Name="Players" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="BedBihan.DemoBoard">
+  <Class Name="BedBihan.StrategyBoardDemo">
     <Position X="7.5" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>DemoBoard.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>StrategyBoardDemo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="BedBihan.ClassicBoard">
+  <Class Name="BedBihan.StrategyBoardClassic">
     <Position X="11" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>ClassicBoard.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>StrategyBoardClassic.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -165,11 +159,11 @@
       <FileName>GameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.SmallBoard">
+  <Class Name="BedBihan.StrategyBoardSmall">
     <Position X="9.25" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>SmallBoard.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>StrategyBoardSmall.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -245,6 +239,17 @@
       <Property Name="hexagons" />
     </ShowAsCollectionAssociation>
   </Class>
+  <Class Name="BedBihan.Board">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Strategy" />
+      <Property Name="grid" />
+    </ShowAsAssociation>
+  </Class>
   <Struct Name="BedBihan.Coordinates">
     <Position X="24.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
@@ -252,22 +257,12 @@
       <FileName>Coordinates.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="BedBihan.IBoard">
-    <Position X="11" Y="4.75" Width="1.75" />
-    <AssociationLine Name="grid" Type="BedBihan.Hexagon" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="12.75" Y="5.687" />
-        <Point X="13" Y="5.687" />
-        <Point X="13" Y="8.75" />
-      </Path>
-    </AssociationLine>
+  <Interface Name="BedBihan.StrategyBoard">
+    <Position X="7.75" Y="4.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>IBoard.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>StrategyBoard.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="grid" />
-    </ShowAsAssociation>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

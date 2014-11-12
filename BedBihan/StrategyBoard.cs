@@ -5,13 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public interface IBoard
+    public interface StrategyBoard
     {
-        Hexagon grid
-        {
-            get;
-            set;
-        }
+   
              
         void buildBoard();
     }

@@ -40,10 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BedBihan.cs" />
-    <Compile Include="ClassicBoard.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="StrategyBoardClassic.cs" />
     <Compile Include="ClassicGameBuilder.cs" />
     <Compile Include="Coordinates.cs" />
-    <Compile Include="DemoBoard.cs" />
+    <Compile Include="StrategyBoardDemo.cs" />
     <Compile Include="DemoGameBuilder.cs" />
     <Compile Include="Desert.cs" />
     <Compile Include="HexagonFactory.cs" />
@@ -57,7 +58,7 @@
     <Compile Include="GameBuilder.cs" />
     <Compile Include="GameCreator.cs" />
     <Compile Include="Hexagon.cs" />
-    <Compile Include="IBoard.cs" />
+    <Compile Include="StrategyBoard.cs" />
     <Compile Include="Mountain.cs" />
     <Compile Include="NewGameBuilder.cs" />
     <Compile Include="Human.cs" />
@@ -68,7 +69,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PseudoCode.cs" />
     <Compile Include="SavedGameBuilder.cs" />
-    <Compile Include="SmallBoard.cs" />
+    <Compile Include="StrategyBoardSmall.cs" />
     <Compile Include="SmallBoardBuilder.cs" />
     <Compile Include="SmallGameBuilder.cs" />
     <Compile Include="Unit.cs" />
