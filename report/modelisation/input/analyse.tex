@@ -1,52 +1,48 @@
-
-\section{Analyse}
-
+\newpage
+\section{Conception}
 	
-	\subsection{Le déroulement du jeu}
-
+	\subsection{Déroulement du jeu}
+	Le diagramme d'état-transition de la {\sc Figure} \ref{fig:transition_jeu} présente les différents états dans lequel \emph{Bedbihan} peut se situer.
 
 		\begin{figure}[h]
 			\begin{center}
-				\includegraphics[width=0.7\textwidth]{figure/etat_transition_partie.pdf}
+				\includegraphics[width=0.7\textwidth]{figure/etat_transition.png}
 			\end{center}
-			\caption{Diagrame d'états-transitions}
+			\caption{Diagrame d'états-transitions du jeu.}
 			\label{fig:transition_jeu}
 		\end{figure}
 	
-		le diagramme d'état-transition présenté en FIGURE \ref{fig:transition_jeu} présente les différents état dans lequel le programme \emph{Bedbihan} peut se situer, il modélise ainsi les différentes phases du jeu.
+		
 
 
-		\subsection{Le lancement du jeu}
+		\subsection{Lancement du jeu}
 
-		Au lancement du jeu, l'utilisateur a le choix entre débuter une nouvelle partie et reprendre une partie préalablement sauvegardée. Le lancement d'une nouvelle partie implique le choix d'une taille de carte, ainsi que le choix d'un peuple pour chacun des joueurs. 
+		Au lancement de \emph{Bedbihan}, l'utilisateur peut débuter une nouvelle partie ou reprendre une partie préalablement sauvegardée. Le lancement d'une nouvelle partie implique de choisir une taille de carte et de sélectionner un peuple pour chacun des joueurs. Ceci est illustré par le diagramme d'utilisation de la {\sc Figure} \ref{fig:use1}.
 
-		Ceci est illustré par le diagramme d'utilisation présenté en FIGURE \ref{fig:use1}.
-+
 		\begin{figure}
 			\begin{center}
-				\includegraphics[width=1\textwidth]{figure/cas_utilisation_1}
+				\includegraphics[width=1\textwidth]{figure/cas_utilisation_launch.png}
 			\end{center}
-			\caption{Cas d'utilisation numéro 1}
+			\caption{Actions possibles lors du démarrage du jeu.}
 			\label{fig:use1}
 		\end{figure}
 
 
+	\subsection{Déroulement d'un tour pour un joueur}
 
-	\subsection{le déroulement d'un tour}
+		\emph{BedBihan} se jouant à tour de rôle, chaque joueur dispose de différentes actions possible lorsque c'est à lui de joueur. Les différentes possibilités sont illustrées par le diagramme d'utilisation présenté en {\sc Figure} \ref{fig:use2}.
 
-		\emph{BedBihan} se joue à tour de rôle. Lors d'un tour le joueur dispose d'un nombre définie d'actions à réaliser. Cela est illusté par le diagramme d'utilisation présenté en FIGURE \ref{fig:use2}.
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=1\textwidth]{figure/cas_utilisation_player_turn.png}
+			\end{center}
+			\caption{Actions possibles pour un joueur lors d'un tour.}
+			\label{fig:use2}
+		\end{figure}
 
-%		\begin{figure}
-%			\begin{center}
-%				\includegraphics[width=1\textwidth]{figure/cas_utilisation_2.png}
-%			\end{center}
-%			\caption{Cas d'utilisation numéro 2}
-%			\label{fig:use2}
-%		\end{figure}
+	\subsection{Cycle de vie d'une unité}
 
-	\subsection{cycle de vie d'une unité}
-
-	Chaque joueur dispose d'un nombre limités d'unités. Chacune de ses unités posséde un certain nombre de point de vie. Lorsque pendant une bataille ce nombre de point de vie est réduit à zéro elle meurt. Elle dispose à chaque tour d'un point de déplacement qu'elle peut utilisé pour ce déplacer ou non. Le déplacement d'une unité sur une casé ocupée par une unité ennemie provoque un combat. Ceci est illustré par le diagramme d'activité en FIGURE \ref{fig:arbre_exemple_1}
+	Les unités d'un joueur ont un cycle de vie illustré par le diagramme d'activité en {\sc Figure} \ref{fig:arbre_exemple_1}.
 
 
 	\begin{figure}[h]
@@ -55,8 +51,3 @@
 	            \caption{Cycle de vie d'une unité.}
 	            \label{fig:arbre_exemple_1}
 	\end{figure}
-
-		\subsection{le déroulement d'un combat}
-
-
-		Dans \emph{BedBihan}, quand un joueur souhaite déplacer une unité sur une case occupée par une unité enemie, il provoque un combat. 

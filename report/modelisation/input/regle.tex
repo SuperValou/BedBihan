@@ -1,16 +1,16 @@
-
+\newpage
 	\section{Règles du jeu}
 	\label{sec:regles}
 
 	\subsection{But du jeu}
 	\label{subsec:butdujeu}
-	BedBihan est un jeu de stratégie au tour-par-tour où chaque joueur dirige un peuple sur une carte. Le but est de marquer le plus de points possible en dirigeant les unités de son peuple pour qu'elles occupent au mieux les cases de la carte. Les unités d’un joueur peuvent attaquer les unités d’un autre joueur pour les détruire, limitant ainsi l'acquisition de points adverses. La partie se termine quand le nombre de tours imparti est atteint, ou qu'il ne reste qu'un seul joueur en jeu --- les autres ayant perdu toutes leurs unités\footnote{Pour ce projet, le nombre de joueurs sera limité à 2.}.
+	\emph{BedBihan} est un jeu de stratégie au tour-par-tour où chaque joueur dirige un peuple sur une carte. Le but est de marquer le plus de points possible en dirigeant les unités de son peuple pour qu'elles occupent au mieux les cases de la carte. Les unités d’un joueur peuvent attaquer les unités d’un autre joueur pour les détruire, limitant ainsi l'acquisition de points adverses. La partie se termine quand le nombre de tours imparti est atteint, ou qu'il ne reste qu'un seul joueur en jeu --- les autres ayant perdu toutes leurs unités\footnote{Pour ce projet, le nombre de joueurs sera limité à 2.}.
 
 	\subsection{Carte du monde}
 	\label{subsec:carte}
-	La carte du monde se compose de cases hexagonales. Chaque case possède un type de terrain : Plaine,	Désert, Montagne ou Forêt. Chaque case peut être occupée par une ou plusieurs unités alliées, mais deux unités adverses ne peuvent se trouver sur la même case. Par défaut, une case occupée par une ou plusieurs unités alliées rapporte 1 point. Des bonus et malus sont possibles selon les caractéristiques de chaque peuple (voir Sous-section \ref{sec:peuples}). 
+	La carte du monde, sur laquelle s'affrontent les joueurs, se compose de cases hexagonales. Chaque case possède un type de terrain : Plaine,	Désert, Montagne ou Forêt. Chaque case peut être occupée par une ou plusieurs unités alliées, mais deux unités adverses ne peuvent se trouver sur la même case. Par défaut, une case occupée par une ou plusieurs unités alliées rapporte 1 point. Des bonus et malus sont possibles selon les caractéristiques de chaque peuple (voir Section \ref{subsec:peuples}). 
 	
-	À chaque nouvelle partie, la carte est générée aléatoirement avec le même nombre de case de type Plaine, Désert, Montagne et Forêt, afin de ne pas avantager un peuple. 
+	À chaque nouvelle partie, la carte est générée aléatoirement avec le même nombre de case de type Désert, Forêt, Montagne et Plaine, afin de ne pas avantager un peuple. 
 	La carte peut avoir trois tailles différentes :
 	\begin{itemize}
 		\item Démo : 4x4 cases, 5 tours, 4 unités par peuple.
@@ -21,7 +21,7 @@
 	
 	\subsection{Peuples}
 	\label{subsec:peuples}
-	BedBihan permet de jouer avec trois peuples différents : les Elfes, les Humains et les Korrigans. Chaque peuple présente des caractéristiques particulières\footnote{Ces caractéristiques se limitent pour l'instant à celles spécifiées dans les consignes du projet. Elles sont toutefois susceptibles d'être étoffées en cours de développement.}.
+	\emph{BedBihan} permet de jouer avec trois peuples différents : les Elfes, les Humains et les Korrigans. Chaque peuple présente des caractéristiques particulières\footnote{Ces caractéristiques se limitent pour l'instant à celles spécifiées dans les consignes du projet. Elles sont toutefois susceptibles d'être étoffées en cours de développement.}.
 	
 		Pour les Elfes :
 		\begin{itemize}
@@ -45,7 +45,7 @@
 		\end{itemize}
 
 	\subsection{Unités}
-	Chaque unité possède des points de vie, des points de déplacement, des points d'attaque et des points de défense. Les points de vie représentent la santé de l'unité : plus ceux-ci sont élevés, plus l'unité attaquera ou se défendra efficacement (voir Sous-section \ref{sec:combats}). Lorsque les points de vie d'une unité atteignent 0, cette dernière est détruite. Ces points de vie ne se régénèrent pas d'un tour à l'autre.
+	Chaque unité possède des points de vie, des points de déplacement, des points d'attaque et des points de défense. Les points de vie représentent la santé de l'unité : plus ceux-ci sont élevés, plus l'unité attaquera ou se défendra efficacement (voir Section \ref{subsec:combats}). Lorsque les points de vie d'une unité atteignent 0, cette dernière est détruite. Ces points de vie ne se régénèrent pas d'un tour à l'autre.
 	
 	Les points d'attaque représentent la force brute d'une unité lorsqu'elle en attaque une autre.  Plus ceux-ci sont élevés, plus l'unité infligera de dégâts à l'adversaire. De la même façon, les points de défense représentent la capacité d'une unité à se défendre : plus ceux-ci sont élevés, et plus l'unité sera susceptible de résister aux attaques. 
 	
@@ -54,7 +54,7 @@
 	\subsection{Déroulement d'un tour}
 	Lorsque vient le tour d'un joueur, celui-ci peut bouger chacune de ses unités tant qu'elles ont suffisamment de points de déplacement. Par défaut, se déplacer d'une case coûte 1 point de déplacement. Une unité peut également passer son tour.
 	
-	Lorsqu'une unité tente de se déplacer sur une case sur laquelle se trouve une ou plusieurs unités ennemies, un certain nombre de combat s'engagent (voir Sous-section \ref{sec:combats}). Une fois les combats terminés, si toutes les unités adverses ont été détruites, l'unité se déplace effectivement sur la case, en consommant le nombre de points de déplacement nécessaire. Si au moins une unité ennemie est encore en vie, l'unité alliée reste sur sa case actuelle mais consomme malgré tout le même nombre de points de déplacement.
+	Lorsqu'une unité tente de se déplacer sur une case sur laquelle se trouve une ou plusieurs unités ennemies, un certain nombre de combat s'engagent (voir Section \ref{subsec:combats}). Une fois les combats terminés, si toutes les unités adverses ont été détruites, l'unité se déplace effectivement sur la case, en consommant le nombre de points de déplacement nécessaire. Si au moins une unité ennemie est encore en vie, l'unité alliée reste sur sa case actuelle mais consomme malgré tout le même nombre de points de déplacement.
 	
 	Ainsi, lors d'un tour, une unité peut attaquer et se déplacer autant de fois que le permet son nombre de points de déplacement. Lorsqu'un joueur a terminé de déplacer toutes ses unités, c'est au tour du joueur suivant, et ainsi de suite.
 
@@ -76,19 +76,10 @@
 	Par exemple, une unité avec 3 en attaque faisant face à une unité ayant 4 en défense possède 37.5\% de chances de gagner chaque affrontement. L'unité défensive possède donc 62.5\% de chances de se défendre et d'infliger des dégats à l'attaquant.
 	
 	\paragraph{}
-	Si l'unité attaquante remporte la victoire lors d'un affrontement, elle inflige des dégâts à l'unité défensive selon la formule suivante :
-	\[ DégâtsInfligés = PVattaquant*attaque \]
+	L'unité remportant la victoire inflige des dégâts à l'unité adverse selon la formule suivante :
+	\[ DégâtsInfligés = partieEntière((PVactuels/PVmax)*attaque) \]
 	
-	Par exemple, une unité ayant 3 points de vie avec 2 en attaque fera perdre 6 points de vie à une unité adverse lors d'un affrontement remporté.
-	
-	Si, au contraire, l'attaqué remporte la victoire lors d'un affrontement, l'attaquant subit des dégâts :
-	\[ DégâtsSubits = PVattaqué*defense \]
-
-	Par exemple, une unité avec 4 en défense possédant 3 point de vie fera perdre 12 points de vie à un attaquant si ce dernier perd un affrontement.
-	
+	Par exemple, une unité ayant 5 en attaque et 3 points de vie sur ses 6 points de vie maximum fera perdre 2 points de vie à une unité adverse lors d'un affrontement remporté.
+		
 	\paragraph{}
 	Le combat se termine lorsque le nombre d'affrontements est atteint, ou que l'une des deux unités est détruite. 
-	
-	
-	
-	
