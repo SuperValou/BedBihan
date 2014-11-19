@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public static class UnitFactory
     {
-        public void createUnit(String TypeUnit)
+        public static void createUnit(String TypeUnit)
         {
             throw new System.NotImplementedException();
         }

@@ -10,7 +10,8 @@ namespace BedBihan
     public class Korrigan : Unit
     {
 
-        public override int getCostOfMovementOn(Field field)
+
+        public override void moveOn(Hexagon hexagon)
         {
             throw new NotImplementedException();
         }

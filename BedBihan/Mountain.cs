@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class Mountain : Hexagon
     {
+        public override Field field
+        {
+            get { return Field.Mountain; }
+        }
     }
 }

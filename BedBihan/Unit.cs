@@ -7,74 +7,37 @@ namespace BedBihan
 {
     public abstract class Unit
     {
-        // -- properties --
-
+        
 
         public int lifePoints
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public int lifeMax
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public int attack
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
 
         public int defense
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public int movementPoints
         {
-            get
-            {
-                return this.movementPoints;
-            }
-            set
-            {
-            }
-        }
-
-        public IEnumerable<int> costsOfMovement
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public People people
@@ -100,18 +63,32 @@ namespace BedBihan
         }
 
 
-        // -- methods --
+        private int[] costsOfMovement;
 
-        // move the current unit and engage fight
-        abstract void moveOn (Hexagon hexagon)
+
+        public Unit()
         {
-            
-                     
+            for (int i = 0; i < costsOfMovement.Length; i++)
+            {
+                costsOfMovement[i] = 1;
+            }
         }
 
 
+        /**
+         * \fn 
+         * \brief 
+         * \param[in] 
+         */
+        public abstract void moveOn(Hexagon hexagon);
 
-        // manage fights
+
+
+        /**
+         * \fn 
+         * \brief 
+         * \param[in] 
+         */
         void fightAgainst(Unit defender)
         {
             Random random = new Random();
@@ -145,15 +122,24 @@ namespace BedBihan
         }
 
 
-        // destroy the current unit
+        /**
+         * \fn 
+         * \brief 
+         * \param[in] 
+         */
         void destroy()
         {
 
         }
 
-        public abstract int getCostOfMovementOn(Field field)
+        /**
+         * \fn 
+         * \brief 
+         * \param[in] 
+         */
+        public int getCostOfMovementOn(Field field)
         {
-            throw new System.NotImplementedException();
+            return costsOfMovement[(int) field];
         }
 
 

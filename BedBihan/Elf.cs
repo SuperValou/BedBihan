@@ -7,7 +7,8 @@ namespace BedBihan
 {
     public class Elf : Unit
     {
-        public override int getCostOfMovementOn(Field field)
+
+        public override void moveOn(Hexagon hexagon)
         {
             throw new NotImplementedException();
         }

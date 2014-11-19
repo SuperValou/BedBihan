@@ -5,12 +5,13 @@ using System.Text;
 
 namespace BedBihan
 {
-    public abstract class HexagonTexture
+
+    public abstract class Hexagon
     {
 
-    }
-
-    public class Hexagon
-    {
+        public abstract Field field
+        {
+            get;
+        }
     }
 }

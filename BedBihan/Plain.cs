@@ -7,5 +7,9 @@ namespace BedBihan
 {
     public class Plain : Hexagon
     {
+        public override Field field
+        {
+            get { return Field.Plain; }
+        }
     }
 }

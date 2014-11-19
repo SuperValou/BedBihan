@@ -5,28 +5,18 @@ using System.Text;
 
 namespace BedBihan
 {
-    public static class Game
+    public class Game
     {
-        public Board board
+        public Board Board
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public int MaxTurnNumber
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public int CurrentTurn
@@ -40,7 +30,7 @@ namespace BedBihan
             }
         }
 
-        public static IEnumerable<Player> Players
+        public IEnumerable<Player> Players
         {
             get
             {
@@ -51,18 +41,7 @@ namespace BedBihan
             }
         }
 
-        public static int unitSelected
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public static int Property
+        public int unitSelected
         {
             get
             {
@@ -98,30 +77,33 @@ namespace BedBihan
              */
         }
 
-        public static void endGame()
+        public void endGame()
         {
             throw new System.NotImplementedException();
         }
 
-        public static void launchTurn()
+        public void launchTurn()
         {
             throw new System.NotImplementedException();
         }
 
-        public static void updatePlayerPoints(Player player)
+        public void updatePlayerPoints(Player player)
         {
             throw new System.NotImplementedException();
         }
 
-        public static IEnumerable<Unit> getUnitsOn(Coordinates coord)
+        public IEnumerable<Unit> getUnitsOn(Coordinates coord)
         {
             throw new System.NotImplementedException();
         }
 
 
-        // changer
 
-
+        public Game(global::BedBihan.Board board)
+        {
+            // TODO: Complete member initialization
+            this.Board = board;
+        }
 
     }
 }

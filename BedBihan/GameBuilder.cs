@@ -7,9 +7,6 @@ namespace BedBihan
 {
     public abstract class GameBuilder
     {
-        public abstract Game buildGame()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract Game buildGame();
     }
 }

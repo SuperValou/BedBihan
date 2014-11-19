@@ -15,21 +15,21 @@
   <Class Name="BedBihan.Elf">
     <Position X="25" Y="14" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Human">
     <Position X="29.5" Y="14" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Korrigan">
     <Position X="27.25" Y="14" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Korrigan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,7 +39,7 @@
       <Property Name="people" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAABgAAAIAAAAAAAAAAgAEAAAEAAAACAAAAAAmAQAAI=</HashCode>
+      <HashCode>AAABgAAQIAAAAAAAAAAgAEIAAAAAAACAAAAAEmARAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -66,40 +66,37 @@
   <Class Name="BedBihan.Woods">
     <Position X="10" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Woods.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Mountain">
     <Position X="11.5" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Mountain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Desert">
     <Position X="13" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Desert.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Plain">
     <Position X="14.5" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Plain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Game">
     <Position X="18" Y="3.25" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAEAAAAAABAAQACgAAQAgAAAAIBAAAQAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAEAAAAAABAAQACgAAQAgAAAAABAAACAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="board" />
-    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Players" />
     </ShowAsCollectionAssociation>
@@ -167,7 +164,7 @@
   <Class Name="BedBihan.Hexagon">
     <Position X="12.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -220,7 +217,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.DemoGameBuilder">
-    <Position X="20.75" Y="10.25" Width="1.75" />
+    <Position X="21" Y="10.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DemoGameBuilder.cs</FileName>
@@ -261,5 +258,12 @@
       <FileName>StrategyBoard.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Enum Name="BedBihan.Field">
+    <Position X="15" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAgAAAAAgAAA=</HashCode>
+      <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

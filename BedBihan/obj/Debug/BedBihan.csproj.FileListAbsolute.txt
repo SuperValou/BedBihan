@@ -1,0 +1,5 @@
+C:\Users\vesmieu\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
+C:\Users\vesmieu\BedBihan\BedBihan\bin\Debug\BedBihan.dll
+C:\Users\vesmieu\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
+C:\Users\vesmieu\BedBihan\BedBihan\obj\Debug\BedBihan.dll
+C:\Users\vesmieu\BedBihan\BedBihan\obj\Debug\BedBihan.pdb

@@ -29,9 +29,6 @@ namespace BedBihan
             }
         }
 
-        public abstract void createArmy()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void createArmy();
     }
 }

@@ -17,10 +17,20 @@ namespace BedBihan
             {
             }
         }
-    
-        public override int getCostOfMovementOn(Field field)
+  
+
+        public override void moveOn(Hexagon hexagon)
         {
             throw new NotImplementedException();
         }
+
+
+        public Human() : base()
+        {
+        }
+
+
+
+       
     }
 }
