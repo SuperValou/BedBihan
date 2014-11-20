@@ -87,7 +87,6 @@ namespace BedBihan
             {
                 this.costOfMovement[i] = 1;
             }
-            Console.WriteLine("created");
         }
 
         /**
@@ -100,6 +99,7 @@ namespace BedBihan
             this.defense = def;
             this.maxMovementPoints = maxMov;
             this.coordinates = spawningPoint;
+            costOfMovement = new float[Enum.GetNames(typeof(Field)).Length];
             for (int i = 0; i < costOfMovement.Length; i++)
             {
                 this.costOfMovement[i] = 1;
@@ -165,9 +165,9 @@ namespace BedBihan
         }
 
         /**
-         * \fn 
-         * \brief 
-         * \param[in] 
+         * \brief get the cost of movement on a specific field
+         * \param[in] the type of field
+         * \param[out] cost of movement on the type of field
          */
         public float getCostOfMovementOn(Field field)
         {

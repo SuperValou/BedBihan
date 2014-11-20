@@ -18,7 +18,10 @@ namespace BedBihan
             this.numberOfKills++;
         }
   
-
+        private void setHumanStandartCostOfMovement()
+        {
+            this.costOfMovement[(int)Field.Plain] = 0.5F;
+        }
         public override void moveOn(Hexagon hexagon)
         {
             throw new NotImplementedException();
@@ -26,14 +29,14 @@ namespace BedBihan
 
         public Human() : base()
         {
-            this.costOfMovement[(int) Field.Plain] = 0.5F;
-            Console.WriteLine("created human");
+            setHumanStandartCostOfMovement();
         }
 
         public Human(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
         {
-            this.costOfMovement[(int) Field.Plain] = 0.5F;
+            setHumanStandartCostOfMovement();
         }
+
 
 
 
