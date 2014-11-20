@@ -23,8 +23,11 @@ namespace UnitTests
         public void TestCostOfMovement()
         {
             Human coco = new Human();
-            int costOnPlain = coco.getCostOfMovementOn(Field.Plain);
-            Assert.Equals(1, costOnPlain);
+            float costOnPlain = coco.getCostOfMovementOn(Field.Plain);
+            float costOnDesert = coco.getCostOfMovementOn(Field.Desert);
+            // Assert.AreEqual(expected value, actual value);
+            Assert.AreEqual(0.5F, costOnPlain);
+            Assert.AreEqual(1, costOnDesert);
         }
     }
 

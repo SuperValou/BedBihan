@@ -28,10 +28,19 @@
 		\end{figure}
 
 
-	\subsection{Déroulement d'un tour pour un joueur}
+	\subsection{Déroulement d'un tour}
 
-		\emph{BedBihan} se jouant à tour de rôle, chaque joueur dispose de différentes actions possible lorsque c'est à lui de joueur. Les différentes possibilités sont illustrées par le diagramme d'utilisation présenté en {\sc Figure} \ref{fig:use2}.
-
+		\emph{BedBihan} se jouant à tour de rôle, chaque tour se déroule comme illustré par le diagramme de séquence en {\sc Figure} \ref{fig:diagrammescouilles}. Chaque joueur dispose de différentes actions possible lorsque c'est à lui de jouer : ces différentes possibilités sont illustrées par le diagramme d'utilisation présenté en {\sc Figure} \ref{fig:use2}. Le déroulement séquentiel d'un tour pour un joueur est également illustré sur la {\sc Figure} \ref{fig:jetencule}
+		
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.7\textwidth]{figure/game_global_sequence_diagram.png}
+			\end{center}
+			\caption{Déroulement séquentiel d'un tour.}
+			\label{fig:diagrammescouilles}
+		\end{figure}		
+		
+		
 		\begin{figure}
 			\begin{center}
 				\includegraphics[width=1\textwidth]{figure/cas_utilisation_player_turn.png}
@@ -39,6 +48,16 @@
 			\caption{Actions possibles pour un joueur lors d'un tour.}
 			\label{fig:use2}
 		\end{figure}
+		
+		
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{figure/turn_for_one_player_sequence_diagram.png}
+			\end{center}
+			\caption{Déroulement séquentiel d'un tour pour un joueur.}
+			\label{fig:jetencule}
+		\end{figure}
+		
 
 	\subsection{Cycle de vie d'une unité}
 

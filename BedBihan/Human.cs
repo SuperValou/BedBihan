@@ -7,15 +7,15 @@ namespace BedBihan
 {
     public class Human : Unit
     {
-        public int killsNb
+        public int numberOfKills
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            private set;
+        }
+
+        public void addKill()
+        {
+            this.numberOfKills++;
         }
   
 
@@ -24,9 +24,15 @@ namespace BedBihan
             throw new NotImplementedException();
         }
 
-
         public Human() : base()
         {
+            this.costOfMovement[(int) Field.Plain] = 0.5F;
+            Console.WriteLine("created human");
+        }
+
+        public Human(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
+        {
+            this.costOfMovement[(int) Field.Plain] = 0.5F;
         }
 
 

@@ -13,23 +13,23 @@
     <Position X="30.59" Y="12.991" Height="0.322" Width="0.801" />
   </Comment>
   <Class Name="BedBihan.Elf">
-    <Position X="25" Y="14" Width="2.25" />
+    <Position X="25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Human">
-    <Position X="29.5" Y="14" Width="2.25" />
+    <Position X="29.5" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Korrigan">
-    <Position X="27.25" Y="14" Width="2.25" />
+    <Position X="27.25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Korrigan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,7 +39,7 @@
       <Property Name="people" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AAABgAAQIAAAAAAAAAAgAEIAAAAAAACAAAAAEmARAAI=</HashCode>
+      <HashCode>AQABgAAAIAAAAAAAgAAgAGAAAEAAAACAAAAAAmgQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
