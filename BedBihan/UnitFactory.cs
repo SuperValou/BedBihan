@@ -5,12 +5,9 @@ using System.Text;
 
 namespace BedBihan
 {
-    public static class UnitFactory
+    public abstract class UnitFactory
     {
-        public static void createUnit(String TypeUnit)
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract Unit createUnit();
 
     }
 }

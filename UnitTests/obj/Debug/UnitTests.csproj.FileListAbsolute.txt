@@ -12,3 +12,10 @@ C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\UnitTests.pdb
 C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\BedBihan.dll
 C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\BedBihan.pdb
 C:\Users\Valentin\BedBihan\UnitTests\obj\Debug\UnitTests.pdb
+E:\4INFO\Repos\Bedbihan\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+E:\4INFO\Repos\Bedbihan\UnitTests\obj\Debug\UnitTests.dll
+E:\4INFO\Repos\Bedbihan\UnitTests\bin\Debug\UnitTests.dll
+E:\4INFO\Repos\Bedbihan\UnitTests\bin\Debug\UnitTests.pdb
+E:\4INFO\Repos\Bedbihan\UnitTests\bin\Debug\BedBihan.dll
+E:\4INFO\Repos\Bedbihan\UnitTests\bin\Debug\BedBihan.pdb
+E:\4INFO\Repos\Bedbihan\UnitTests\obj\Debug\UnitTests.pdb

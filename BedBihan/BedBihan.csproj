@@ -73,6 +73,7 @@
     <Compile Include="SmallGameBuilder.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitFactory.cs" />
+    <Compile Include="UnitFactoryElf.cs" />
     <Compile Include="Woods.cs" />
   </ItemGroup>
   <ItemGroup>

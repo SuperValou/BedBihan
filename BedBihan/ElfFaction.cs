@@ -7,9 +7,9 @@ namespace BedBihan
 {
     public class ElfFaction : Faction
     {
-        public override void createArmy()
+        public ElfFaction()
         {
-            throw new NotImplementedException();
+            this.unitFactory = new UnitFactoryElf();
         }
     }
 }

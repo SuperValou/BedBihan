@@ -15,21 +15,21 @@
   <Class Name="BedBihan.Elf">
     <Position X="25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Human">
     <Position X="29.5" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAgAEAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Korrigan">
     <Position X="27.25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Korrigan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,7 +39,7 @@
       <Property Name="people" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>AQABgAAAIAAAAAAAgAAgAGAAAEAAAACAAAAAAmgQAAI=</HashCode>
+      <HashCode>ASABgAAAIAAAAAAAgAAgAGAAAAAAAACAAAAAAmgQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -57,7 +57,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactory">
-    <Position X="30.25" Y="10.75" Width="1.75" />
+    <Position X="31" Y="9.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>UnitFactory.cs</FileName>
@@ -169,22 +169,19 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Faction">
-    <Position X="26.5" Y="6" Width="1.5" />
-    <Members>
-      <Property Name="people" Hidden="true" />
-    </Members>
+    <Position X="26.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAgAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Faction.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="troops" />
+      <Field Name="troops" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.KorriganFaction">
     <Position X="24.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>KorriganFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -243,6 +240,27 @@
       <Property Name="grid" />
       <Property Name="Strategy" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="BedBihan.UnitFactoryElf">
+    <Position X="31.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UnitFactoryElf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.UnitFactoryKorrigan">
+    <Position X="33.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UnitFactoryElf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.UnitFactoryHuman">
+    <Position X="35.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>UnitFactoryElf.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Struct Name="BedBihan.Coordinates">
     <Position X="24.25" Y="11.25" Width="1.5" />

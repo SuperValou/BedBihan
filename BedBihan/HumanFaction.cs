@@ -7,9 +7,9 @@ namespace BedBihan
 {
     public class HumanFaction : Faction
     {
-        public override void createArmy()
+         public HumanFaction()
         {
-            throw new NotImplementedException();
+            this.unitFactory = new UnitFactoryHuman();
         }
     }
 }

@@ -32,8 +32,11 @@ namespace BedBihan
             get;
             private set;
         }
+
         protected float[] costOfMovement;
+
         private int maxMovementPoints;
+
         public int movementPoints
         {
             get;

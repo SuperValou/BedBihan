@@ -7,7 +7,15 @@ namespace BedBihan
 {
     public abstract class Faction
     {
-        public People people
+
+        protected UnitFactory unitFactory
+        {
+            get;
+            set;
+        }
+    
+       
+        protected People people
         {
             get
             {
@@ -18,17 +26,16 @@ namespace BedBihan
             }
         }
 
-        public IEnumerable<Unit> troops
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public Unit[] troops; 
 
-        public abstract void createArmy();
+
+        public  void createArmy(int size)
+        {
+            troops = new Unit[size];
+            for ( int i = 0 ; i < size ; i++)
+            {
+               troops[i] = this.unitFactory.createUnit();
+            } 
+        }
     }
 }
