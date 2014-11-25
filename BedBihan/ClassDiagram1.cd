@@ -104,18 +104,16 @@
   <Class Name="BedBihan.StrategyBoardDemo">
     <Position X="7.5" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyBoardDemo.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.StrategyBoardClassic">
     <Position X="11" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>StrategyBoardClassic.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.GameCreator">
     <Position X="16.5" Y="7" Width="1.5" />
@@ -156,10 +154,9 @@
   <Class Name="BedBihan.StrategyBoardSmall">
     <Position X="9.25" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyBoardSmall.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="BedBihan.Hexagon">
     <Position X="12.25" Y="8.75" Width="1.5" />
@@ -188,14 +185,14 @@
   <Class Name="BedBihan.ElfFaction">
     <Position X="26.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ElfFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.HumanFaction">
     <Position X="28" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HumanFaction.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -233,12 +230,12 @@
   <Class Name="BedBihan.Board">
     <Position X="11" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="grid" />
-      <Property Name="Strategy" />
+      <Field Name="grid" />
+      <Property Name="strategy" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactoryElf">
@@ -262,6 +259,13 @@
       <FileName>UnitFactoryElf.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="BedBihan.StrategyBoard" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>StrategyBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Struct Name="BedBihan.Coordinates">
     <Position X="24.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
@@ -269,13 +273,6 @@
       <FileName>Coordinates.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="BedBihan.StrategyBoard">
-    <Position X="7.75" Y="4.5" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
-      <FileName>StrategyBoard.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Enum Name="BedBihan.Field">
     <Position X="15" Y="8.5" Width="1.5" />
     <TypeIdentifier>

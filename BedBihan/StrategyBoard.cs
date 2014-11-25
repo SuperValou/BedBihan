@@ -5,10 +5,18 @@ using System.Text;
 
 namespace BedBihan
 {
-    public interface StrategyBoard
+    abstract class StrategyBoard
     {
-   
-             
-        void buildBoard();
+
+        protected int size;
+
+        public Hexagon[,] LaunchStrategy()
+        {
+            Hexagon[,] res = new Hexagon[size,size];
+
+
+
+            return res;
+        }
     }
 }

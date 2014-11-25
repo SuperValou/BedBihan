@@ -7,7 +7,7 @@ namespace BedBihan
 {
     public class StrategyBoardClassic : StrategyBoard
     {
-        public void buildBoard()
+        public void LaunchStrategy()
         {
             throw new NotImplementedException();
         }

@@ -7,29 +7,19 @@ namespace BedBihan
 {
     public class Board
     {
-
-        Hexagon grid
+        protected Hexagon[,] grid;
+        
+        public StrategyBoard strategy
         {
             get;
             set;
         }
 
-
-        public StrategyBoard Strategy
+        public void BuildBoard()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            grid = strategy.LaunchStrategy();
         }
 
-        public void setStrategy()
-        {
-        }
-
-
+   
     }
 }

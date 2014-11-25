@@ -8,9 +8,9 @@ namespace BedBihan
     public class StrategyBoardSmall : StrategyBoard
     {
 
-        public void buildBoard()
+        public StrategyBoardSmall()
         {
-            throw new NotImplementedException();
+            size = 4;
         }
     }
 }
