@@ -71,11 +71,11 @@
     <Compile Include="StrategyBoardSmall.cs" />
     <Compile Include="SmallBoardBuilder.cs" />
     <Compile Include="SmallGameBuilder.cs" />
-    <Compile Include="testWrapper.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitFactory.cs" />
     <Compile Include="UnitFactoryElf.cs" />
     <Compile Include="Woods.cs" />
+    <Compile Include="WrapperGate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

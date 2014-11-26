@@ -28,10 +28,7 @@ namespace BedBihanGUI
 
         private void OnClick(object sender, RoutedEventArgs e)
         {
-            testWrapper tW = new testWrapper();
-            int x = tW.go(21);
-
-            labelTest.Content = "Bedbihan : " + x;
+            labelTest.Content = "Bedbihan : " + WrapperGate.access.computeFoo(21);
         }
     }
 }

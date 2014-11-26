@@ -266,11 +266,11 @@
       <FileName>StrategyBoard.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.testWrapper">
-    <Position X="17.5" Y="12.25" Width="1.5" />
+  <Class Name="BedBihan.WrapperGate">
+    <Position X="8.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>testWrapper.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WrapperGate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="BedBihan.Coordinates">

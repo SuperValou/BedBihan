@@ -11,10 +11,9 @@ namespace UnitTests
         [TestMethod]
         public void TestWrapperTropFoo()
         {
-            testWrapper tW = new testWrapper();
-            int x = tW.go(21);
+            int testFortyTwo = WrapperGate.access.computeFoo(21); 
 
-            Assert.AreEqual(42, x);
+            Assert.AreEqual(42, testFortyTwo);
         }
     }
 }
