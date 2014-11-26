@@ -1,0 +1,10 @@
+﻿<Window x:Class="BedBihanGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Clique moi canaille" HorizontalAlignment="Left" Margin="217,153,0,0" VerticalAlignment="Top" Width="115" Click="OnClick"/>
+        <Label x:Name="labelTest" Content="" HorizontalAlignment="Left" Height="44" Margin="217,89,0,0" VerticalAlignment="Top" Width="115"/>
+
+    </Grid>
+</Window>

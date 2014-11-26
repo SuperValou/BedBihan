@@ -7,10 +7,9 @@ namespace BedBihan
 {
     public class StrategyBoardSmall : StrategyBoard
     {
-
         public StrategyBoardSmall()
         {
-            size = 4;
+            this.size = 10;
         }
     }
 }

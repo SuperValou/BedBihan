@@ -111,7 +111,7 @@
   <Class Name="BedBihan.StrategyBoardClassic">
     <Position X="11" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyBoardClassic.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -264,6 +264,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>StrategyBoard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BedBihan.testWrapper">
+    <Position X="17.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>testWrapper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="BedBihan.Coordinates">

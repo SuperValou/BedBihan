@@ -9,7 +9,7 @@ namespace BedBihan
     {
         public StrategyBoardDemo()
         {
-            size = 10;
+            size = 4;
         }
     }
 }

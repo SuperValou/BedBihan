@@ -13,3 +13,10 @@ E:\4INFO\Repos\Bedbihan\BedBihan\obj\Debug\BedBihan.dll
 E:\4INFO\Repos\Bedbihan\BedBihan\obj\Debug\BedBihan.pdb
 E:\4INFO\Repos\Bedbihan\BedBihan\bin\Debug\BedBihan.dll
 E:\4INFO\Repos\Bedbihan\BedBihan\bin\Debug\BedBihan.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.dll
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.dll
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.dll
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb

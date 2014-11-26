@@ -71,6 +71,7 @@
     <Compile Include="StrategyBoardSmall.cs" />
     <Compile Include="SmallBoardBuilder.cs" />
     <Compile Include="SmallGameBuilder.cs" />
+    <Compile Include="testWrapper.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitFactory.cs" />
     <Compile Include="UnitFactoryElf.cs" />
@@ -96,6 +97,12 @@
     <EmbeddedResource Include="Sequence_turn.sequencediagram.layout">
       <DependentUpon>Sequence_turn.sequencediagram</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wrapper\Wrapper.vcxproj">
+      <Project>{09d90241-be40-4499-9f79-5f713bd3305b}</Project>
+      <Name>Wrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

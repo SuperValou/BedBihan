@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    abstract class StrategyBoard
+    public abstract class StrategyBoard
     {
 
         protected int size;

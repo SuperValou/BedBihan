@@ -1,0 +1,17 @@
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihanGUI.exe.config
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.csprojResolveAssemblyReference.cache
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MainWindow.baml
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MainWindow.g.cs
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\App.g.cs
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.cache
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.g.resources
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.Properties.Resources.resources
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.csproj.GenerateResource.Cache
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihanGUI.exe
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihanGUI.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\Wrapper.dll
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\Wrapper.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.exe
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.pdb
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihan.dll
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihan.pdb
