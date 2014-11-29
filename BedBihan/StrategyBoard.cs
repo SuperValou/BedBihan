@@ -7,16 +7,45 @@ namespace BedBihan
 {
     public abstract class StrategyBoard
     {
-
+        protected HexagonFactory hexFactory;
         protected int size;
 
-        public Hexagon[,] LaunchStrategy()
+      
+        public unsafe Hexagon[,] LaunchStrategy()
         {
-            Hexagon[,] res = new Hexagon[size,size];
+            hexFactory = new HexagonFactory();
 
 
+            int** mapInt = WrapperGate.access.mapGenerator(size);
+            Hexagon[,] map = new Hexagon[size, size];
 
-            return res;
+            for (int i = 0; i < size; i++)
+             {
+                for(int j =0; j < size; j++)
+                {
+                    switch(mapInt[i][j]){
+                        case (int) Field.Desert:
+                            map[i,j] = hexFactory.getHexagons("Desert");
+                            break;
+                        case (int) Field.Mountain:
+                            map[i,j] = hexFactory.getHexagons("Mountain");
+                            break;
+                        case (int) Field.Plain:
+                            map[i,j] = hexFactory.getHexagons("Plain");
+                            break;
+                        case (int) Field.Woods:
+                            map[i,j] = hexFactory.getHexagons("Woods");
+                            break;
+                        default:
+                            map[i,j] = hexFactory.getHexagons("Woods");
+                            break;
+                    }
+                }
+            }
+            return map;
         }
+
+
+
     }
 }

@@ -10,7 +10,8 @@ namespace UnitTests
         [TestMethod]
         public void TestGetBoard()
         {
-            Board board = new Board();
+            StrategyBoard sb = new StrategyBoardClassic();
+            Board board = new Board(sb);
             Game game = new Game(board);
             Assert.AreEqual(board, game.Board);
         }

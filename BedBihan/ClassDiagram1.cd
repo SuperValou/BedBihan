@@ -220,12 +220,9 @@
   <Class Name="BedBihan.HexagonFactory">
     <Position X="8.75" Y="8.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAA=</HashCode>
       <FileName>HexagonFactory.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="hexagons" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.Board">
     <Position X="11" Y="4.5" Width="1.5" />
@@ -234,8 +231,8 @@
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="grid" />
       <Property Name="strategy" />
+      <Property Name="grid" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.UnitFactoryElf">
@@ -262,7 +259,7 @@
   <Class Name="BedBihan.StrategyBoard" Collapsed="true">
     <Position X="14.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>StrategyBoard.cs</FileName>
     </TypeIdentifier>
   </Class>

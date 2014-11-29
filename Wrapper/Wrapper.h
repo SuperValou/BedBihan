@@ -33,5 +33,10 @@ namespace Wrapper
 		{
 			return algo->computeFoo(x);
 		}
+
+		int** mapGenerator(int size)
+		{
+			return algo->mapGenerator(size);
+		}
 	};
 }

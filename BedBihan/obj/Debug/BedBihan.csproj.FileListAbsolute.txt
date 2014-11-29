@@ -20,3 +20,10 @@ C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.dll
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.dll
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
+E:\4INFO\BedBihan\BedBihan\bin\Debug\BedBihan.dll
+E:\4INFO\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
+E:\4INFO\BedBihan\BedBihan\bin\Debug\Wrapper.dll
+E:\4INFO\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
+E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
+E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.dll
+E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.pdb

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BedBihan", "BedBihan\BedBihan.csproj", "{874BDBD4-EEBD-4031-9907-64DCD9D30474}"
 EndProject
@@ -14,6 +14,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BedBihanAlgo", "BedBihanAlgo\BedBihanAlgo.vcxproj", "{76C936E8-6E39-426C-AA42-61F080932F5F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wrapper", "Wrapper\Wrapper.vcxproj", "{09D90241-BE40-4499-9F79-5F713BD3305B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76C936E8-6E39-426C-AA42-61F080932F5F} = {76C936E8-6E39-426C-AA42-61F080932F5F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BedBihanGUI", "BedBihanGUI\BedBihanGUI.csproj", "{8D3D3084-2A91-4759-A1F8-9018688642C5}"
 EndProject
