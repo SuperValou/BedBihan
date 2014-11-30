@@ -27,3 +27,5 @@ E:\4INFO\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
 E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
 E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.dll
 E:\4INFO\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
+C:\Users\Valentin\BedBihan\BedBihan\bin\Debug\Wrapper.dll
+C:\Users\Valentin\BedBihan\BedBihan\bin\Debug\Wrapper.pdb

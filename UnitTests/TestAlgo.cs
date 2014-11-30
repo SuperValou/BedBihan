@@ -75,5 +75,25 @@ namespace UnitTests
             }
 
         }
+
+        [TestMethod]
+        public void TestnumberOfConfrontations()
+        {
+            int nbOfConf = WrapperGate.access.numberOfConfrontations(2,6);
+            Console.WriteLine(nbOfConf);
+            Assert.IsTrue(nbOfConf >= 3, "The number of confrontations was less than 3.");
+            Assert.IsTrue(nbOfConf <= 8, "The number of confrontations was greater than 8.");
+        }
+
+        [TestMethod]
+        public void TestchancesOfVictory()
+        {
+            double chancesOfV = WrapperGate.access.chancesOfVictory(3,4);
+            Console.WriteLine(chancesOfV);
+            Assert.IsTrue(chancesOfV >= 0, "The chance of victory was less than 0.");
+            Assert.IsTrue(chancesOfV < 1, "The chances of victory was greater than 1.");
+        }
+
+
     }
 }

@@ -12,7 +12,7 @@ namespace BedBihan
             get;
             private set;
         }
-        public int lifeMax
+        public int maxHP
         {
             get;
             private set;
@@ -27,7 +27,7 @@ namespace BedBihan
             get;
             private set;
         }
-        public int lifePoints
+        public int currentHP
         {
             get;
             private set;
@@ -53,9 +53,18 @@ namespace BedBihan
          * \brief lower units life points 
          * \param[in] the damages the unit takes
          */
-        public void looseLifePoints(int damages)
+        public void looseHealthPoints(int damages)
         {
-            this.lifePoints -= damages;
+            this.currentHP -= damages;
+        }
+
+        /**
+         * \brief lower units life points 
+         * \param[in] the damages the unit takes
+         */
+        public bool isDead()
+        {
+            return this.currentHP <= 0;
         }
 
         /**
@@ -81,7 +90,8 @@ namespace BedBihan
          */
         public Unit()
         {
-            this.lifeMax = 1;
+            this.maxHP = 1;
+            this.currentHP = 1;
             this.attack = 1;
             this.defense = 1;
             this.maxMovementPoints = 1;
@@ -97,7 +107,8 @@ namespace BedBihan
          */
         public Unit(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint)
         {
-            this.lifeMax = maxLife;
+            this.maxHP = maxLife;
+            this.currentHP = maxLife;
             this.attack = att;
             this.defense = def;
             this.maxMovementPoints = maxMov;
@@ -124,21 +135,28 @@ namespace BedBihan
          * \brief 
          * \param[in] 
          */
-        void fightAgainst(Unit defender)
+        public void fightAgainst(Unit defender)
         {
-            Random random = new Random();
-            double fightNumber = 3 + random.NextDouble() * (2+ Math.Max(this.lifePoints, defender.lifePoints)); // calcul à vérifier mais là on s'en branle
-            while (fightNumber > 0)
+            int numberOfConfrontations = WrapperGate.access.numberOfConfrontations(this.currentHP, defender.currentHP);
+            while (numberOfConfrontations > 0)
             {
-                double chanceOfVictory = 0.5*(this.attack / defender.defense);
-                double godDecision = random.NextDouble();
+
+                // konsole
+                double chanceOfVictory = WrapperGate.access.chancesOfVictory(this.attack,defender.defense);
+                double godDecision = WrapperGate.access.godDecision();
+
+                Console.WriteLine("tour "+numberOfConfrontations + " : " + this.currentHP + " " + defender.currentHP);
+                Console.WriteLine("Chance of victory : "+chanceOfVictory);
+                Console.WriteLine("godDecision : "+godDecision);
+
                 if (chanceOfVictory > godDecision)
                 // attacker wins
                 {
-                    defender.lifePoints -= this.attack * (this.lifePoints / this.lifeMax);
-                    if (defender.lifePoints < 0)
+                    
+                    defender.looseHealthPoints(WrapperGate.access.damagesInflicted(this.attack,this.currentHP,this.maxHP));
+                    if (defender.isDead())
                     {
-                        fightNumber = 0;
+                        numberOfConfrontations = 0;
                         defender.destroy();
                         return;
                     } 
@@ -146,13 +164,15 @@ namespace BedBihan
                 else
                 // attacker looses
                 {
-                    this.lifePoints -= defender.defense * (defender.lifePoints / defender.lifeMax);
-                    if (this.lifePoints < 0)
+                    this.looseHealthPoints(WrapperGate.access.damagesInflicted(defender.attack,defender.currentHP,defender.maxHP));
+                    if (this.isDead())
                     {
-                        fightNumber = 0;
+                        numberOfConfrontations = 0;
                         this.destroy(); // ??
                     }
                 }
+                
+                numberOfConfrontations--;
             }
         }
 

@@ -53,12 +53,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\4INFO\BedBihan\BedBihanAlgo;C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanAlgo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\4INFO\BedBihan\BedBihanAlgo;C:\Users\Valentin\BedBihan\BedBihanAlgo;C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanAlgo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>BedBihanAlgo.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>E:\4INFO\BedBihan\Debug;C:\Users\vesmieu\Source\Repos\BedBihan\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:\4INFO\BedBihan\Debug;C:\Users\vesmieu\Source\Repos\BedBihan\Debug;C:\Users\Valentin\BedBihan\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

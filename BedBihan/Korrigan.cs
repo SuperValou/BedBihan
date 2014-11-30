@@ -11,7 +11,7 @@ namespace BedBihan
         {
             costOfMovement[(int) Field.Plain] = 0.5F;
         }
-        public Korrigan()
+        public Korrigan() : base()
         {
             setKorriganStandartCostOfMovement();
         }

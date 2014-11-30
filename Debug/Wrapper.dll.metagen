@@ -1,5 +1,5 @@
 ImageRuntimeVersion: v4.0.30319
-Assembly Wrapper, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
+Assembly Wrapper, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
 Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
@@ -11,4 +11,9 @@ Class Wrapper.WrapperAlgo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     System.IDisposable
   Methods:
     computeFoo(Int32): PrivateScope, Public, HideBySig
+    mapGenerator(Int32): PrivateScope, Public, HideBySig
+    numberOfConfrontations(Int32, Int32): PrivateScope, Public, HideBySig
+    chancesOfVictory(Int32, Int32): PrivateScope, Public, HideBySig
+    godDecision(): PrivateScope, Public, HideBySig
+    damagesInflicted(Int32, Int32, Int32): PrivateScope, Public, HideBySig
     Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

@@ -38,5 +38,25 @@ namespace Wrapper
 		{
 			return algo->mapGenerator(size);
 		}
+
+		int numberOfConfrontations(int attackerHP, int defenderHP)
+		{
+			return algo->numberOfConfrontations(attackerHP, defenderHP);
+		}
+
+		double chancesOfVictory(int attackerAtt, int defenderDef)
+		{
+			return algo->chanceOfVictory(attackerAtt, defenderDef);
+		}
+
+		double godDecision()
+		{
+			return algo->godDecision();
+		}
+
+		int damagesInflicted(int attack, int currentHP, int maxHP)
+		{
+			return algo->damagesInflicted(attack, currentHP, maxHP);
+		}
 	};
 }

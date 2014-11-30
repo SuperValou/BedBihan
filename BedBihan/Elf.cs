@@ -12,7 +12,7 @@ namespace BedBihan
             costOfMovement[(int) Field.Woods] = 0.5F;
             costOfMovement[(int) Field.Desert] = 2F;
         }
-        public Elf()
+        public Elf() : base()
         {
             setElfStandartCostOfMovement();
         }

@@ -37,3 +37,5 @@ E:\4INFO\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
 E:\4INFO\BedBihan\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 E:\4INFO\BedBihan\UnitTests\obj\Debug\UnitTests.dll
 E:\4INFO\BedBihan\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\Wrapper.dll
+C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
