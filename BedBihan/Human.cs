@@ -22,10 +22,7 @@ namespace BedBihan
         {
             this.costOfMovement[(int)Field.Plain] = 0.5F;
         }
-        public override void moveOn(Hexagon hexagon)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public Human() : base()
         {

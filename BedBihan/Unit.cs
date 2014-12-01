@@ -126,7 +126,10 @@ namespace BedBihan
          * \brief 
          * \param[in] 
          */
-        public abstract void moveOn(Hexagon hexagon);
+        public void moveOn(Hexagon hexagon)
+        {
+
+        }
 
 
 
@@ -144,10 +147,6 @@ namespace BedBihan
                 // konsole
                 double chanceOfVictory = WrapperGate.access.chancesOfVictory(this.attack,defender.defense);
                 double godDecision = WrapperGate.access.godDecision();
-
-                Console.WriteLine("tour "+numberOfConfrontations + " : " + this.currentHP + " " + defender.currentHP);
-                Console.WriteLine("Chance of victory : "+chanceOfVictory);
-                Console.WriteLine("godDecision : "+godDecision);
 
                 if (chanceOfVictory > godDecision)
                 // attacker wins

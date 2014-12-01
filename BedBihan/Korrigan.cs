@@ -20,10 +20,7 @@ namespace BedBihan
             setKorriganStandartCostOfMovement();
         }
 
-        public override void moveOn(Hexagon hexagon)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
 
