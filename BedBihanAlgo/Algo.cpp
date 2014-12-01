@@ -85,9 +85,10 @@ double Algo::godDecision()
 }
 
 /*
-*	return the amout of damages inflicted to a unit
+*	return the amout of damages inflicted to a unit (at least 1 HP)
 */
 int Algo::damagesInflicted(int attack, int currentHP, int maxHP)
 {
-	return ((int) std::floor(attack * ((double) currentHP / (double) maxHP)));
+	int damages = ((int)std::floor(attack * ((double)currentHP / (double)maxHP)));
+	return std::max(damages,1);
 }
