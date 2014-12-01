@@ -81,7 +81,7 @@ namespace UnitTests
         {
             int nbOfConf = WrapperGate.access.numberOfConfrontations(2,6);
             Console.WriteLine(nbOfConf);
-            Assert.IsTrue(nbOfConf >= 3, "The number of confrontations was less than 3.");
+            Assert.IsTrue(nbOfConf >= 2, "The number of confrontations was less than 2.");
             Assert.IsTrue(nbOfConf <= 8, "The number of confrontations was greater than 8.");
         }
 
