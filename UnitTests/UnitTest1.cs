@@ -13,7 +13,7 @@ namespace UnitTests
             StrategyBoard sb = new StrategyBoardClassic();
             Board board = new Board(sb);
             Game game = new Game(board);
-            Assert.AreEqual(board, game.Board);
+            Assert.AreEqual(board, game.board);
         }
     }
 

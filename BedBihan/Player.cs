@@ -8,37 +8,27 @@ namespace BedBihan
     public class Player
     {
 
-        public IEnumerable<Unit> points
+        public Player(int size, string people)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+       //     this.faction = new Faction(size, people);   TO FIX !!
+        }
+
+        public int points
+        {
+            get;
+            set;
         }
 
         public Faction faction
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public String pseudo
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public void playTurn()

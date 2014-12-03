@@ -7,50 +7,55 @@ namespace BedBihan
 {
     public class Game
     {
-        public Board Board
+
+        public Game() 
+        {
+            this.currentTurn = 0;        
+        }
+
+
+
+        private Board board
         {
             get;
-            private set;
+            set;
         }
 
-        public int MaxTurnNumber
+        private int maxTurnNumber
         {
             get;
-            private set;
+            set;
         }
 
-        public int CurrentTurn
+        private int currentTurn
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public IEnumerable<Player> Players
+        public List<Player> list_players
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public int unitSelected
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
+
+        public void setBoard(Board b) { this.board = b;  }
+        public void setMaxTurnNumber(int mtn) { this.maxTurnNumber = mtn; }
+       // public void setCurrentTurn(int ct) { this.currentTurn = ct; }
+        public void setListplayers(List<Player> lplay) { this.list_players = lplay;  }
+
+
+       
+
+
+
+
 
         public void endTurn()
         {

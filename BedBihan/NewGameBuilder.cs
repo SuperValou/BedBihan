@@ -7,9 +7,8 @@ namespace BedBihan
 {
     public class NewGameBuilder : GameBuilder
     {
-        public override Game buildGame()
+        public override Game getGame()
         {
-            throw new NotImplementedException();
         }
     }
 }

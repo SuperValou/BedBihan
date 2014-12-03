@@ -8,28 +8,37 @@ namespace BedBihan
     public abstract class Faction
     {
 
+        public Faction(int size, string people)
+        {
+            switch (people)
+            {
+                case "korrigan":
+                    this.unitFactory = new UnitFactoryKorrigan();
+                    break;
+                case "human":
+                    this.unitFactory = new UnitFactoryHuman();
+                    break;
+                case "Elf":
+                    this.unitFactory = new UnitFactoryElf();
+                    break;
+            }
+            this.createArmy(size);
+        }
+
         protected UnitFactory unitFactory
         {
             get;
             set;
         }
-    
-       
-        protected People people
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
+
+
+
+        // tab of units
         public Unit[] troops; 
 
 
-        public  void createArmy(int size)
+        private  void createArmy(int size)
         {
             troops = new Unit[size];
             for ( int i = 0 ; i < size ; i++)

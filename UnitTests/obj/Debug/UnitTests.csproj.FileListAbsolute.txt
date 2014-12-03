@@ -39,3 +39,12 @@ E:\4INFO\BedBihan\UnitTests\obj\Debug\UnitTests.dll
 E:\4INFO\BedBihan\UnitTests\obj\Debug\UnitTests.pdb
 C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\Wrapper.dll
 C:\Users\Valentin\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\BedBihan.dll
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\Wrapper.dll
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\BedBihan.pdb
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.pdb

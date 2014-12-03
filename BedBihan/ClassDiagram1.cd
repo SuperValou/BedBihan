@@ -15,21 +15,21 @@
   <Class Name="BedBihan.Elf">
     <Position X="25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Human">
     <Position X="29.5" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAgAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAgAAAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Korrigan">
     <Position X="27.25" Y="15" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Korrigan.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,7 +39,7 @@
       <Property Name="people" Hidden="true" />
     </Members>
     <TypeIdentifier>
-      <HashCode>ASABgAAAIAAAAAAAgAAgAGAAAAAAAACAAAAAAmgQAAI=</HashCode>
+      <HashCode>ASAAgAAAIAAQAAAAAAAgAGCAABAAAACAAAAAAGgQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -94,15 +94,9 @@
   <Class Name="BedBihan.Game">
     <Position X="18" Y="3.25" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAEAAAAAABAAQACgAAQAgAAAAABAAACAAAAA=</HashCode>
+      <HashCode>AAIAAAgAAEAEAAAACAAQACgAARAAABAAIBAAAAAEAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Board" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Players" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.StrategyBoardDemo">
     <Position X="7.5" Y="6" Width="1.75" />
@@ -136,21 +130,21 @@
   <Class Name="BedBihan.NewGameBuilder">
     <Position X="18.75" Y="8.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>NewGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.SavedGameBuilder">
-    <Position X="21.25" Y="8.25" Width="1.75" />
+    <Position X="22.5" Y="8.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>SavedGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.GameBuilder">
-    <Position X="19.5" Y="6.75" Width="1.75" />
+    <Position X="21" Y="6" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAEAAAABAAAAAAAAIAgCAAAAAAAg=</HashCode>
       <FileName>GameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -171,7 +165,7 @@
   <Class Name="BedBihan.Faction">
     <Position X="26.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAgAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Faction.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -202,7 +196,7 @@
   <Class Name="BedBihan.SmallGameBuilder">
     <Position X="17.25" Y="10.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAAAA=</HashCode>
       <FileName>SmallGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
