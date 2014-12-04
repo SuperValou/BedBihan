@@ -10,7 +10,18 @@ namespace BedBihan
 
         public Player(int size, string people)
         {
-       //     this.faction = new Faction(size, people);   TO FIX !!
+            switch (people)
+            {
+                case "korrigan":
+                    this.faction = new KorriganFaction(size);
+                    break;
+                case "human":
+                    this.faction = new HumanFaction(size);
+                    break;
+                case "elf":
+                    this.faction = new ElfFaction(size);
+                    break;
+            } // add error for default ?
         }
 
         public int points

@@ -7,7 +7,7 @@
     <Position X="11.111" Y="9.469" Height="0.322" Width="0.801" />
   </Comment>
   <Comment CommentText="Builder">
-    <Position X="17.352" Y="8.436" Height="0.322" Width="0.801" />
+    <Position X="17.431" Y="7.929" Height="0.322" Width="0.801" />
   </Comment>
   <Comment CommentText="Factory">
     <Position X="30.59" Y="12.991" Height="0.322" Width="0.801" />
@@ -120,31 +120,20 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAABAAAAAAAAkAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>GameCreator.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="gameBuilder" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="BedBihan.NewGameBuilder">
-    <Position X="18.75" Y="8.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
-      <FileName>NewGameBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="BedBihan.SavedGameBuilder">
-    <Position X="22.5" Y="8.75" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
-      <FileName>SavedGameBuilder.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="BedBihan.GameBuilder">
     <Position X="21" Y="6" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAACAEAAAABAAAAAAAAIAgCAAAAAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAEAAAAAAAAAAAAAIAgCAAAAAAAg=</HashCode>
       <FileName>GameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -196,21 +185,24 @@
   <Class Name="BedBihan.SmallGameBuilder">
     <Position X="17.25" Y="10.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgCAAAAAAAA=</HashCode>
       <FileName>SmallGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.ClassicGameBuilder">
     <Position X="19.25" Y="10.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgCAAAAAAAA=</HashCode>
       <FileName>ClassicGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.DemoGameBuilder">
-    <Position X="21" Y="10.25" Width="1.75" />
+    <Position X="22" Y="10.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgCAAAAAAAA=</HashCode>
       <FileName>DemoGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Class>

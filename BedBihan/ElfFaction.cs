@@ -7,9 +7,10 @@ namespace BedBihan
 {
     public class ElfFaction : Faction
     {
-        public ElfFaction()
+        public ElfFaction(int size) : base (size)
         {
             this.unitFactory = new UnitFactoryElf();
+            this.createArmy(size);
         }
     }
 }

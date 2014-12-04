@@ -21,10 +21,10 @@ namespace BedBihan
             set;
         }
 
-        private int maxTurnNumber
+        public int maxTurnNumber
         {
             get;
-            set;
+            private set;
         }
 
         private int currentTurn
@@ -49,11 +49,6 @@ namespace BedBihan
         public void setMaxTurnNumber(int mtn) { this.maxTurnNumber = mtn; }
        // public void setCurrentTurn(int ct) { this.currentTurn = ct; }
         public void setListplayers(List<Player> lplay) { this.list_players = lplay;  }
-
-
-       
-
-
 
 
 
@@ -107,7 +102,7 @@ namespace BedBihan
         public Game(global::BedBihan.Board board)
         {
             // TODO: Complete member initialization
-            this.Board = board;
+            this.board = board;
         }
 
     }

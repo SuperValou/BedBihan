@@ -8,21 +8,9 @@ namespace BedBihan
     public abstract class Faction
     {
 
-        public Faction(int size, string people)
+        public Faction(int size)
         {
-            switch (people)
-            {
-                case "korrigan":
-                    this.unitFactory = new UnitFactoryKorrigan();
-                    break;
-                case "human":
-                    this.unitFactory = new UnitFactoryHuman();
-                    break;
-                case "Elf":
-                    this.unitFactory = new UnitFactoryElf();
-                    break;
-            }
-            this.createArmy(size);
+          // this.createArmy(size);  pb with order. (heritage)
         }
 
         protected UnitFactory unitFactory
@@ -38,7 +26,7 @@ namespace BedBihan
         public Unit[] troops; 
 
 
-        private  void createArmy(int size)
+        protected  void createArmy(int size)
         {
             troops = new Unit[size];
             for ( int i = 0 ; i < size ; i++)

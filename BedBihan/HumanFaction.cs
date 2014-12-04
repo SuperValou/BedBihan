@@ -7,9 +7,10 @@ namespace BedBihan
 {
     public class HumanFaction : Faction
     {
-         public HumanFaction()
+        public HumanFaction(int size): base(size)
         {
             this.unitFactory = new UnitFactoryHuman();
+            this.createArmy(size);
         }
     }
 }

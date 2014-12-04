@@ -8,9 +8,10 @@ namespace BedBihan
     public class KorriganFaction : Faction
     {
 
-        public KorriganFaction()
+        public KorriganFaction(int size) : base (size)
         {
             this.unitFactory = new UnitFactoryKorrigan();
+            this.createArmy(size); 
         }
 
     }

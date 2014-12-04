@@ -10,24 +10,22 @@ namespace UnitTests
         [TestMethod]
         public void TestKorriganFabrication()
         {
-            Faction army = new KorriganFaction();
-            army.createArmy(5);
+            Player pKorrigan = new Player(5, "korrigan");
             for (int i = 0; i<5; i++)
 
             {
-                Assert.IsInstanceOfType( army.troops[i] , typeof(Korrigan) );
+                Assert.IsInstanceOfType( pKorrigan.faction.troops[i] , typeof(Korrigan) );
             }
-           
+        
         }
 
         [TestMethod]
         public void TestHumanFabrication()
         {
-            Faction army = new HumanFaction();
-            army.createArmy(5);
+            Player pHuman = new Player(5, "human");
             for (int i = 0; i < 5; i++)
             {
-                Assert.IsInstanceOfType(army.troops[i], typeof(Human));
+                Assert.IsInstanceOfType(pHuman.faction.troops[i], typeof(Human));
             }
 
         }
@@ -35,11 +33,11 @@ namespace UnitTests
         [TestMethod]
         public void TestElfFabrication()
         {
-            Faction army = new ElfFaction();
-            army.createArmy(5);
+            Player pElf = new Player(5, "elf");
+           
             for (int i = 0; i < 5; i++)
             {
-                Assert.IsInstanceOfType(army.troops[i], typeof(Elf));
+                Assert.IsInstanceOfType(pElf.faction.troops[i], typeof(Elf));
             }
 
         }

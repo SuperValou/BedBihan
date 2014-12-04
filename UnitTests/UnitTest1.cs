@@ -7,14 +7,14 @@ namespace UnitTests
     [TestClass]
     public class TestGame
     {
-        [TestMethod]
+     /*   [TestMethod]
         public void TestGetBoard()
         {
             StrategyBoard sb = new StrategyBoardClassic();
             Board board = new Board(sb);
             Game game = new Game(board);
             Assert.AreEqual(board, game.board);
-        }
+        }*/
     }
 
     [TestClass]

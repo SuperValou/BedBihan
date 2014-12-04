@@ -8,10 +8,12 @@ namespace BedBihan
     public abstract class GameBuilder
     {
 
-        protected Game game
+  
+
+        public Game game
         {
             get;
-            set;
+            protected set;
         }
 
 
@@ -27,8 +29,7 @@ namespace BedBihan
 
         public abstract void buildBoard();
         public abstract void buildMaxTurnNumber();
-        public abstract void buildCurrentTurn();
-        public abstract void buildList_players();
+        public abstract void buildList_players(string pj1,string pj2);
 
         
 
