@@ -8,16 +8,16 @@ namespace UnitTests
     public class TestBuilder
     {
         [TestMethod]
-        public void TestSmallBuilder()
+        public unsafe void TestDemoBuilder()
         {
             GameCreator gc = new GameCreator();
             gc.setPeopleJ1("elf");
             gc.setPeopleJ2("human");
-            GameBuilder gb = new SmallGameBuilder();
+            GameBuilder gb = new DemoGameBuilder();
             gc.gameBuilder = gb;
             gc.createGame();
             Game game = gc.getGame();
-            Assert.AreEqual(game.maxTurnNumber, 6);
+            Assert.AreEqual(game.maxTurnNumber, 5);
         }
     }
 }

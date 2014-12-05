@@ -16,7 +16,9 @@ namespace BedBihan
             hexFactory = new HexagonFactory();
 
 
-            int** mapInt = WrapperGate.access.mapGenerator(size);
+            int** mapInt; // IMPORTANT ! INSTANCE MEMORY BEFORE ACCESS WRAPPER !
+                           // ONE FUCKING HOUR LOST FOR THIS SHIT
+            mapInt = WrapperGate.access.mapGenerator(size);
             Hexagon[,] map = new Hexagon[size, size];
 
             for (int i = 0; i < size; i++)

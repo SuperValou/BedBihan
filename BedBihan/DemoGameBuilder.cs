@@ -9,7 +9,7 @@ namespace BedBihan
     {
         public override void buildBoard()
         {
-            StrategyBoardSmall sbd = new StrategyBoardSmall();
+            StrategyBoardDemo sbd = new StrategyBoardDemo();
             Board gameBoard = new Board(sbd);
             gameBoard.BuildBoard();
             this.game.setBoard(gameBoard);
@@ -28,7 +28,7 @@ namespace BedBihan
 
         public override void buildMaxTurnNumber()
         {
-            throw new NotImplementedException();
+            this.game.setMaxTurnNumber(5);
         }
     }
 }
