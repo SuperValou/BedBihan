@@ -264,3 +264,20 @@ UpgradeLog*.htm
 *.bim_*.settings
 # Microsoft Fakes
 FakesAssemblies/
+
+# Visual Build
+*.dll
+*.dll.metagen
+*.lib
+*.pdb
+*.tlog
+*.bi
+*.lastbuildstate
+*.obj
+*.cache
+*.lastbuildstate
+unsuccessfulbuild
+*.exe
+*.vshost
+*.vshost.exe
+*.config
