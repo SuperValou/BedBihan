@@ -88,6 +88,7 @@ Debug/*
 *.exe
 *.vshost
 *.vshost.exe
-*.config
-
-
+*.g.cs
+*.g.i.cs
+*.baml
+*.idb	
