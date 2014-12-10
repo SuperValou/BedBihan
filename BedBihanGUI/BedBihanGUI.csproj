@@ -67,6 +67,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MapView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,6 +104,15 @@
       <Name>Wrapper</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="textures\desert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="textures\mountain.png" />
+    <Resource Include="textures\plain.png" />
+    <Resource Include="textures\woods.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -66,3 +66,14 @@ C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_Markup
 C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.g.resources
 C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.Properties.Resources.resources
 C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.csproj.GenerateResource.Cache
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\bin\Debug\BedBihanGUI.exe.config
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI.exe
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI.pdb
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI.csprojResolveAssemblyReference.cache
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\MainWindow.g.cs
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\App.g.cs
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.cache
+C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
