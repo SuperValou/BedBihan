@@ -105,12 +105,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="textures\desert.png" />
+    <Resource Include="textures\desert.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="textures\mountain.png" />
-    <Resource Include="textures\plain.png" />
-    <Resource Include="textures\woods.png" />
+    <Resource Include="textures\mountain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="textures\plain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="textures\woods.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

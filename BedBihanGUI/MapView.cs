@@ -11,11 +11,18 @@ namespace BedBihanGUI
 {
     class MapView : Panel
     {
-        
 
+        // when you click on something
+        protected override void OnMouseDown(System.Windows.Input.MouseButtonEventArgs e)
+        {
+            base.OnMouseDown(e);
+
+        }
 
         protected override void OnRender(System.Windows.Media.DrawingContext dc)
         {
+            System.Diagnostics.Debug.WriteLine("OnRender");
+
             BitmapImage woodsImg = new BitmapImage();
             woodsImg.BeginInit();
             woodsImg.UriSource = new Uri ("textures/woods.png",UriKind.RelativeOrAbsolute);
@@ -28,7 +35,23 @@ namespace BedBihanGUI
             plainImg.EndInit();
             Rect rectPlain = new Rect(69, 0, 69, 79);
             dc.DrawImage(plainImg, rectPlain);
-           
+          
+        }
+
+
+        internal void generateClassic()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void generateSmall()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void generateDemo()
+        {
+            throw new NotImplementedException();
         }
     }
 }

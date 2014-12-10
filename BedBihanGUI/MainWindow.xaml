@@ -3,9 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:BBGUI="clr-namespace:BedBihanGUI"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Clique moi canaille" HorizontalAlignment="Left" Margin="217,153,0,0" VerticalAlignment="Top" Width="115" Click="OnClick"/>
-        <Label x:Name="labelTest" Content="" HorizontalAlignment="Left" Height="44" Margin="217,89,0,0" VerticalAlignment="Top" Width="115"/>
-        <BBGUI:MapView /> 
-    </Grid>
+
+        <Button Content="Generate Classic Map" HorizontalAlignment="Left" Margin="217,153,0,0" VerticalAlignment="Top" Width="115" Click="generateClassicMap"/>
     
+        <Button Content="Generate Small Map" HorizontalAlignment="Left" Margin="217,126,0,0" VerticalAlignment="Top" Width="115" Click="generateSmallMap"/>
+   
+        <Button Content="Generate Demo Map" HorizontalAlignment="Left" Margin="217,99,0,0" VerticalAlignment="Top" Width="115" Click="generateDemoMap"/>
+
+        <!-- button texture -->
+        <Button Height="69" Width="79" Click="highlight" Margin="18,75,399,145">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="textures/mountain.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <BBGUI:MapView x:Name="mapView"  />
+    </Grid>
+
 </Window>

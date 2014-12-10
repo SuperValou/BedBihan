@@ -26,9 +26,30 @@ namespace BedBihanGUI
             InitializeComponent();
         }
 
-        private void OnClick(object sender, RoutedEventArgs e)
+
+        private void highlight(object sender, RoutedEventArgs e)
         {
-            labelTest.Content = "Bedbihan : " + WrapperGate.access.computeFoo(21);
+            
         }
+
+        private void generateClassicMap(object sender, RoutedEventArgs e)
+        {
+            mapView.generateClassic();
+            mapView.InvalidateVisual();
+        }
+
+        private void generateSmallMap(object sender, RoutedEventArgs e)
+        {
+            mapView.generateSmall();
+            mapView.InvalidateVisual();
+        }
+
+        private void generateDemoMap(object sender, RoutedEventArgs e)
+        {
+            mapView.generateDemo();
+            mapView.InvalidateVisual();
+        }
+
+       
     }
 }
