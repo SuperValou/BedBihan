@@ -77,3 +77,5 @@ C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_Mark
 C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
