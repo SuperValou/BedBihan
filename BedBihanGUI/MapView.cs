@@ -21,21 +21,21 @@ namespace BedBihanGUI
 
         protected override void OnRender(System.Windows.Media.DrawingContext dc)
         {
-            System.Diagnostics.Debug.WriteLine("OnRender");
+           System.Diagnostics.Debug.WriteLine("OnRender");
 
             BitmapImage woodsImg = new BitmapImage();
             woodsImg.BeginInit();
-            woodsImg.UriSource = new Uri ("textures/woods.png",UriKind.RelativeOrAbsolute);
+            woodsImg.UriSource = new Uri ("pack://application:,,,/textures/woods.png",UriKind.RelativeOrAbsolute);
             woodsImg.EndInit();
             Rect rectWoods = new Rect(0,0,69,79);
             dc.DrawImage(woodsImg,rectWoods);
-            BitmapImage plainImg = new BitmapImage();
-            plainImg.BeginInit();
-            plainImg.UriSource = new Uri("textures/plain.png", UriKind.RelativeOrAbsolute);
-            plainImg.EndInit();
-            Rect rectPlain = new Rect(69, 0, 69, 79);
-            dc.DrawImage(plainImg, rectPlain);
-          
+            /*   BitmapImage plainImg = new BitmapImage();
+              plainImg.BeginInit();
+              plainImg.UriSource = new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute);
+              plainImg.EndInit();
+              Rect rectPlain = new Rect(69, 0, 69, 79);
+              dc.DrawImage(plainImg, rectPlain);
+            */
         }
 
 

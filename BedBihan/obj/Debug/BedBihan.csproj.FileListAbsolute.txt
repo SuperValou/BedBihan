@@ -36,3 +36,5 @@ C:\Users\conicole\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.dll
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
+E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.dll
+E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb

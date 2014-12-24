@@ -48,3 +48,5 @@ C:\Users\conicole\Source\Repos\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
 C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\conicole\Source\Repos\BedBihan\UnitTests\obj\Debug\UnitTests.pdb
+E:\4INFO\Repos\BedBihan\UnitTests\bin\Debug\Wrapper.dll
+E:\4INFO\Repos\BedBihan\UnitTests\bin\Debug\Wrapper.pdb
