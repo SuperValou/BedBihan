@@ -24,6 +24,7 @@ namespace BedBihanGUI
         public MainWindow()
         {
             InitializeComponent();
+            this.MainMenu.Source = new Uri("MainMenu.xaml", UriKind.Relative);
         }
 
 
@@ -32,23 +33,7 @@ namespace BedBihanGUI
             
         }
 
-        private void generateClassicMap(object sender, RoutedEventArgs e)
-        {
-            mapView.generateClassic();
-            mapView.InvalidateVisual();
-        }
 
-        private void generateSmallMap(object sender, RoutedEventArgs e)
-        {
-            mapView.generateSmall();
-            mapView.InvalidateVisual();
-        }
-
-        private void generateDemoMap(object sender, RoutedEventArgs e)
-        {
-            mapView.generateDemo();
-            mapView.InvalidateVisual();
-        }
 
        
     }
