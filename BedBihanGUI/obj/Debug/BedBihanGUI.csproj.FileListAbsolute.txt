@@ -89,7 +89,6 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\bin\Debug\Wrapper.pdb
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.csprojResolveAssemblyReference.cache
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MainWindow.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\App.g.cs
-E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.cache
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MainWindow.baml
@@ -103,3 +102,4 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MainMenu.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MainMenu.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\App.baml

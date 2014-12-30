@@ -26,7 +26,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Button x:Name="Bouton_PartieDemo" Grid.ColumnSpan="3" Content="Lancer une nouvelle partie" HorizontalAlignment="Left" Height="109" Margin="32,26,0,0" VerticalAlignment="Top" Width="242" Click="PartieDemo" FontFamily="Comic Sans MS" Background="Black" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button Click="PartieDemo" Margin="69,112,68,58" Grid.ColumnSpan="3">Lancer une nouvelle partie</Button>
         </Grid>
 
 
