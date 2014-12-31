@@ -3,12 +3,25 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    Loaded="Window_Loaded"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="PageGame">
 
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="264" Margin="23,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Cursor="None" FontSize="48" TextAlignment="Center" FontFamily="Yu Gothic" FontWeight="Bold" Foreground="White"><Run Text="BOLOSSE"/><LineBreak/><Run Text="BOLOSSE"/><LineBreak/><Run Text="BOLOSSE"/><LineBreak/><Run/></TextBlock>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="233" VerticalAlignment="Top" Width="240" Margin="38,32,0,0">
+            <Rectangle Height="354" Stroke="#FFFF0303" Width="374">
+                <Rectangle.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="#FF141514" Offset="0.77"/>
+                    </RadialGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </ScrollViewer>
+
+
+
 
     </Grid>
 </Page>
