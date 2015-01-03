@@ -103,3 +103,8 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MainMenu.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\App.baml
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.baml
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.baml

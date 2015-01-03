@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="BedBihanGUI.Hex"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="118.917" Width="102.667">
+
+    <Grid>
+        <Polygon x:Name="PolygonTile" Stroke="Black" StrokeThickness="2" Stretch="Uniform" MouseDown="hex_down" HorizontalAlignment="Left" VerticalAlignment="Top"  >
+            <Polygon.Points>
+                <PointCollection>
+                    <Point X="50" Y="0" />
+                    <Point X="100" Y="28.8675" />
+                    <Point X="100" Y="86.6025" />
+                    <Point X="50" Y="115.47" />
+                    <Point X="0" Y="86.6025" />
+                    <Point X="0" Y="28.8675" />
+                </PointCollection>
+            </Polygon.Points>
+            <Polygon.Fill>
+                <ImageBrush x:Name="fond" ImageSource="textures/desert.png" Stretch="Uniform" TileMode="Tile"/>
+            </Polygon.Fill>
+        </Polygon>
+    </Grid>
+</UserControl>

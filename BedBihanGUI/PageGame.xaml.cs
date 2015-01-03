@@ -24,9 +24,11 @@ namespace BedBihanGUI
     /// </summary>
     public partial class PageGame : Page
     {
+        int cpt;
         public PageGame()
         {
             InitializeComponent();
+            
         }
 
 
@@ -35,6 +37,27 @@ namespace BedBihanGUI
         {
 
         }
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            Hex tile = new Hex();
+            this.LayoutRoot.Children.Add(tile);
+        }
+
+
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            UIElementCollection lcase = this.LayoutRoot.Children;
+            foreach(Hex tile in lcase){
+                tile.Height = 20;
+            }
+        }
+
+
+
 
     }
 

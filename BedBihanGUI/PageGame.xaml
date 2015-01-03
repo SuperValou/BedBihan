@@ -3,23 +3,39 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+     xmlns:src="clr-namespace:BedBihanGUI"
+
     Loaded="Window_Loaded"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="PageGame">
 
     <Grid>
-        <ScrollViewer HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="233" VerticalAlignment="Top" Width="240" Margin="38,32,0,0">
-            <Rectangle Height="354" Stroke="#FFFF0303" Width="374">
-                <Rectangle.Fill>
-                    <RadialGradientBrush>
-                        <GradientStop Color="White" Offset="0"/>
-                        <GradientStop Color="#FF141514" Offset="0.77"/>
-                    </RadialGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-        </ScrollViewer>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="296*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="240" Margin="29,0,0,0" Grid.Column="1" >
+            <Canvas x:Name="LayoutRoot" Background="Transparent" Height="294" Width="388">
 
+
+
+
+                <!--         <src:Hex Height="119" Width="103"/>
+                <src:Hex Canvas.Left="100" Canvas.Top="0"/>
+                <src:Hex Canvas.Left="200" Canvas.Top="0"/>
+                <src:Hex Canvas.Left="50" Canvas.Top="86.6025"/>
+                <src:Hex Canvas.Left="150" Canvas.Top="86.6025"/>
+                <src:Hex Canvas.Left="0" Canvas.Top="173.205"/>
+                <src:Hex Canvas.Left="100" Canvas.Top="173.205"/>
+                <src:Hex Canvas.Left="200" Canvas.Top="173.205"/> -->
+
+            </Canvas>
+
+
+        </ScrollViewer>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="1" Margin="105,210,0,0" Click="Button_Click_2"/>
+        <src:MapView Grid.ColumnSpan="2" Margin="-82,24,58,140"/>
 
 
 
