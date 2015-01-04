@@ -5,25 +5,123 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BedBihanGUI" x:Class="BedBihanGUI.MapView" 
              mc:Ignorable="d" 
-         xmlns:src="clr-namespace:BedBihanGUI" Height="120" Width="303.5">
+             xmlns:src="clr-namespace:BedBihanGUI"    >
+
+    <!-- <UniformGrid Rows="5">
+        <UniformGrid Columns="5">
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+        </UniformGrid>
+        <UniformGrid Columns="5">
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+        </UniformGrid>
+        <UniformGrid Columns="5">
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+        </UniformGrid>
+        <UniformGrid Columns="5">
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+            <src:Hex/>
+        </UniformGrid>
+    </UniformGrid> -->
 
 
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.IsSharedSizeScope="True" ShowGridLines="True"   >
+    <!--    xmlns:src="clr-namespace:BedBihanGUI"   VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" > -->
+
+    <Grid  x:Name="BoardGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+
+<!--
         <Grid.RowDefinitions>
-
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition  />
-            <ColumnDefinition  />
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
 
-        </Grid.ColumnDefinitions>
+            <local:Hex Grid.Column="0"/>
+            <local:Hex Grid.Column="1"/>
+            <local:Hex Grid.Column="2"/>
+            <local:Hex Grid.Column="3"/>
+            <local:Hex Grid.Column="4"/>
+
+        </Grid>
+        
+        
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
 
 
-        <src:Hex HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.Column="0"/>
-        <src:Hex HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.Column="1"/>
-        <src:Hex HorizontalAlignment="Center" VerticalAlignment="Center" Grid.RowSpan="3" Grid.Column="2"/>
+            <local:Hex Grid.Column="1"/>
+            <local:Hex Grid.Column="2"/>
+            <local:Hex Grid.Column="3"/>
+            <local:Hex Grid.Column="4"/>
+            <local:Hex Grid.Column="5"/>
+        </Grid>
+
+
 
     </Grid>
+
+
+-->
+    <!--
+     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" >
+            <local:Hex />
+            <local:Hex />
+            <local:Hex />
+            <local:Hex />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Cursor="" Grid.ColumnSpan="2" Margin="51,88,-51,-88" >
+            <src:Hex />
+            <src:Hex />
+            <src:Hex />
+            <src:Hex />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,177,0,-177" Grid.ColumnSpan="2" >
+            <local:Hex />
+            <local:Hex />
+            <local:Hex />
+            <local:Hex />
+        </StackPanel>
+    </Grid>
+
+-->
+
 </UserControl>

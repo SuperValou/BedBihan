@@ -108,3 +108,5 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.baml
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Page1.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\Page1.baml

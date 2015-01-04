@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace BedBihanGUI
 {
     /// <summary>
-    /// Logique d'interaction pour Hex_wood.xaml
+    /// Logique d'interaction pour Hex.xaml
     /// </summary>
     public partial class Hex : UserControl
     {
