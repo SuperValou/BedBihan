@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BedBihan;
 
+
 namespace UnitTests
 {
     [TestClass]
@@ -10,16 +11,17 @@ namespace UnitTests
         [TestMethod]
         public unsafe void TestMapGeneratorAlgo()
         {
-            int** map = WrapperGate.access.mapGenerator(4);
+            int** map;
+            map = WrapperGate.access.mapGenerator(10);
 
             int nb_zero = 0;
             int nb_un = 0;
             int nb_deux = 0;
             int nb_trois = 0;
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 10; i++)
             {
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < 10; j++)
                 {
                     switch (map[i][j])
                     {
@@ -41,10 +43,10 @@ namespace UnitTests
                 }
             }
 
-            Assert.AreEqual(4, nb_un);
-            Assert.AreEqual(4, nb_deux);
-            Assert.AreEqual(4, nb_trois);
-            Assert.AreEqual(4, nb_zero);
+            Assert.AreEqual(25, nb_un);
+            Assert.AreEqual(25, nb_deux);
+            Assert.AreEqual(25, nb_trois);
+            Assert.AreEqual(25, nb_zero);
             
         }
 

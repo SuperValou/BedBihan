@@ -12,32 +12,11 @@
 
 
     <Grid >
-
-        <ScrollViewer HorizontalScrollBarVisibility="Visible"  Height="290" Width="290">
-            <Grid x:Name="grid" Height="464" Width="395"  >
-                <src:MapView x:Name="map" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    >
+        <ScrollViewer HorizontalScrollBarVisibility="Visible">
+            <Grid>
+                <src:MapView x:Name="map"  Margin="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
                 </src:MapView>
-
             </Grid>
-
-
-
-            <!--       
-                                <Canvas x:Name="LayoutRoot" Background="Transparent" Height="294" Width="388">
-                <src:Hex Height="119" Width="103"/>
-                <src:Hex Canvas.Left="100" Canvas.Top="0"/>
-                <src:Hex Canvas.Left="200" Canvas.Top="0"/>
-                <src:Hex Canvas.Left="50" Canvas.Top="86.6025"/>
-                <src:Hex Canvas.Left="150" Canvas.Top="86.6025"/>
-                <src:Hex Canvas.Left="0" Canvas.Top="173.205"/>
-                <src:Hex Canvas.Left="100" Canvas.Top="173.205"/>
-                <src:Hex Canvas.Left="200" Canvas.Top="173.205"/>
-                   </Canvas>
-                
-                -->
-
-
-
 
         </ScrollViewer>
 

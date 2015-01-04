@@ -31,7 +31,9 @@ namespace BedBihanGUI
 
         private void PartieDemo(object sender, RoutedEventArgs e)
         {
+
             parent.MainMenu.Source = new Uri("PageGame.xaml", UriKind.Relative);
+
         }
     }
 }

@@ -16,12 +16,12 @@ namespace Wrapper
 	public:
 		WrapperAlgo()
 		{
-			algo = new Algo(); 
+			algo = new Algo();
 		}
 
 		~WrapperAlgo()
 		{
-			delete algo; 
+			delete algo;
 		}
 
 
@@ -29,7 +29,7 @@ namespace Wrapper
 		 *	wrapped functions
 		 */
 
-		int computeFoo(int x) 
+		int computeFoo(int x)
 		{
 			return algo->computeFoo(x);
 		}

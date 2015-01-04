@@ -28,13 +28,7 @@ namespace BedBihanGUI
 
         }
 
-        public void AddHex(int c, int r)
-        {
-            Hex h = new Hex();
-            Grid.SetColumn(h,c);
-            Grid.SetRow(h, r);
-            this.BoardGrid.Children.Add(h);
-         }
+  
 
         private void Hex_Loaded(object sender, RoutedEventArgs e)
         {

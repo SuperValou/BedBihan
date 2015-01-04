@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BedBihan;
 
 namespace BedBihanGUI
 {
@@ -24,13 +25,42 @@ namespace BedBihanGUI
         {
             InitializeComponent();
         }
+
+        public Coordinates coord
+        {
+            get;
+            set;
+        }
         public void WoodOver(object obj, EventArgs ea)
         {
         }
 
         private void hex_down(object sender, MouseButtonEventArgs e)
         {
-         //   this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/woods.png", UriKind.RelativeOrAbsolute));
+        }
+
+        public void SetWoods()
+        {
+            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/woods.png", UriKind.RelativeOrAbsolute));
+
+        }
+
+        public void SetMountain()
+        {
+            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/mountain.png", UriKind.RelativeOrAbsolute));
+
+        }
+
+        public void SetPlain()
+        {
+            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute));
+
+        }
+
+        public void SetDesert()
+        {
+            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/desert.png", UriKind.RelativeOrAbsolute));
+
         }
 
   

@@ -15,10 +15,10 @@ namespace BedBihan
 
 
 
-        private Board board
+        public Board board
         {
             get;
-            set;
+            protected set;
         }
 
         public int maxTurnNumber

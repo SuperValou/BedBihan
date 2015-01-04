@@ -7,13 +7,14 @@ namespace BedBihan
 {
     public struct Coordinates
     {
-        int x, y;
+        public int x, y;
         public Coordinates(int x, int y) 
         {
             this.x = x;
             this.y = y;
         }
 
+       
         /*
          * return true if the coordinates are adjacent to the current coordinates (hexagonal grid)
          * */

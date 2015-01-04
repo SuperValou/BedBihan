@@ -20,6 +20,8 @@ int Algo::computeFoo(int x)
 
 int** Algo::mapGenerator(const int size)
 {
+	srand((unsigned int)time(NULL));
+
 	int i;
 	int nb_hex = size*size;
 	int nb_hex_by_world[4]; // fix nb_world
@@ -42,7 +44,7 @@ int** Algo::mapGenerator(const int size)
 		random = rand() % nb_world;
 		if (nb_hex_by_world[random] > 0)
 		{
-			map[i/nb_world][i%nb_world] = random;
+			map[i/size][i%size] = random;
 			nb_hex_by_world[random]--;
 			i++;
 		}

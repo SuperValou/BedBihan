@@ -2,14 +2,14 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:BBGUI="clr-namespace:BedBihanGUI"
         Title="BedBihan" Height="700" Width="1000">
-    
-        <Grid>
-            
+
+    <Grid>
+
         <Grid.Background>
             <ImageBrush ImageSource="/textures/background.jpg" TileMode="None" Stretch="Fill"/>
         </Grid.Background>
-            
-        <Grid.RowDefinitions>      
+
+        <Grid.RowDefinitions>
             <RowDefinition Height="37*" />
             <RowDefinition Height="259*" />
             <RowDefinition Height="27*" />
@@ -21,10 +21,9 @@
             <ColumnDefinition Width="43*" />
         </Grid.ColumnDefinitions>
 
-        <!-- <Rectangle Fill="Gray" Name="MaskFont"  Opacity="0.850" Grid.Column="1" Grid.Row="1"></Rectangle> -->
-           
-        
-            <Grid Grid.Column="1" Grid.Row="0">
+
+
+        <Grid Grid.Column="1" Grid.Row="0">
             <Viewbox StretchDirection="Both" Stretch="Uniform">
                 <TextBlock Grid.Column="1" 
                                Grid.Row="0" 
@@ -45,17 +44,17 @@
 
 
         </Grid>
-        
 
-            
-         <Grid Grid.Column="1" Grid.Row="1">
+
+
+        <Grid Grid.Column="1" Grid.Row="1">
             <Viewbox StretchDirection="Both" Stretch="Uniform">
                 <Frame Name="MainMenu" NavigationUIVisibility="Hidden"/>
             </Viewbox>
         </Grid>
-     </Grid>
+    </Grid>
 
-    
-   
+
+
 
 </Window>

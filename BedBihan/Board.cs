@@ -12,6 +12,12 @@ namespace BedBihan
             get;
             set;
         }
+
+        public int b_size
+        {
+            get;
+            set;
+        }
         
 
         public StrategyBoard strategy
@@ -29,6 +35,7 @@ namespace BedBihan
         public void BuildBoard()
         {
             grid = strategy.LaunchStrategy();
+            b_size = strategy.getSize();
         }
 
    

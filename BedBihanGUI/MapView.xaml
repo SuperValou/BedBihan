@@ -40,10 +40,10 @@
 
 
     <!--    xmlns:src="clr-namespace:BedBihanGUI"   VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" > -->
-
-    <Grid  x:Name="BoardGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-
-<!--
+    
+    <Grid  x:Name="BoardGrid" />
+  
+    <!--
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>

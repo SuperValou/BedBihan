@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Runtime.InteropServices;
 namespace BedBihan
 {
     public abstract class StrategyBoard
@@ -16,8 +16,8 @@ namespace BedBihan
             hexFactory = new HexagonFactory();
 
 
-            int** mapInt; // IMPORTANT ! INSTANCE MEMORY BEFORE ACCESS WRAPPER !
-                           // ONE FUCKING HOUR LOST FOR THIS SHIT
+            int** mapInt;
+                           
             mapInt = WrapperGate.access.mapGenerator(size);
             Hexagon[,] map = new Hexagon[size, size];
 
@@ -25,7 +25,7 @@ namespace BedBihan
              {
                 for(int j =0; j < size; j++)
                 {
-                    switch(mapInt[i][j]){
+                    switch( mapInt[i][j] ){
                         case (int) Field.Desert:
                             map[i,j] = hexFactory.getHexagons("Desert");
                             break;
@@ -44,7 +44,13 @@ namespace BedBihan
                     }
                 }
             }
+
+            
             return map;
+        }
+
+        public int getSize(){
+            return size;
         }
 
 
