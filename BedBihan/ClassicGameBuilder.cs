@@ -9,7 +9,7 @@ namespace BedBihan
     {
         public override void buildBoard()
         {
-            StrategyBoardSmall sbd = new StrategyBoardSmall();
+            StrategyBoardClassic sbd = new StrategyBoardClassic();
             Board gameBoard = new Board(sbd);
             gameBoard.BuildBoard();
             this.game.setBoard(gameBoard);

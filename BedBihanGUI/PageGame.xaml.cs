@@ -70,17 +70,25 @@ namespace BedBihanGUI
 
            
            int taille = this.game.board.b_size;
+           
             
 
             for (int nbR = 0; nbR < taille; nbR++)
             {
-                this.map.BoardGrid.RowDefinitions.Add(new RowDefinition());
+                this.map.RowDefinitions.Add(new RowDefinition());
                 Grid row = new Grid();
-                SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromRgb(111, 111, 111));
+                row.HorizontalAlignment = HorizontalAlignment.Stretch;
+                row.VerticalAlignment = VerticalAlignment.Stretch;
+               // SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromRgb(111, 111, 111));
+                Rectangle Rempty = new Rectangle();
+                Rempty.Width = 50;
+                Rempty.Height = 50;
+
+                //Rempty.MinHeight = 1;
+                //Rempty.MinWidth = 1;
 
                 if (nbR % 2 == 0)
                 {
-
                     for (int nbC = 0; nbC < taille; nbC++)
                     {
                         row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) });
@@ -93,12 +101,18 @@ namespace BedBihanGUI
 
                     row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
                   
+                    Grid.SetColumn(Rempty, taille);
+                    row.Children.Add(Rempty);
             
                 }
 
                 else
                 {
                     row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+                //    r.Fill = mySolidColorBrush;
+                    Grid.SetColumn(Rempty, 0);
+
+                    row.Children.Add(Rempty);
                    
 
                     for (int nbC = 1; nbC < taille + 1; nbC++)
@@ -113,14 +127,12 @@ namespace BedBihanGUI
                 }
 
                 Grid.SetRow(row, nbR);
-                this.map.BoardGrid.Children.Add(row);
+                this.map.Children.Add(row);
 
 
             }
 
-            Grid LastRow = new Grid();
-            Grid.SetRow(LastRow, taille);
-            //this.map.BoardGrid.Children.Add(LastRow);
+           
 
             initHexImg();
         }
@@ -130,13 +142,17 @@ namespace BedBihanGUI
         {
             Hexagon[,] board = this.game.board.grid;
 
-            foreach(Grid row in this.map.BoardGrid.Children)
+            foreach(Grid row in this.map.Children)
             {
-                foreach (Hex h in row.Children)
+                foreach (Object o in row.Children)
                 {
-                    int x = h.coord.x;
-                    int y = h.coord.y;
-                    PrintFondHex(board[x, y], h);
+                    if (o is Hex)
+                    {
+                        Hex h = (Hex)o;
+                        int x = h.coord.x;
+                        int y = h.coord.y;
+                        PrintFondHex(board[x, y], h);
+                    }
                 }
             }
 

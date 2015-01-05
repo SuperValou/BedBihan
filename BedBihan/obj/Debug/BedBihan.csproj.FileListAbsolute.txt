@@ -8,11 +8,6 @@ C:\Users\Valentin\BedBihan\BedBihan\obj\Debug\BedBihan.dll
 C:\Users\Valentin\BedBihan\BedBihan\bin\Debug\BedBihan.dll
 C:\Users\Valentin\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
 C:\Users\Valentin\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
-E:\4INFO\Repos\Bedbihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
-E:\4INFO\Repos\Bedbihan\BedBihan\obj\Debug\BedBihan.dll
-E:\4INFO\Repos\Bedbihan\BedBihan\obj\Debug\BedBihan.pdb
-E:\4INFO\Repos\Bedbihan\BedBihan\bin\Debug\BedBihan.dll
-E:\4INFO\Repos\Bedbihan\BedBihan\bin\Debug\BedBihan.pdb
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.dll
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
@@ -36,5 +31,10 @@ C:\Users\conicole\Source\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.dll
 C:\Users\conicole\Source\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
+E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.dll
+E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\BedBihan.pdb
 E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.dll
 E:\4INFO\Repos\BedBihan\BedBihan\bin\Debug\Wrapper.pdb
+E:\4INFO\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.csprojResolveAssemblyReference.cache
+E:\4INFO\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.dll
+E:\4INFO\Repos\BedBihan\BedBihan\obj\Debug\BedBihan.pdb
