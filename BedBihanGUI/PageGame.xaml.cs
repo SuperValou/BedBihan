@@ -35,7 +35,7 @@ namespace BedBihanGUI
             GameCreator gc = new GameCreator();
             gc.setPeopleJ1("elf");
             gc.setPeopleJ2("human");
-            GameBuilder gb = new SmallGameBuilder();
+            GameBuilder gb = new DemoGameBuilder();
             gc.gameBuilder = gb;
             gc.createGame();
             game = gc.getGame();
