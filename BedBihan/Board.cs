@@ -13,6 +13,8 @@ namespace BedBihan
             set;
         }
 
+        
+
         public int b_size
         {
             get;

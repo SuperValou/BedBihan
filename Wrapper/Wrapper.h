@@ -39,6 +39,11 @@ namespace Wrapper
 			return algo->mapGenerator(size);
 		}
 
+		int** getStartingPositions(int numberOfPlayers, int mapSize)
+		{
+			return algo->getStartingPositions(numberOfPlayers, mapSize);
+		}
+
 		int numberOfConfrontations(int attackerHP, int defenderHP)
 		{
 			return algo->numberOfConfrontations(attackerHP, defenderHP);

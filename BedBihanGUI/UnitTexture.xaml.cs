@@ -25,12 +25,18 @@ namespace BedBihanGUI
             InitializeComponent();
         }
 
+        /**
+         * \brief initialize a unit texture 
+         */
         public UnitTexture(BedBihan.Faction faction)
         {
             InitializeComponent();
             this.background.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/"+faction+".png", UriKind.RelativeOrAbsolute));
         }
 
+        /**
+         * \brief do something when you click on the unit
+         */
         private void unitOnClick(object sender, MouseButtonEventArgs e)
         {
             MessageBox.Show("ta cliké sur 1 unité bravo sal batar");

@@ -48,7 +48,7 @@ namespace BedBihan
         public Coordinates coordinates
         {
             get;
-            private set;
+            set;
         }
 
 

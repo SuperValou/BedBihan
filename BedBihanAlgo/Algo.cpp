@@ -53,6 +53,34 @@ int** Algo::mapGenerator(const int size)
 	return map;
 }
 
+/*
+*  Generate random starting position for the oppent troops.
+*/
+int** Algo::getStartingPositions(const int numberOfOpponent, const int sizeOfMap)
+{
+	srand((unsigned int)time(NULL));
+	int** map = (int **)malloc(numberOfOpponent * sizeof(int *));
+	int i;
+	int j;
+	for (i = 0; i < numberOfOpponent; i++)
+	{
+		bool startingPositionAlreadyUsed = false;
+		do
+		{
+			map[i] = (int *)malloc(2 * sizeof(int));
+			map[i][0] = rand() % sizeOfMap;
+			map[i][1] = rand() % sizeOfMap;
+
+			// check if the random generated position is not already used
+			for (j = 0; (j < i) && !startingPositionAlreadyUsed; j++)
+			{
+				startingPositionAlreadyUsed = (map[j][0] == map[i][0] && map[j][1] == map[i][1]);
+			}
+		} while (startingPositionAlreadyUsed);
+		
+	}
+	return map;
+}
 
 
 /*

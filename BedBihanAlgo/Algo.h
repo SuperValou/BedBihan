@@ -1,8 +1,8 @@
 #pragma once
 #include <stdlib.h> 
 #include <time.h>
-#include <algorithm>   
-
+#include <algorithm>
+#include <vector>
 /**
 	Algo class contains the c++ calculation fonctions (algorithme of battle and map building for example)
 */
@@ -22,6 +22,7 @@ public:
 	double chanceOfVictory(const int attackerAtt, const int defenderDef);
 	double godDecision();
 	int damagesInflicted(int attack, int currentHP, int maxHP);
+	int** getStartingPositions(const int playerNumber, const int sizeOfMap);
 };
 
 

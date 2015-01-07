@@ -31,7 +31,7 @@ namespace BedBihanGUI
             InitializeComponent();
             MainWindow parent = (Application.Current.MainWindow as MainWindow);
 
-            // création du game pour tester, a déplacer plus tard.
+            // création du game pour tester, à déplacer plus tard.
             GameCreator gc = new GameCreator();
             gc.setPeopleJ1("elf");
             gc.setPeopleJ2("human");
@@ -46,48 +46,32 @@ namespace BedBihanGUI
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             PrintMap();
+            placeTroops();
             displayUnits();
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //this.grid.Height = Double.NaN; // set to "auto" 
+        
 
-        }
-
-
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-        /*    UIElementCollection lcase = this.LayoutRoot.Children;
-            foreach(Hex tile in lcase){
-                tile.Height = 20;*/
-            }
-
-     
+        /**
+         * \brief display the map (all hexagons)
+         */
         private void PrintMap()
         {
-
-           
            int taille = this.game.board.b_size;
            
-            
-
             for (int nbR = 0; nbR < taille; nbR++)
             {
                 this.map.RowDefinitions.Add(new RowDefinition());
                 Grid row = new Grid();
                 row.HorizontalAlignment = HorizontalAlignment.Stretch;
                 row.VerticalAlignment = VerticalAlignment.Stretch;
-               // SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromRgb(111, 111, 111));
+              
                 Rectangle Rempty = new Rectangle();
                 Rempty.Width = 50;
                 Rempty.Height = 50;
 
-                //Rempty.MinHeight = 1;
-                //Rempty.MinWidth = 1;
-
+ 
                 if (nbR % 2 == 0)
                 {
                     for (int nbC = 0; nbC < taille; nbC++)
@@ -138,7 +122,9 @@ namespace BedBihanGUI
             initHexImg();
         }
 
-
+        /**
+         * \brief display an hexagon
+         */
         private void initHexImg()
         {
             Hexagon[,] board = this.game.board.grid;
@@ -159,6 +145,9 @@ namespace BedBihanGUI
 
         }
 
+        /**
+         * \brief set hexagon background
+         */
         private void PrintFondHex(Hexagon hexLog, Hex hexPhys)
         {
             if (hexLog is Woods)
@@ -180,6 +169,26 @@ namespace BedBihanGUI
 
         }
 
+
+        /**
+        * \brief set the position of the opposing troops
+        */
+        private unsafe void placeTroops()
+        {
+            
+            int** positions = WrapperGate.access.getStartingPositions(game.list_players.Count, game.board.b_size);
+            for (int i = 0; i < game.list_players.Count;i++ )
+            {
+                Coordinates coord = new Coordinates(positions[i][0], positions[i][1]);
+
+                for (int j = 0; j < this.game.list_players[i].faction.troops.Length; j++)
+                {
+                    this.game.list_players[i].faction.troops[j].coordinates = coord;
+                }
+            }
+        }
+
+
         /**
          * \brief display all units on the map
          */
@@ -194,13 +203,21 @@ namespace BedBihanGUI
             }
         }
 
+       
+
+
         /**
          * \brief display a unit on the map
          */
         private void displayUnitOnMap(Unit unit)
         {
-           // UnitTexture unitTexture = new UnitTexture(unit.faction);
+            UnitTexture unitTexture = new UnitTexture(unit.faction);
+            this.map.Children.Add(unitTexture);
+            
+            // this.map.Children.Cast<UIElement>().First(e => Grid.GetRow(e) == unit.coordinates.x && Grid.GetColumn(e) == unit.coordinates.y);
         }
+
+
 
 
     }

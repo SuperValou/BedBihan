@@ -40,12 +40,17 @@
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="coordinates" />
       <Property Name="faction" />
+      <Property Name="coordinates" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Player">
     <Position X="26.5" Y="3.25" Width="2.25" />
+    <AssociationLine Name="faction" Type="BedBihan.AbstractFaction">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="1.079" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAEgAAAA=</HashCode>
       <FileName>Player.cs</FileName>
@@ -95,6 +100,12 @@
       <HashCode>AAIAAAgAAEAEAAAACAAQACgAARAAABAAIBAAAAAEAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="board" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="list_players" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BedBihan.StrategyBoardDemo">
     <Position X="7.5" Y="6" Width="1.75" />
