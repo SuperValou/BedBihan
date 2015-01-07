@@ -27,11 +27,13 @@ namespace BedBihan
         public Human() : base()
         {
             setHumanStandartCostOfMovement();
+            faction = Faction.human;
         }
 
         public Human(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
         {
             setHumanStandartCostOfMovement();
+            faction = Faction.human;
         }
 
 

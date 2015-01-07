@@ -14,10 +14,12 @@ namespace BedBihan
         public Korrigan() : base()
         {
             setKorriganStandartCostOfMovement();
+            faction = Faction.korrigan;
         }
         public Korrigan(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
         {
             setKorriganStandartCostOfMovement();
+            faction = Faction.korrigan;
         }
 
        

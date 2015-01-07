@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class HumanFaction : Faction
+    public class HumanFaction : AbstractFaction
     {
         public HumanFaction(int size): base(size)
         {

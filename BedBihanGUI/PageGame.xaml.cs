@@ -46,6 +46,7 @@ namespace BedBihanGUI
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             PrintMap();
+            displayUnits();
         }
 
 
@@ -179,8 +180,27 @@ namespace BedBihanGUI
 
         }
 
+        /**
+         * \brief display all units on the map
+         */
+        private void displayUnits()
+        {
+            foreach (Player player in this.game.list_players)
+            {
+                foreach (Unit unit in player.faction.troops)
+                {
+                    displayUnitOnMap(unit);
+                }
+            }
+        }
 
-
+        /**
+         * \brief display a unit on the map
+         */
+        private void displayUnitOnMap(Unit unit)
+        {
+           // UnitTexture unitTexture = new UnitTexture(unit.faction);
+        }
 
 
     }

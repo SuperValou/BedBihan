@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BedBihan.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="Faction.cs" />
     <Compile Include="StrategyBoardClassic.cs" />
     <Compile Include="ClassicGameBuilder.cs" />
     <Compile Include="Coordinates.cs" />
@@ -53,7 +54,7 @@
     <Compile Include="KorriganFaction.cs" />
     <Compile Include="Elf.cs" />
     <Compile Include="ElfFaction.cs" />
-    <Compile Include="Faction.cs" />
+    <Compile Include="AbstractFaction.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameBuilder.cs" />
@@ -64,7 +65,6 @@
     <Compile Include="NewGameBuilder.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="HumanFaction.cs" />
-    <Compile Include="People.cs" />
     <Compile Include="Plain.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

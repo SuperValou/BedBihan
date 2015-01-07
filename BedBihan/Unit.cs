@@ -7,11 +7,7 @@ namespace BedBihan
 {
     public abstract class Unit
     {
-        public People people
-        {
-            get;
-            private set;
-        }
+       
         public int maxHP
         {
             get;
@@ -32,6 +28,13 @@ namespace BedBihan
             get;
             private set;
         }
+
+        public Faction faction
+        {
+            get;
+            set;
+        }
+
 
         protected float[] costOfMovement;
 
@@ -195,6 +198,8 @@ namespace BedBihan
         {
             return costOfMovement[(int) field];
         }
+
+        
 
 
     }

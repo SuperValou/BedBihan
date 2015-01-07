@@ -13,21 +13,21 @@
     <Position X="30.59" Y="12.991" Height="0.322" Width="0.801" />
   </Comment>
   <Class Name="BedBihan.Elf">
-    <Position X="25" Y="15" Width="2.25" />
+    <Position X="25" Y="15.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Human">
-    <Position X="29.5" Y="15" Width="2.25" />
+    <Position X="29.5" Y="15.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAgAAAAAAA=</HashCode>
       <FileName>Human.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BedBihan.Korrigan">
-    <Position X="27.25" Y="15" Width="2.25" />
+    <Position X="27.25" Y="15.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Korrigan.cs</FileName>
@@ -35,15 +35,13 @@
   </Class>
   <Class Name="BedBihan.Unit">
     <Position X="27.25" Y="10.25" Width="2.75" />
-    <Members>
-      <Property Name="people" Hidden="true" />
-    </Members>
     <TypeIdentifier>
-      <HashCode>ASAAgAAAIAAQAAAAAAAgAGCAABAAAACAAAAAAGgQAAI=</HashCode>
+      <HashCode>ASAAAAAAIAAQAAAAAAAgAGCAABAAAACAAAAAAGgQAAI=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="coordinates" />
+      <Property Name="faction" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BedBihan.Player">
@@ -151,11 +149,11 @@
       <FileName>Hexagon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="BedBihan.Faction">
+  <Class Name="BedBihan.AbstractFaction">
     <Position X="26.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
-      <FileName>Faction.cs</FileName>
+      <FileName>AbstractFaction.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="troops" />
@@ -216,7 +214,7 @@
   <Class Name="BedBihan.Board">
     <Position X="11" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>EEAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Board.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -248,7 +246,7 @@
   <Class Name="BedBihan.StrategyBoard" Collapsed="true">
     <Position X="14.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAEAAAAIAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
       <FileName>StrategyBoard.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -262,7 +260,7 @@
   <Struct Name="BedBihan.Coordinates">
     <Position X="24.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
       <FileName>Coordinates.cs</FileName>
     </TypeIdentifier>
   </Struct>
@@ -271,6 +269,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAgAAAAAgAAA=</HashCode>
       <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BedBihan.Faction">
+    <Position X="24.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Faction.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

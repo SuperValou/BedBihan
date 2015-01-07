@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BedBihan
 {
-    public class KorriganFaction : Faction
+    public class KorriganFaction : AbstractFaction
     {
 
         public KorriganFaction(int size) : base (size)

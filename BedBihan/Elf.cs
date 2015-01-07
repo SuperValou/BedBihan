@@ -15,10 +15,12 @@ namespace BedBihan
         public Elf() : base()
         {
             setElfStandartCostOfMovement();
+            faction = Faction.elf;
         }
         public Elf(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
         {
             setElfStandartCostOfMovement();
+            faction = Faction.elf;
         }
 
         

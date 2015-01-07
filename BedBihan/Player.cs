@@ -30,7 +30,7 @@ namespace BedBihan
             set;
         }
 
-        public Faction faction
+        public AbstractFaction faction
         {
             get;
             set;

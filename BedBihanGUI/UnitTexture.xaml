@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="BedBihanGUI.UnitTexture"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Polygon x:Name="UnitTex" Stroke="Black" Stretch="Uniform" MouseDown="unitOnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,-29,0,0"  >
+            <Polygon.Points>
+                <PointCollection>
+                    <Point X="50" Y="0" />
+                    <Point X="100" Y="28.8675" />
+                    <Point X="100" Y="86.6025" />
+                    <Point X="50" Y="115.47" />
+                    <Point X="0" Y="86.6025" />
+                    <Point X="0" Y="28.8675" />
+                </PointCollection>
+            </Polygon.Points>
+            <Polygon.Fill>
+                <ImageBrush x:Name="background" ImageSource="textures/korrigan.png" Stretch="Uniform"/>
+            </Polygon.Fill>
+        </Polygon>
+    </Grid>
+</UserControl>
