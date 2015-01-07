@@ -21,7 +21,10 @@ namespace BedBihanGUI
     public partial class MainMenu : Page
     {
         private MainWindow parent;
-        
+
+
+         
+
         public MainMenu()
         {
             InitializeComponent();
@@ -29,11 +32,24 @@ namespace BedBihanGUI
 
         }
 
-        private void PartieDemo(object sender, RoutedEventArgs e)
+        private void LunchGame(object sender, RoutedEventArgs e)
         {
 
             parent.MainMenu.Source = new Uri("PageGame.xaml", UriKind.Relative);
+             
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+          //  MessageBoxResult result = MessageBox.Show(Tbp1.Text);   
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
+
+     
     }
 }

@@ -4,10 +4,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="500" d:DesignWidth="400"
 	Title="MainMenu">
 
-    <Grid>
+    <!--<Grid>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -15,24 +15,42 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="72"/>
             <RowDefinition />
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>-->
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Button Click="PartieDemo" Margin="69,112,68,58" Grid.ColumnSpan="3">Lancer une nouvelle partie</Button>
-        </Grid>
+    <StackPanel Margin="80,40">
+       
+        
+        <!--Player1-->
 
+        <TextBox x:Name="NamePlayer1"  Height="23" TextWrapping="Wrap" Text="{Binding Path=NamePlayer1, Mode=TwoWay}"/>
+        <ComboBox x:Name="RacePlayer1">
+            <ComboBoxItem IsSelected="True">Elf</ComboBoxItem>
+            <ComboBoxItem>Human</ComboBoxItem>
+            <ComboBoxItem>Korrigan</ComboBoxItem>
+        </ComboBox>
 
+        <!--Player 2-->
 
+        <TextBox x:Name="NamePlayer2" Height="23" TextWrapping="Wrap" Text="Player2" Margin="0,30,0,0"/>
+        <ComboBox x:Name="RacePlayer2">
+            <ComboBoxItem IsSelected="True">Elf</ComboBoxItem>
+            <ComboBoxItem>Human</ComboBoxItem>
+            <ComboBoxItem>Korrigan</ComboBoxItem>
+        </ComboBox>
 
-    </Grid>
+        <!--Game-->
+        <ComboBox x:Name="TypeOfGame" Margin="0,30,0,0">
+            <ComboBoxItem IsSelected="True">Demo Game</ComboBoxItem>
+            <ComboBoxItem>Small Game</ComboBoxItem>
+            <ComboBoxItem>Classic Game</ComboBoxItem>
+        </ComboBox>
+        
+        <Button Click="LunchGame" Margin="0,30,0,0">new game</Button>
+     
+    </StackPanel>
+               
+
+    <!--</Grid>-->
 
 
 

@@ -77,7 +77,6 @@ C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_Mark
 C:\Users\vesmieu\BedBihan_save_03_12_2014\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\vesmieu\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
-C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI_MarkupCompile.lref
 E:\4INFO\Repos\BedBihan\BedBihanGUI\bin\Debug\MainWindow.xaml.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\bin\Debug\BedBihanGUI.exe.config
@@ -110,3 +109,13 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.Properties.Resources.r
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.csproj.GenerateResource.Cache
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.exe
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\BedBihanGUI.pdb
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\bin\Debug\MainWindow.xaml.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.baml
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MainMenu.baml
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\App.baml
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\Hex.g.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MainMenu.g.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.g.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.g.cs
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.baml
+C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.baml
