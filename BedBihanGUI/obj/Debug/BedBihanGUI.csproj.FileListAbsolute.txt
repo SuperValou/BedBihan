@@ -118,3 +118,5 @@ C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\MapView.baml
 C:\Users\conicole\Source\Repos\BedBihan\BedBihanGUI\obj\Debug\PageGame.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitTexture.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitTexture.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\score.baml
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\score.g.cs

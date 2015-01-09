@@ -47,6 +47,8 @@ namespace BedBihanGUI
         {
         }
 
+
+
         public void SetWoods()
         {
             this.fond.ImageSource = imgWoods;
@@ -69,6 +71,16 @@ namespace BedBihanGUI
         {
             this.fond.ImageSource = imgDesert;
 
+        }
+
+        private void mouseEnter(object sender, MouseEventArgs e)
+        {
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.White);
+        }
+
+        private void PolygonTile_MouseLeave(object sender, MouseEventArgs e)
+        {
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
         }
 
   

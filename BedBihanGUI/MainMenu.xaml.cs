@@ -22,9 +22,6 @@ namespace BedBihanGUI
     {
         private MainWindow parent;
 
-
-         
-
         public MainMenu()
         {
             InitializeComponent();
@@ -57,10 +54,19 @@ namespace BedBihanGUI
             gc.gameBuilder = gb;
             gc.createGame();
             parent.game = gc.getGame();
-            
+
+            parent.game.list_players[0].name = NamePlayer1.Text;
+            parent.game.list_players[1].name = NamePlayer2.Text;
+
             PageGame pg = new PageGame();
+            score scJ1 = new score(parent.game.list_players[0]);
+            score scJ2 = new score(parent.game.list_players[1]);
             parent.center.Navigate(pg);
-             
+            parent.ScoreJ1.Navigate(scJ1);
+            parent.ScoreJ2.Navigate(scJ2);
+
+
+
         }
 
         // TEST BUTTON 

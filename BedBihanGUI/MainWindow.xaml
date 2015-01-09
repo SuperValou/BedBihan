@@ -41,8 +41,6 @@
                                Foreground="White"/>
 
             </Viewbox>
-
-
         </Grid>
 
 
@@ -52,7 +50,41 @@
                 <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
             </Viewbox>
         </Grid>
+        
+        
+        <!-- Score Displays-->
+        <Grid Grid.Row="1" Margin="5,0,25,0">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Viewbox StretchDirection="Both" Stretch="Uniform">
+                <Frame x:Name="ScoreJ1"></Frame>
+            </Viewbox>
+           
+            
+        </Grid>
+
+
+        <Grid Grid.Row="1" Grid.Column="2" Margin="25,0,5,0">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Viewbox StretchDirection="Both" Stretch="Uniform">
+                <Frame x:Name="ScoreJ2"></Frame>
+            </Viewbox>
+         
+            
+        </Grid>
+
     </Grid>
+    
+    
+    
 
 
 

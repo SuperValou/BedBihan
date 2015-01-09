@@ -24,6 +24,14 @@ namespace BedBihan
             } // add error for default ?
         }
 
+
+        public string name
+        {
+            get;
+            set;
+        }
+
+
         public int points
         {
             get;

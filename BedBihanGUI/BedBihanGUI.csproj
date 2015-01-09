@@ -75,6 +75,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="score.xaml.cs">
+      <DependentUpon>score.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UnitTexture.xaml.cs">
       <DependentUpon>UnitTexture.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="score.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,6 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="textures\human.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="textures\parchemin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

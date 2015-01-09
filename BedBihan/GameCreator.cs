@@ -11,6 +11,7 @@ namespace BedBihan
         private string pj1;
         private string pj2;
 
+
         public GameBuilder gameBuilder
         {
             get;
@@ -31,6 +32,8 @@ namespace BedBihan
         {
             pj2 = pj;
         }
+
+     
 
         public void createGame()
         {

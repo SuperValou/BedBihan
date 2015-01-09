@@ -73,6 +73,16 @@ namespace BedBihanGUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap parchemin {
+            get {
+                object obj = ResourceManager.GetObject("parchemin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap woods {
             get {
                 object obj = ResourceManager.GetObject("woods", resourceCulture);

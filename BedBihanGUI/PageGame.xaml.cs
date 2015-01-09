@@ -60,7 +60,7 @@ namespace BedBihanGUI
                 row.VerticalAlignment = VerticalAlignment.Stretch;
               
                 Rectangle Rempty = new Rectangle();
-                Rempty.Width = 50;
+                Rempty.Width = 51;
                 Rempty.Height = 50;
 
  
