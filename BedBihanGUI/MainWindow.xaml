@@ -16,9 +16,9 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="38*" />
-            <ColumnDefinition Width="83*" />
-            <ColumnDefinition Width="43*" />
+            <ColumnDefinition Width="262*" />
+            <ColumnDefinition Width="469*" />
+            <ColumnDefinition Width="261*" />
         </Grid.ColumnDefinitions>
 
 
@@ -49,7 +49,7 @@
 
         <Grid Grid.Column="1" Grid.Row="1">
             <Viewbox StretchDirection="Both" Stretch="Uniform">
-                <Frame Name="MainMenu" NavigationUIVisibility="Hidden"/>
+                <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
             </Viewbox>
         </Grid>
     </Grid>

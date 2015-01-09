@@ -21,6 +21,14 @@ namespace BedBihanGUI
     /// </summary>
     public partial class Hex : UserControl
     {
+
+        static BitmapImage imgWoods = new BitmapImage(new Uri("pack://application:,,,/textures/woods.png", UriKind.RelativeOrAbsolute));
+        static BitmapImage imgMountains = new BitmapImage(new Uri("pack://application:,,,/textures/mountain.png", UriKind.RelativeOrAbsolute));
+        static BitmapImage imgPlain = new BitmapImage(new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute));
+        static BitmapImage imgDesert = new BitmapImage(new Uri("pack://application:,,,/textures/desert.png", UriKind.RelativeOrAbsolute));
+
+
+
         public Hex()
         {
             InitializeComponent();
@@ -41,25 +49,25 @@ namespace BedBihanGUI
 
         public void SetWoods()
         {
-            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/woods.png", UriKind.RelativeOrAbsolute));
+            this.fond.ImageSource = imgWoods;
 
         }
 
         public void SetMountain()
         {
-            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/mountain.png", UriKind.RelativeOrAbsolute));
+            this.fond.ImageSource = imgMountains;
 
         }
 
         public void SetPlain()
         {
-            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute));
+            this.fond.ImageSource = imgPlain;
 
         }
 
         public void SetDesert()
         {
-            this.fond.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/desert.png", UriKind.RelativeOrAbsolute));
+            this.fond.ImageSource = imgDesert;
 
         }
 

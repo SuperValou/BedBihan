@@ -22,20 +22,20 @@
         
         <!--Player1-->
 
-        <TextBox x:Name="NamePlayer1"  Height="23" TextWrapping="Wrap" Text="{Binding Path=NamePlayer1, Mode=TwoWay}"/>
+        <TextBox x:Name="NamePlayer1"  Height="23" TextWrapping="Wrap" Text="Player1"/>
         <ComboBox x:Name="RacePlayer1">
-            <ComboBoxItem IsSelected="True">Elf</ComboBoxItem>
-            <ComboBoxItem>Human</ComboBoxItem>
-            <ComboBoxItem>Korrigan</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">elf</ComboBoxItem>
+            <ComboBoxItem>human</ComboBoxItem>
+            <ComboBoxItem>korrigan</ComboBoxItem>
         </ComboBox>
 
         <!--Player 2-->
 
         <TextBox x:Name="NamePlayer2" Height="23" TextWrapping="Wrap" Text="Player2" Margin="0,30,0,0"/>
         <ComboBox x:Name="RacePlayer2">
-            <ComboBoxItem IsSelected="True">Elf</ComboBoxItem>
-            <ComboBoxItem>Human</ComboBoxItem>
-            <ComboBoxItem>Korrigan</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">elf</ComboBoxItem>
+            <ComboBoxItem>human</ComboBoxItem>
+            <ComboBoxItem>korrigan</ComboBoxItem>
         </ComboBox>
 
         <!--Game-->
@@ -46,6 +46,7 @@
         </ComboBox>
         
         <Button Click="LunchGame" Margin="0,30,0,0">new game</Button>
+        <Button Click="Button_Click" Margin="0,30,0,0">new caca</Button>
      
     </StackPanel>
                

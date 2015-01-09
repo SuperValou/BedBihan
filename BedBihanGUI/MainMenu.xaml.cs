@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using BedBihan;
 namespace BedBihanGUI
 {
     /// <summary>
@@ -34,15 +34,40 @@ namespace BedBihanGUI
 
         private void LunchGame(object sender, RoutedEventArgs e)
         {
-
-            parent.MainMenu.Source = new Uri("PageGame.xaml", UriKind.Relative);
+            GameCreator gc = new GameCreator();
+            gc.setPeopleJ1(RacePlayer1.Text);
+            gc.setPeopleJ2(RacePlayer2.Text);
+            GameBuilder gb;
+            switch (TypeOfGame.Text)
+            {
+                case "Demo Game":
+                    gb = new DemoGameBuilder();
+                    break;
+                case "Small Game":
+                    gb = new SmallGameBuilder();
+                    break;
+                case "Classic Game":
+                    gb = new ClassicGameBuilder();
+                    break;
+                default:
+                    gb = new DemoGameBuilder();
+                    break;
+            }
+            
+            gc.gameBuilder = gb;
+            gc.createGame();
+            parent.game = gc.getGame();
+            
+            PageGame pg = new PageGame();
+            parent.center.Navigate(pg);
              
         }
 
+        // TEST BUTTON 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-          //  MessageBoxResult result = MessageBox.Show(Tbp1.Text);   
+
+            MessageBoxResult result = MessageBox.Show(TypeOfGame.Text);   
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -50,6 +75,9 @@ namespace BedBihanGUI
 
         }
 
+        public string getKindOfGame(){
+            return TypeOfGame.Text;
+        }
      
     }
 }

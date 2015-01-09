@@ -31,15 +31,7 @@ namespace BedBihanGUI
             InitializeComponent();
             MainWindow parent = (Application.Current.MainWindow as MainWindow);
 
-            // création du game pour tester, à déplacer plus tard.
-            GameCreator gc = new GameCreator();
-            gc.setPeopleJ1("elf");
-            gc.setPeopleJ2("human");
-            GameBuilder gb = new DemoGameBuilder();
-            gc.gameBuilder = gb;
-            gc.createGame();
-            game = gc.getGame();
-            
+            game = parent.game;
         }
 
 

@@ -21,10 +21,12 @@ namespace BedBihanGUI
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public Game game;
         public MainWindow()
         {
             InitializeComponent();
-            this.MainMenu.Source = new Uri("MainMenu.xaml", UriKind.Relative);
+            
         }
 
 
