@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BedBihan;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,20 @@ namespace BedBihanGUI
     /// </summary>
     public partial class UnitTexture : UserControl
     {
+        // coordinates of the texture
+        public Coordinates coordinates
+        {
+            get;
+            set;
+        }
+
+        // faction of the texture
+        public Faction faction
+        {
+            get;
+            set;
+        }
+
         public UnitTexture()
         {
             InitializeComponent();
@@ -28,10 +43,13 @@ namespace BedBihanGUI
         /**
          * \brief initialize a unit texture 
          */
-        public UnitTexture(BedBihan.Faction faction)
+        public UnitTexture(BedBihan.Faction faction,Coordinates coord)
         {
             InitializeComponent();
+            this.faction = faction;
+            this.coordinates = coord;
             this.background.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/"+faction+".png", UriKind.RelativeOrAbsolute));
+
         }
 
         /**
@@ -39,7 +57,7 @@ namespace BedBihanGUI
          */
         private void unitOnClick(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("ta cliké sur 1 unité bravo sal batar");
+            MessageBox.Show("Selected : "+this.faction+" unit at position ("+this.coordinates.x+","+this.coordinates.y+").");
         }
     }
 }

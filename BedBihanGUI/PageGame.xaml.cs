@@ -199,13 +199,28 @@ namespace BedBihanGUI
 
 
         /**
-         * \brief display a unit on the map
+         * \brief display a unit on the map (i'm working on it)
          */
         private void displayUnitOnMap(Unit unit)
         {
-            UnitTexture unitTexture = new UnitTexture(unit.faction);
-            this.map.Children.Add(unitTexture);
-            
+            return; // i'm working on this function
+            UnitTexture unitTexture = new UnitTexture(unit.faction,unit.coordinates);
+            int i = 0;
+            int j = 0;
+
+            foreach (Grid row in this.map.Children)
+            {
+                if (i != unit.coordinates.x)
+                {
+                    i++;
+                }
+                else
+                {
+                    //row.Children.Add(unitTexture);
+                    return;
+                }
+
+            }
             // this.map.Children.Cast<UIElement>().First(e => Grid.GetRow(e) == unit.coordinates.x && Grid.GetColumn(e) == unit.coordinates.y);
         }
 

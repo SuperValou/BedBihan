@@ -6,15 +6,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Polygon x:Name="UnitTex" Stroke="Black" Stretch="Uniform" MouseDown="unitOnClick" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,-29,0,0"  >
+        <Polygon x:Name="UnitTex" Stroke="Black" Stretch="Uniform" MouseDown="unitOnClick" HorizontalAlignment="Left" VerticalAlignment="Top"  >
             <Polygon.Points>
                 <PointCollection>
-                    <Point X="50" Y="0" />
-                    <Point X="100" Y="28.8675" />
-                    <Point X="100" Y="86.6025" />
-                    <Point X="50" Y="115.47" />
-                    <Point X="0" Y="86.6025" />
-                    <Point X="0" Y="28.8675" />
+                    <Point X="25" Y="25" />
+                    <Point X="75" Y="25" />
+                    <Point X="75" Y="75" />
+                    <Point X="25" Y="75" />
                 </PointCollection>
             </Polygon.Points>
             <Polygon.Fill>
