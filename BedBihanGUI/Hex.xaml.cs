@@ -27,22 +27,36 @@ namespace BedBihanGUI
         static BitmapImage imgPlain = new BitmapImage(new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute));
         static BitmapImage imgDesert = new BitmapImage(new Uri("pack://application:,,,/textures/desert.png", UriKind.RelativeOrAbsolute));
 
+        private bool selected;
 
 
         public Hex()
         {
+            selected = false;
             InitializeComponent();
         }
 
+        public PageGame pg
+        {
+            get;
+            set;
+        }
         public Coordinates coord
         {
             get;
             set;
         }
-        public void WoodOver(object obj, EventArgs ea)
+
+        public void select()
         {
+            selected = true;
         }
 
+        public void unselect()
+        {
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
+            selected = false;
+        }
         /**
          * \brief show units on this hexagon
          */
@@ -53,16 +67,15 @@ namespace BedBihanGUI
             {
                 return;
             }
-            string resul = "Units on hexagon ("+this.coord.x+","+this.coord.y+") :\n";
-            foreach (Unit unit in unitsHere)
-            {
-                resul += unit.faction+" : Helth Points = "+unit.currentHP+"/"+unit.maxHP+" - MovPoints = "+unit.movementPoints+"\n";
-            }
-            MessageBox.Show(resul);
-            
+            //string resul = "Units on hexagon ("+this.coord.x+","+this.coord.y+") :\n";
+            //foreach (Unit unit in unitsHere)
+            //{
+            //    resul += unit.faction+" : Helth Points = "+unit.currentHP+"/"+unit.maxHP+" - MovPoints = "+unit.movementPoints+"\n";
+            //}
+            pg.selectHex(this,unitsHere);
+                    
+            this.select();
         }
-
-
 
         public void SetWoods()
         {
@@ -94,7 +107,10 @@ namespace BedBihanGUI
 
         private void PolygonTile_MouseLeave(object sender, MouseEventArgs e)
         {
-            this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
+            if (!selected)
+            {
+                this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
+            }
         }
 
   

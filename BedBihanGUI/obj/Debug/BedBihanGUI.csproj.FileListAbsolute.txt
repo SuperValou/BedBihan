@@ -120,3 +120,5 @@ E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitTexture.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitTexture.g.cs
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\score.baml
 E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\score.g.cs
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitScore..baml
+E:\4INFO\Repos\BedBihan\BedBihanGUI\obj\Debug\UnitScore..g.cs

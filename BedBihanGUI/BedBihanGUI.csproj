@@ -78,6 +78,9 @@
     <Compile Include="score.xaml.cs">
       <DependentUpon>score.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UnitScore..xaml.cs">
+      <DependentUpon>UnitScore..xaml</DependentUpon>
+    </Compile>
     <Compile Include="UnitTexture.xaml.cs">
       <DependentUpon>UnitTexture.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="score.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UnitScore..xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

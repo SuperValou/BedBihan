@@ -22,10 +22,10 @@ namespace BedBihanGUI
     public partial class score : Page
     {
 
-        public score(Player j)
+        public score(Player J)
         {
             InitializeComponent();
-            this.Name.Content = j.name;
+            this.Name.Content = J.name;
         }
     }
 }

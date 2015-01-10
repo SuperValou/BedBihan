@@ -26,10 +26,14 @@ namespace BedBihanGUI
     {
 
         private static Game game;
+        private Hex selectedHex = null;
+        private MainWindow parent;
+       
+
         public PageGame()
         {
             InitializeComponent();
-            MainWindow parent = (Application.Current.MainWindow as MainWindow);
+           parent = (Application.Current.MainWindow as MainWindow);
 
             game = parent.game;
         }
@@ -70,7 +74,8 @@ namespace BedBihanGUI
                     {
                         row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) });
                         Hex h = new Hex();
-                        h.coord = new Coordinates(nbR, nbC);
+                        h.pg = this;
+                        h.coord = new Coordinates(nbC, nbR);
                         Grid.SetColumn(h, nbC);
                         row.Children.Add(h);
 
@@ -96,7 +101,8 @@ namespace BedBihanGUI
                     {
                         row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) });
                         Hex h = new Hex();
-                        h.coord = new Coordinates(nbR, nbC-1);
+                        h.pg = this;
+                        h.coord = new Coordinates(nbC-1, nbR);
                         Grid.SetColumn(h, nbC);
                         row.Children.Add(h);
                     }
@@ -201,39 +207,19 @@ namespace BedBihanGUI
         private void displayUnitOnMap(Unit unit)
         {
             UnitTexture unitTexture = new UnitTexture(unit.faction,unit.coordinates);
-            Rectangle Rempty = new Rectangle();
-            Rempty.Width = 10;
-            Rempty.Height = 50;
+            int x = unit.coordinates.x;
+            int y = unit.coordinates.y;
+           
+            // one horizontal 
+            if (y % 2 != 0) { x++; }
+        
+            Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);
+   
+            Grid.SetColumn(unitTexture, x);
+            SelectedRow.Children.Add(unitTexture);
 
-            int iRow = 0;
-            foreach (Grid row in this.map.Children)
-            {
-                if (iRow == unit.coordinates.x)
-                {
-                    if (iRow % 2 == 0)
-                    {
-                        row.Children.Add(unitTexture);
-                        Grid.SetColumn(unitTexture, unit.coordinates.y);
-                        row.Children.Add(Rempty);
-                        Grid.SetColumn(Rempty, 0);
-                    }
-                    else
-                    {
-                        row.Children.Add(unitTexture);
-                        Grid.SetColumn(unitTexture, unit.coordinates.y);
-                        row.Children.Add(Rempty);
-                        Grid.SetColumn(Rempty, 1);
-                    }
-                    return;
-                }
-                iRow++;
-            }
+            
         }
-
-
-
-
-
 
         internal static List<Unit> getUnitsOn(Coordinates coordinates)
         {
@@ -249,6 +235,26 @@ namespace BedBihanGUI
                 }
             }
             return units;
+        }
+
+
+        public void selectHex(Hex h, List<Unit> ListUnit)
+        {
+            if (h != this.selectedHex)
+            {
+                if (selectedHex != null)
+                {
+                    parent.infoUnit.Children.Clear();
+                    selectedHex.unselect();
+                }
+                selectedHex = h;
+                foreach (Unit u in ListUnit)
+                {
+                    UnitScore Us = new UnitScore(u);
+                    parent.infoUnit.Children.Add(Us);
+                }
+            }
+
         }
     }
 }

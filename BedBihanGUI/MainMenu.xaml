@@ -46,8 +46,7 @@
         </ComboBox>
         
         <Button Click="LunchGame" Margin="0,30,0,0">new game</Button>
-        <Button Click="Button_Click" Margin="0,30,0,0">new caca</Button>
-     
+
     </StackPanel>
                
 

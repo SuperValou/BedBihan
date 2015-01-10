@@ -35,6 +35,10 @@ namespace BedBihanGUI
             
         }
 
+        public void addScorePanel(UnitScore Us)
+        {
+            this.infoUnit.Children.Add(Us);
+        }
 
 
 
