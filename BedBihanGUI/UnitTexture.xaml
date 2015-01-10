@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Polygon x:Name="UnitTex" Stroke="Black" Stretch="Uniform" MouseDown="unitOnClick" HorizontalAlignment="Left" VerticalAlignment="Top"  >
+        <Polygon x:Name="UnitTex" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top"  >
             <Polygon.Points>
                 <PointCollection>
                     <Point X="25" Y="25" />

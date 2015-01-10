@@ -77,9 +77,25 @@
             <Viewbox StretchDirection="Both" Stretch="Uniform">
                 <Frame x:Name="ScoreJ2"></Frame>
             </Viewbox>
-         
-            
+           
         </Grid>
+
+        <!-- viewBox for unit selected -->
+        <Grid Grid.Row="1" Margin="5,0,25,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Viewbox StretchDirection="Both" Stretch="Uniform">
+                <Frame x:Name="salbatard"></Frame>
+            </Viewbox>
+
+
+        </Grid>
+
+
+
 
     </Grid>
     

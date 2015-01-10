@@ -52,12 +52,6 @@ namespace BedBihanGUI
 
         }
 
-        /**
-         * \brief do something when you click on the unit
-         */
-        private void unitOnClick(object sender, MouseButtonEventArgs e)
-        {
-            MessageBox.Show("Selected : "+this.faction+" unit at position ("+this.coordinates.x+","+this.coordinates.y+").");
-        }
+        
     }
 }

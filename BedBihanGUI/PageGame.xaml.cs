@@ -25,7 +25,7 @@ namespace BedBihanGUI
     public partial class PageGame : Page
     {
 
-        private Game game;
+        private static Game game;
         public PageGame()
         {
             InitializeComponent();
@@ -46,11 +46,11 @@ namespace BedBihanGUI
         
 
         /**
-         * \brief display the map (all hexagons)
+         * \brief build the map (all hexagons textures)
          */
         private void PrintMap()
         {
-           int taille = this.game.board.b_size;
+           int taille = game.board.b_size;
            
             for (int nbR = 0; nbR < taille; nbR++)
             {
@@ -108,19 +108,16 @@ namespace BedBihanGUI
 
 
             }
-
-           
-
             initHexImg();
         }
 
         /**
-         * \brief display an hexagon
+         * \brief set all hexagons background
          */
         private void initHexImg()
         {
-            Hexagon[,] board = this.game.board.grid;
-
+            Hexagon[,] board = game.board.grid;
+            
             foreach(Grid row in this.map.Children)
             {
                 foreach (Object o in row.Children)
@@ -173,9 +170,9 @@ namespace BedBihanGUI
             {
                 Coordinates coord = new Coordinates(positions[i][0], positions[i][1]);
 
-                for (int j = 0; j < this.game.list_players[i].faction.troops.Length; j++)
+                for (int j = 0; j < game.list_players[i].faction.troops.Length; j++)
                 {
-                    this.game.list_players[i].faction.troops[j].coordinates = coord;
+                    game.list_players[i].faction.troops[j].coordinates = coord;
                 }
             }
         }
@@ -186,7 +183,7 @@ namespace BedBihanGUI
          */
         private void displayUnits()
         {
-            foreach (Player player in this.game.list_players)
+            foreach (Player player in game.list_players)
             {
                 foreach (Unit unit in player.faction.troops)
                 {
@@ -203,31 +200,56 @@ namespace BedBihanGUI
          */
         private void displayUnitOnMap(Unit unit)
         {
-            return; // i'm working on this function
             UnitTexture unitTexture = new UnitTexture(unit.faction,unit.coordinates);
-            int i = 0;
-            int j = 0;
+            Rectangle Rempty = new Rectangle();
+            Rempty.Width = 10;
+            Rempty.Height = 50;
 
+            int iRow = 0;
             foreach (Grid row in this.map.Children)
             {
-                if (i != unit.coordinates.x)
+                if (iRow == unit.coordinates.x)
                 {
-                    i++;
-                }
-                else
-                {
-                    //row.Children.Add(unitTexture);
+                    if (iRow % 2 == 0)
+                    {
+                        row.Children.Add(unitTexture);
+                        Grid.SetColumn(unitTexture, unit.coordinates.y);
+                        row.Children.Add(Rempty);
+                        Grid.SetColumn(Rempty, 0);
+                    }
+                    else
+                    {
+                        row.Children.Add(unitTexture);
+                        Grid.SetColumn(unitTexture, unit.coordinates.y);
+                        row.Children.Add(Rempty);
+                        Grid.SetColumn(Rempty, 1);
+                    }
                     return;
                 }
-
+                iRow++;
             }
-            // this.map.Children.Cast<UIElement>().First(e => Grid.GetRow(e) == unit.coordinates.x && Grid.GetColumn(e) == unit.coordinates.y);
         }
 
 
 
 
-    }
 
+
+        internal static List<Unit> getUnitsOn(Coordinates coordinates)
+        {
+            List<Unit> units = new List<Unit>();
+            foreach(Player p in game.list_players)
+            {
+                foreach (Unit unit in p.faction.troops)
+                {
+                    if (unit.coordinates.x == coordinates.x && unit.coordinates.y == coordinates.y)
+                    {
+                        units.Add(unit);
+                    }
+                }
+            }
+            return units;
+        }
+    }
 }
 

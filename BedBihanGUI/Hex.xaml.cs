@@ -43,8 +43,23 @@ namespace BedBihanGUI
         {
         }
 
+        /**
+         * \brief show units on this hexagon
+         */
         private void hex_down(object sender, MouseButtonEventArgs e)
         {
+            List<Unit> unitsHere = PageGame.getUnitsOn(this.coord);
+            if (unitsHere.Count == 0)
+            {
+                return;
+            }
+            string resul = "Units on hexagon ("+this.coord.x+","+this.coord.y+") :\n";
+            foreach (Unit unit in unitsHere)
+            {
+                resul += unit.faction+" : Helth Points = "+unit.currentHP+"/"+unit.maxHP+" - MovPoints = "+unit.movementPoints+"\n";
+            }
+            MessageBox.Show(resul);
+            
         }
 
 
@@ -52,7 +67,6 @@ namespace BedBihanGUI
         public void SetWoods()
         {
             this.fond.ImageSource = imgWoods;
-
         }
 
         public void SetMountain()

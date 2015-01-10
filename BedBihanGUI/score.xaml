@@ -4,19 +4,19 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d"
-	Title="score" Height="133" Width="239">
+	Title="score" Height="258.6" Width="239">
 
-    <Grid>
+    <Grid Margin="-38,0,0.2,0.4">
         <Grid.Background>
             <ImageBrush ImageSource="pack://application:,,,/textures/parchemin.png"/>
         </Grid.Background>
 
-        <Grid Margin="31,8,33,11">
+        <Grid Margin="31,8,33.2,-0.2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35*"></RowDefinition>
                 <RowDefinition Height="79*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Label Content="caca" x:Name="Name" FontSize="22" Cursor="" FontFamily="Arial" FontWeight="Bold" />
+            <Label Content="caca" x:Name="Name" FontSize="22" Cursor="" FontFamily="Arial" FontWeight="Bold" Margin="10,0,0,26.8" />
 
         </Grid>
 

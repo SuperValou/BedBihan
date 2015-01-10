@@ -64,7 +64,8 @@ namespace BedBihanGUI
             parent.center.Navigate(pg);
             parent.ScoreJ1.Navigate(scJ1);
             parent.ScoreJ2.Navigate(scJ2);
-
+            
+            
 
 
         }
@@ -72,7 +73,6 @@ namespace BedBihanGUI
         // TEST BUTTON 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             MessageBoxResult result = MessageBox.Show(TypeOfGame.Text);   
         }
 
