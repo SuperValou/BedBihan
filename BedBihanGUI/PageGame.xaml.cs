@@ -25,17 +25,17 @@ namespace BedBihanGUI
     public partial class PageGame : Page
     {
 
-        private static Game game;
+        public static Game game;
         private Hex selectedHex = null;
         private MainWindow parent;
-       
+
 
         public PageGame()
         {
-           InitializeComponent();
-           parent = (Application.Current.MainWindow as MainWindow);
-
+            InitializeComponent();
+            parent = (Application.Current.MainWindow as MainWindow);
             game = parent.game;
+            Coordinates.mapSize = game.board.b_size;
         }
 
 
@@ -47,27 +47,27 @@ namespace BedBihanGUI
         }
 
 
-        
+
 
         /**
          * \brief build the map (all hexagons textures)
          */
         private void PrintMap()
         {
-           int taille = game.board.b_size;
-           
+            int taille = game.board.b_size;
+
             for (int nbR = 0; nbR < taille; nbR++)
             {
                 this.map.RowDefinitions.Add(new RowDefinition());
                 Grid row = new Grid();
                 row.HorizontalAlignment = HorizontalAlignment.Stretch;
                 row.VerticalAlignment = VerticalAlignment.Stretch;
-              
+
                 Rectangle Rempty = new Rectangle();
                 Rempty.Width = 51;
                 Rempty.Height = 50;
 
- 
+
                 if (nbR % 2 == 0)
                 {
                     for (int nbC = 0; nbC < taille; nbC++)
@@ -82,27 +82,27 @@ namespace BedBihanGUI
                     }
 
                     row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
-                  
+
                     Grid.SetColumn(Rempty, taille);
                     row.Children.Add(Rempty);
-            
+
                 }
 
                 else
                 {
                     row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
-                //    r.Fill = mySolidColorBrush;
+                    //    r.Fill = mySolidColorBrush;
                     Grid.SetColumn(Rempty, 0);
 
                     row.Children.Add(Rempty);
-                   
+
 
                     for (int nbC = 1; nbC < taille + 1; nbC++)
                     {
                         row.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) });
                         Hex h = new Hex();
                         h.pg = this;
-                        h.coord = new Coordinates(nbC-1, nbR);
+                        h.coord = new Coordinates(nbC - 1, nbR);
                         Grid.SetColumn(h, nbC);
                         row.Children.Add(h);
                     }
@@ -123,8 +123,8 @@ namespace BedBihanGUI
         private void initHexImg()
         {
             Hexagon[,] board = game.board.grid;
-            
-            foreach(Grid row in this.map.Children)
+
+            foreach (Grid row in this.map.Children)
             {
                 foreach (Object o in row.Children)
                 {
@@ -149,7 +149,7 @@ namespace BedBihanGUI
             {
                 hexPhys.SetWoods();
             }
-            else if (hexLog is Plain) 
+            else if (hexLog is Plain)
             {
                 hexPhys.SetPlain();
             }
@@ -170,9 +170,9 @@ namespace BedBihanGUI
         */
         private unsafe void placeTroops()
         {
-            
+
             int** positions = WrapperGate.access.getStartingPositions(game.list_players.Count, game.board.b_size);
-            for (int i = 0; i < game.list_players.Count;i++ )
+            for (int i = 0; i < game.list_players.Count; i++)
             {
                 Coordinates coord = new Coordinates(positions[i][0], positions[i][1]);
 
@@ -198,7 +198,7 @@ namespace BedBihanGUI
             }
         }
 
-       
+
 
 
         /**
@@ -206,25 +206,25 @@ namespace BedBihanGUI
          */
         private void displayUnitOnMap(Unit unit)
         {
-            UnitTexture unitTexture = new UnitTexture(unit.faction,unit.coordinates);
+            UnitTexture unitTexture = new UnitTexture(unit.faction, unit.coordinates);
             int x = unit.coordinates.x;
             int y = unit.coordinates.y;
-           
+
             // if odd row
             if (y % 2 != 0) { x++; }
-        
+
             Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);
-   
+
             Grid.SetColumn(unitTexture, x);
             SelectedRow.Children.Add(unitTexture);
 
-            
+
         }
 
         internal static List<Unit> getUnitsOn(Coordinates coordinates)
         {
             List<Unit> units = new List<Unit>();
-            foreach(Player p in game.list_players)
+            foreach (Player p in game.list_players)
             {
                 foreach (Unit unit in p.faction.troops)
                 {
@@ -253,8 +253,14 @@ namespace BedBihanGUI
                     UnitScore Us = new UnitScore(u);
                     parent.infoUnit.Children.Add(Us);
                 }
+                selectUnit(ListUnit.First<Unit>());
             }
 
+        }
+
+        // show unit statistics and highlight accessible hexagons
+        public void selectUnit(Unit unit)
+        {
         }
     }
 }

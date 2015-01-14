@@ -57,6 +57,16 @@ namespace BedBihanGUI
             this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
             selected = false;
         }
+
+
+        /**
+         * \brief highlight this hexagon
+         */
+        public void highlight()
+        {
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.PaleGreen);
+        }
+
         /**
          * \brief show units on this hexagon
          */
