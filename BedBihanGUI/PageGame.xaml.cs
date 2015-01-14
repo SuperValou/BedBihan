@@ -32,7 +32,7 @@ namespace BedBihanGUI
 
         public PageGame()
         {
-            InitializeComponent();
+           InitializeComponent();
            parent = (Application.Current.MainWindow as MainWindow);
 
             game = parent.game;
@@ -210,7 +210,7 @@ namespace BedBihanGUI
             int x = unit.coordinates.x;
             int y = unit.coordinates.y;
            
-            // one horizontal 
+            // if odd row
             if (y % 2 != 0) { x++; }
         
             Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);

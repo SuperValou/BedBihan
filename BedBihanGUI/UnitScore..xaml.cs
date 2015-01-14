@@ -27,6 +27,8 @@ namespace BedBihanGUI
             InitializeComponent();
             unit = u;
             Race.Content = u.faction.ToString();
+            HP.Content = u.currentHP;
+            HPMax.Content = "/ " + u.maxHP;
         }
     }
 }
