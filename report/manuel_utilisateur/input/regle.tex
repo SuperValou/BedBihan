@@ -1,0 +1,58 @@
+\newpage
+	\section{Règles du jeu}
+	\label{sec:regles}
+
+	\subsection{But du jeu}
+	\label{subsec:butdujeu}
+	\emph{BedBihan} est un jeu de stratégie au tour-par-tour où chaque joueur dirige un peuple sur une carte. Le but est de marquer le plus de points possible en dirigeant les unités de son peuple pour qu'elles occupent au mieux les cases de la carte. Les unités d’un joueur peuvent attaquer les unités d’un autre joueur pour les détruire, limitant ainsi l'acquisition de points adverses. La partie se termine quand le nombre de tours imparti est atteint, ou qu'il ne reste qu'un seul joueur en jeu --- les autres ayant perdu toutes leurs unités\footnote{Actuellement, le nombre de joueurs est limité à 2.}.
+
+	\subsection{Carte du monde}
+	\label{subsec:carte}
+	La carte du monde, sur laquelle s'affrontent les joueurs, se compose de cases hexagonales. Chaque case possède un type de terrain : Plaine,	Désert, Montagne ou Forêt. Chaque case peut être occupée par une ou plusieurs unités alliées, mais deux unités adverses ne peuvent se trouver sur la même case. Par défaut, une case occupée par une ou plusieurs unités alliées rapporte 1 point. Des bonus et malus sont possibles selon les caractéristiques de chaque peuple (voir Section \ref{subsec:peuples}). 
+	
+	La carte peut avoir trois tailles différentes, paramètrable au lancement d'une partie :
+	\begin{itemize}
+		\item Démo : 4x4 cases, 5 tours, 4 unités par peuple.
+		\item Petite : 10x10 cases, 20 tours, 6 unités par peuple.
+		\item Normale : 14x14 cases, 30 tours, 8 unités par peuple.
+	\end{itemize}
+	
+	
+	\subsection{Peuples}
+	\label{subsec:peuples}
+	\emph{BedBihan} permet de jouer avec trois peuples différents : les Elfes, les Humains et les Korrigans. Chaque peuple présente des caractéristiques particulières.
+	
+		Pour les Elfes :
+		\begin{itemize}
+			\item le coût de déplacement sur une case Forêt est divisé par deux. 
+			\item le coût de déplacement sur une case Désert est multiplié par deux.
+			\item Une unité elfe a 50\% de chance de survivre avec 1 point de vie lors d’un combat conduisant normalement à sa mort.
+		\end{itemize}
+		
+		Pour les Humains :
+		\begin{itemize}
+			\item le coût de déplacement sur une case Plaine est divisé par deux.
+			\item une unité humaine ne rapporte aucun point lorsqu'elle occupe une case Forêt.
+			\item lorsqu’une unité humaine détruit une autre unité, elle marque 1 point. Les points ainsi gagnés sont liés à l'unité : si celle-ci meurt, les points sont perdus.
+		\end{itemize}
+		
+		Pour les Korrigans :
+		\begin{itemize}
+			\item le coût de déplacement sur une case Plaine est divisé par deux.
+			\item une unité korrigane ne rapporte aucun point lorsqu'elle occupe une case Plaine.
+			\item lorsqu'une unité korrigane occupe une case Montagne, elle peut se déplacer sur n’importe quelle autre case Montage de la carte (à condition que celle-ci ne soit pas occupée par une unité adverse).
+		\end{itemize}
+
+	\subsection{Unités}
+	Chaque unité possède des points de vie, des points de déplacement, des points d'attaque et des points de défense. Les points de vie représentent la santé de l'unité : plus ceux-ci sont élevés, plus l'unité attaquera ou se défendra efficacement (voir Section \ref{subsec:combats}). Lorsque les points de vie d'une unité atteignent 0, cette dernière est détruite. Ces points de vie ne se régénèrent pas d'un tour à l'autre.
+	
+	Les points d'attaque représentent la force brute d'une unité lorsqu'elle en attaque une autre.  Plus ceux-ci sont élevés, plus l'unité infligera de dégâts à l'adversaire. De la même façon, les points de défense représentent la capacité d'une unité à se défendre : plus ceux-ci sont élevés, et plus l'unité sera susceptible de résister aux attaques. 
+	
+	Les points de déplacement, quant à eux, représentent la capacité de mouvement d'une unité à travers la carte. Plus ces points sont élevés, plus l'unité pourra se déplacer loin lors d'un tour. Ces points de déplacement sont restaurés d'un tour à l'autre.
+	
+	\subsection{Déroulement d'un tour}
+	Lorsque vient le tour d'un joueur, celui-ci peut bouger chacune de ses unités tant qu'elles ont suffisamment de points de déplacement. Par défaut, se déplacer d'une case coûte 1 point de déplacement.
+	
+	Lorsqu'une unité tente de se déplacer sur une case sur laquelle se trouve une ou plusieurs unités ennemies, un combat a lieu. Une fois le combat terminé, si toutes les unités adverses ont été détruites, l'unité se déplace effectivement sur la case, en consommant le nombre de points de déplacement nécessaire. Cependant, si au moins une unité ennemie est encore en vie, l'unité alliée reste sur sa case actuelle mais consomme malgré tout le même nombre de points de déplacement.
+	
+	Lorsqu'un joueur a terminé de déplacer toutes ses unités, c'est au tour du joueur suivant, et ainsi de suite.
