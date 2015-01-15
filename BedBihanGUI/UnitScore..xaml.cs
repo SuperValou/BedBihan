@@ -33,7 +33,7 @@ namespace BedBihanGUI
             unitTex = u;
             Race.Content = u.unit.faction.ToString();
             HP.Content = u.unit.currentHP;
-            HPMax.Content = "/ " + u.unit.maxHP;
+           
         }
 
         /*
