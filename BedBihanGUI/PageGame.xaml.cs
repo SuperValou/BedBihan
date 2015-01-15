@@ -22,9 +22,11 @@ namespace BedBihanGUI
     /// <summary>
     /// Logique d'interaction pour PageGame.xaml
     /// </summary>
+    
+    
     public partial class PageGame : Page
     {
-
+        
         public static Game game;
         private Hex selectedHex = null;
         private MainWindow parent;
@@ -295,6 +297,11 @@ namespace BedBihanGUI
                     uTex.unitscore = us;
                     parent.infoUnit.Children.Add(us);
                 }
+                else
+                {
+                    UnitInformation info = new UnitInformation(ListUnit);
+                    parent.info.Navigate(info);
+                }
                
             }
            // if (ListUnit.Count > 0 && ListUnit.First<UnitTexture>().unit.faction == parent.game.currentPlayer.faction.troops.First<Unit>().faction)
@@ -323,10 +330,13 @@ namespace BedBihanGUI
 
             // update the control panel
             unitTex.unitscore.select();
-            parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/" + unitTex.unit.faction + ".png", UriKind.RelativeOrAbsolute));
-            parent.unitIcon.Visibility = Visibility.Visible;
-            parent.unitName.Content = "Beautiful unit";
-            parent.movementPoints.Content = unitTex.unit.movementPoints;
+            //parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/" + unitTex.unit.faction + ".png", UriKind.RelativeOrAbsolute));
+            //parent.unitIcon.Visibility = Visibility.Visible;
+            //parent.unitName.Content = "Beautiful unit";
+            //parent.movementPoints.Content = unitTex.unit.movementPoints;
+            UnitInformation info = new UnitInformation(unitTex.unit);
+            parent.info.Navigate(info);
+            info.Visibility = Visibility.Visible;
       
         }
 
@@ -384,7 +394,7 @@ namespace BedBihanGUI
          * */
         internal void deselectEverything()
         {
-            parent.unitIcon.Visibility = Visibility.Hidden;
+            parent.info.Content = null;
             foreach(Hex hex in hexagons)
             {
                 hex.deselect();
@@ -475,8 +485,8 @@ namespace BedBihanGUI
                             int looseDeffHp = Deffhp - ennemie.unit.currentHP;
                             string msg = "RESULT OF THE BATTLE \n";
                             msg += "******************** \n";
-                            msg += game.list_players[idyou].name + " loose " + looseAttHp + " HP \n";
-                            msg += game.list_players[idEn].name + " loose " + looseDeffHp + " HP";
+                            msg += game.list_players[idyou].name + " looses " + looseAttHp + " HP \n";
+                            msg += game.list_players[idEn].name + " looses " + looseDeffHp + " HP";
                             MessageBox.Show( msg );
                             break;
                     }

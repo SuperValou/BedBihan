@@ -48,9 +48,9 @@ namespace BedBihanGUI
         public void loadPanels()
         {
             this.controlUnitBackground.Visibility = System.Windows.Visibility.Visible;
-            this.movPoints.Visibility = System.Windows.Visibility.Visible;
-            this.movementPoints.Visibility = System.Windows.Visibility.Visible;
-            this.unitIcon.Visibility = System.Windows.Visibility.Visible;
+            //this.movPoints.Visibility = System.Windows.Visibility.Visible;
+            //this.movementPoints.Visibility = System.Windows.Visibility.Visible;
+            //this.unitIcon.Visibility = System.Windows.Visibility.Visible;
             this.playerLabel.Visibility = System.Windows.Visibility.Visible;
             this.turnLabel.Visibility = System.Windows.Visibility.Visible;
             this.endTurnButton.Visibility = System.Windows.Visibility.Visible;
@@ -64,9 +64,9 @@ namespace BedBihanGUI
         public void RemovePanels()
         {
             this.controlUnitBackground.Visibility = System.Windows.Visibility.Hidden;
-            this.movPoints.Visibility = System.Windows.Visibility.Hidden;
-            this.movementPoints.Visibility = System.Windows.Visibility.Hidden;
-            this.unitIcon.Visibility = System.Windows.Visibility.Hidden;
+            //this.movPoints.Visibility = System.Windows.Visibility.Hidden;
+            //this.movementPoints.Visibility = System.Windows.Visibility.Hidden;
+            //this.unitIcon.Visibility = System.Windows.Visibility.Hidden;
             this.playerLabel.Visibility = System.Windows.Visibility.Hidden;
             this.turnLabel.Visibility = System.Windows.Visibility.Hidden;
             this.endTurnButton.Visibility = System.Windows.Visibility.Hidden;
@@ -84,7 +84,7 @@ namespace BedBihanGUI
             if(game.over() || this.currentTurn == this.maxTurnNumber)
             {
                 string winner = game.getWinner().name;
-                MessageBox.Show(winner + " WIN ! ");
+                MessageBox.Show(winner + " WINS ! ");
                 this.newgame_Click(null,null);
             }
             if (game.currentPlayer == game.list_players.Last<Player>())

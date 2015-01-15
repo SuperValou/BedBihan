@@ -4,11 +4,32 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             >
     <StackPanel>
-        <Image x:Name="unitIcon" Source="/textures/blank.png" HorizontalAlignment="Left" Height="100" Margin="93,48,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="unitName" Content="Select a unitf" Height="31" Margin="93,153,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left"/>
-        <Label x:Name="movPoints" Content="Movement points" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="117" />
-        <Label x:Name="movementPoints" Content="0" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" />
+        <Label x:Name="EnUnit" Content="Enemy's Units" FontFamily="Gill Sans Ultra Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"></Label>  
+        <Image x:Name="unitIcon" Source="/textures/blank.png" HorizontalAlignment="Center" Height="100" Margin="0,48,0,15" />
+        <Label x:Name="unitName" Content="Select a unit"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Black" FontStyle="Italic" FontFamily="Times New Roman" Margin="0" FontSize="16"/>
+      
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label x:Name="lifeLabel" Content="Life Point :"></Label>
+            <Label x:Name="HP" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0" FontSize="14" FontWeight="Bold" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label x:Name="AttaqueLabel" Content="Attaque"></Label>
+            <Label x:Name="Att" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0" FontSize="14" FontWeight="Bold" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label x:Name="DefenceLabel" Content="Defence"></Label>
+            <Label x:Name="def" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0" FontSize="14" FontWeight="Bold" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+            <!--<Image Source="textures/move.png"></Image>-->
+            <Label x:Name="movPoint" Content="Movement Point "></Label>
+            <Label x:Name="movementPoints" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0" FontSize="14" FontWeight="Bold" />
+        </StackPanel>
+        <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label x:Name="nbEn" Content="0"></Label>
+            <Label x:Name="LabelnbEn" Content="Enemies" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="0" FontSize="14" FontWeight="Bold" />
+        </StackPanel>-->
     </StackPanel>
 </UserControl>
