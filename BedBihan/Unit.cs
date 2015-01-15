@@ -40,10 +40,10 @@ namespace BedBihan
 
         private int maxMovementPoints;
 
-        public int movementPoints
+        public float movementPoints
         {
             get;
-            private set;
+            set;
         }
         public Coordinates coordinates
         {
@@ -70,14 +70,20 @@ namespace BedBihan
             return this.currentHP <= 0;
         }
 
+
+        public bool canMove(Field field)
+        {
+            return (movementPoints - this.costOfMovement[(int)field]) >= 0;
+        }
+
         /**
          * \brief lower units movement points 
-         * \param[in] the cost of movement the unit has to pay
          */
-        public void looseMovementPoints(int costOfMovement)
+        public void looseMovementPoints(Field field)
         {
-            this.movementPoints -= costOfMovement;
+            this.movementPoints -= this.costOfMovement[(int)field];
         }
+        
 
         /**
          * \brief restore units movement points 
@@ -187,18 +193,10 @@ namespace BedBihan
          */
         void destroy()
         {
-
+            
         }
 
-        /**
-         * \brief get the cost of movement on a specific field
-         * \param[in] the type of field
-         * \param[out] cost of movement on the type of field
-         */
-        public float getCostOfMovementOn(Field field)
-        {
-            return costOfMovement[(int) field];
-        }
+        
 
 
 

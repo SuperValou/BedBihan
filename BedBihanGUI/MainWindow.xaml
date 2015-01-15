@@ -3,6 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:BBGUI="clr-namespace:BedBihanGUI"
         Title="BedBihan" Height="700" Width="1000">
 
+
+
+    <Window.Resources>
+        <Storyboard x:Key="fadeIn" Storyboard.TargetProperty="(TextBlock.Opacity)">
+            <DoubleAnimation From="0" To="1" Duration="0:0:1" />
+            <DoubleAnimation From="1" To="0" Duration="0:0:3" />
+        </Storyboard>
+
+        <Storyboard x:Key="SizeOn" Storyboard.TargetProperty="(TextBlock.FontSize)">
+            <DoubleAnimation
+                    From="0" To="70" Duration="0:0:2" />
+            <DoubleAnimation
+                    From="70" To="0" Duration="0:0:2" />
+        </Storyboard>
+    </Window.Resources>
+        
+        
     <Grid>
 
         <Grid.Background>
@@ -46,46 +63,35 @@
         <!-- Current player and current turn -->
         <Grid Grid.Row="0" Grid.Column="2">
             <!-- static labels -->
-            <Label x:Name="turnLabel" Content="Turn        /" HorizontalAlignment="Left" Margin="46,10,0,0" VerticalAlignment="Top" Width="102" FontSize="18" Foreground="White"/>
-            <Label x:Name="playerLabel" Content="Current player : " HorizontalAlignment="Left" Margin="49,43,0,0" VerticalAlignment="Top" Height="24" Width="99" RenderTransformOrigin="0.5,0.5" Foreground="White">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.504"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-            <Label x:Name="maxTurnNumber" Content="27" HorizontalAlignment="Left" Margin="130,16,0,0" VerticalAlignment="Top" Width="42" Height="27" Foreground="White"/>
+            <Label x:Name="turnLabel" Content="Turn        /" HorizontalAlignment="Left" Margin="46,10,0,0" VerticalAlignment="Top" Width="102" FontSize="18" Foreground="White" Visibility="Hidden"/>
+            <Label x:Name="playerLabel" Content="Current player : " HorizontalAlignment="Left" Margin="49,43,0,0" VerticalAlignment="Top" Height="24" Width="99" RenderTransformOrigin="0.5,0.5" Foreground="White" Visibility="Hidden"/>
+            <Label x:Name="maxTurnNumber" Content="27" HorizontalAlignment="Left" Margin="130,16,0,0" VerticalAlignment="Top" Width="42" Height="27" Foreground="White" Visibility="Hidden"/>
 
             <!-- dynamique labels-->
-            <Label x:Name="currentTurn" Content="8" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="29" Height="34" FontSize="18" Foreground="White"/>
-            <Label x:Name="currentPlayer" Content="Totoplayer" HorizontalAlignment="Left" Margin="135,44,-1.4,0" VerticalAlignment="Top" Height="24" Width="128" RenderTransformOrigin="0.5,0.5" Foreground="White">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.504"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
+            <Label x:Name="currentTurn" Content="8" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="29" Height="34" FontSize="18" Foreground="White" Visibility="Hidden"/>
+            <Label x:Name="currentPlayer" Content="Totoplayer" HorizontalAlignment="Left" Margin="135,44,-1.4,0" VerticalAlignment="Top" Height="24" Width="128" RenderTransformOrigin="0.5,0.5" Foreground="White"  Visibility="Hidden"/>
         </Grid>
 
 
         <!-- end turn button -->
         <Grid Grid.Row="2" Grid.Column="2">
-            <Button x:Name="endTurnButton" Content="End turn" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="75" Click="endTurn"/>
+            <Button x:Name="endTurnButton" Content="End turn" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="75" Click="endTurn"  Visibility="Hidden"/>
             
         </Grid>
 
 
         <!-- main -->
         <Grid Grid.Column="1" Grid.Row="1">
+         
+
             <Viewbox StretchDirection="Both" Stretch="Uniform">
-                <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
+            <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
             </Viewbox>
+
+            <TextBlock x:Name="PlayerTurn" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="White" FontFamily="Arial Black" Opacity="0">
+                lol
+              </TextBlock>
+
         </Grid>
 
 
@@ -119,11 +125,10 @@
             <Grid >
 
                 <Image x:Name="controlUnitBackground" Source="/textures/oakwood.png" HorizontalAlignment="Left" Height="528" Margin="10,10,0,-0.4" VerticalAlignment="Top" Width="242" Stretch="Fill" IsEnabled="False" Visibility="Hidden"/>
-                <Button x:Name="moveUnitButton" Content="Move" HorizontalAlignment="Left" Margin="93,447,0,0" VerticalAlignment="Top" Width="85" IsEnabled="False" Visibility="Hidden"/>
                 <Image x:Name="unitIcon" Source="/textures/blank.png" HorizontalAlignment="Left" Height="100" Margin="93,48,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
                 <Label x:Name="unitName" Content="Select a unitf" Height="31" Margin="93,153,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Visibility="Hidden"/>
                 <Label x:Name="movPoints" Content="Movement points" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="117" Visibility="Hidden"/>
-                <Label x:Name="movementPoints" Content="" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" Visibility="Hidden"/>
+                <Label x:Name="movementPoints" Content="0" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" Visibility="Hidden"/>
             </Grid>
         </Viewbox>
 

@@ -287,12 +287,17 @@ namespace BedBihanGUI
             selectedHex = h;
             foreach (UnitTexture uTex in ListUnit)
             {
-                UnitScore us = new UnitScore(uTex);
-                us.pg = this;
-                uTex.unitscore = us;
-                parent.infoUnit.Children.Add(us);
+                if(game.currentPlayer.belongTo( ListUnit.First<UnitTexture>().unit))
+                {
+                    UnitScore us = new UnitScore(uTex);
+                    us.pg = this;
+                    uTex.unitscore = us;
+                    parent.infoUnit.Children.Add(us);
+                }
+               
             }
-            if (ListUnit.Count > 0 && ListUnit.First<UnitTexture>().unit.faction == parent.game.currentPlayer.faction.troops.First<Unit>().faction)
+           // if (ListUnit.Count > 0 && ListUnit.First<UnitTexture>().unit.faction == parent.game.currentPlayer.faction.troops.First<Unit>().faction)
+            if(ListUnit.Count > 0 && game.currentPlayer.belongTo( ListUnit.First<UnitTexture>().unit)    )
             {
                 selectUnit(ListUnit.First<UnitTexture>());
             }
@@ -339,14 +344,16 @@ namespace BedBihanGUI
             foreach (Coordinates coord in adjacent)
             {
                 // if korrigan, highlight mountains too
-                if (unitTex.unit.faction == Faction.korrigan)
+                if (unitTex.unit.faction == Faction.korrigan && this.selectedHex.field == Field.Mountain)
                 {
                     foreach (Hex hex in hexagons)
                     {
-                        if (hex.field == Field.Mountain || (hex.coord.x == coord.x && hex.coord.y == coord.y))
+                        if ((hex.coord.x == coord.x && hex.coord.y == coord.y) || hex.field == Field.Mountain)
                         {
-                            hex.highlight();
-
+                            if (unitTex.unit.canMove(hex.field))
+                            {
+                                hex.highlight();
+                            }
                         }
                     }
                 }
@@ -358,7 +365,10 @@ namespace BedBihanGUI
                     {
                         if (hex.coord.x == coord.x && hex.coord.y == coord.y)
                         {
-                            hex.highlight();
+                            if (unitTex.unit.canMove(hex.field))
+                            {
+                                hex.highlight();
+                            }
 
                         }
                     }
@@ -381,26 +391,22 @@ namespace BedBihanGUI
         }
 
 
-
-        public void moveUnit(Coordinates coord)
+        /*
+         * \brief  Move unit to Hex
+         * */
+        public void moveUnit(Hex hex)
         {
-
             
+            this.selectedUnit.unit.looseMovementPoints(hex.field);
             this.RemoveUnitOnMap(this.selectedUnit);
-            this.selectedUnit.unit.coordinates = coord;
+            this.selectedUnit.unit.coordinates = hex.coord;
             displayUnitOnMap(this.selectedUnit);
             deselectEverything();
             selectHex(this.selectedHex, PageGame.getUnitsOn(this.selectedHex.coord));
         }
 
-        /*
-         * \brief update the panels showing wich units are on the selected hexagon
-         * */
-        private void updateUnitScores()
-        {
-            throw new NotImplementedException();
-        }
-    
+      
+  
 
 
 

@@ -33,7 +33,7 @@
 
         <TextBox x:Name="NamePlayer2" Height="23" TextWrapping="Wrap" Text="Player2" Margin="0,30,0,0"/>
         <ComboBox x:Name="RacePlayer2">
-            <ComboBoxItem IsSelected="True">elf</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">korrigan</ComboBoxItem>
             <ComboBoxItem>human</ComboBoxItem>
             <ComboBoxItem>korrigan</ComboBoxItem>
         </ComboBox>

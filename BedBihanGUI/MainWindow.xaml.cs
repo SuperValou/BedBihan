@@ -13,9 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using BedBihan;
+using System.Windows.Media.Animation;
+using System.Windows.Threading;
+using System.Threading;
 
 namespace BedBihanGUI
-{
+{ 
+    
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
@@ -27,7 +31,7 @@ namespace BedBihanGUI
         public MainWindow()
         {
             InitializeComponent();
-            
+                       
         }
 
 
@@ -42,12 +46,12 @@ namespace BedBihanGUI
         public void loadPanels()
         {
             this.controlUnitBackground.Visibility = System.Windows.Visibility.Visible;
-            this.moveUnitButton.Visibility = System.Windows.Visibility.Visible;
             this.movPoints.Visibility = System.Windows.Visibility.Visible;
+            this.movementPoints.Visibility = System.Windows.Visibility.Visible;
             this.unitIcon.Visibility = System.Windows.Visibility.Visible;
             this.playerLabel.Visibility = System.Windows.Visibility.Visible;
             this.turnLabel.Visibility = System.Windows.Visibility.Visible;
-
+            this.endTurnButton.Visibility = System.Windows.Visibility.Visible;
             this.updateTurnPanel();
             this.maxTurnNumber.Visibility = System.Windows.Visibility.Visible;
             this.currentPlayer.Visibility = System.Windows.Visibility.Visible;
@@ -67,10 +71,14 @@ namespace BedBihanGUI
             }
             else
             {
-                // Don't play with more than two player, lol
+                // Don't work with more than two player
                 game.currentPlayer = game.list_players.Last<Player>();
                 updateTurnPanel();
             }
+
+            game.endTurn();
+            string msg = game.currentPlayer.name + "'s turn !";
+            DisplayPlayerTurn(msg);
         }
 
         /*
@@ -98,6 +106,22 @@ namespace BedBihanGUI
                 }
                 ScoreJ1.Content = "SWAG";
             }
+            
+       }
+
+        public void DisplayPlayerTurn(string s) 
+        {
+            this.PlayerTurn.Text = s;
+            Storyboard sb = this.FindResource("fadeIn") as Storyboard;
+            Storyboard.SetTarget(sb, this.PlayerTurn);
+            Storyboard sbSize = this.FindResource("SizeOn") as Storyboard;
+            Storyboard.SetTarget(sbSize, this.PlayerTurn);
+            
+            sb.Begin();
+            sbSize.Begin();
+            
+        //    
+
         }
 
         

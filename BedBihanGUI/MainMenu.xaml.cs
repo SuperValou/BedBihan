@@ -31,6 +31,11 @@ namespace BedBihanGUI
 
         private void LunchGame(object sender, RoutedEventArgs e)
         {
+
+            if (RacePlayer1.Text == RacePlayer2.Text) 
+            {
+                MessageBoxResult msg = MessageBox.Show("Players must have different races");
+                return; }
             GameCreator gc = new GameCreator();
             gc.setPeopleJ1(RacePlayer1.Text);
             gc.setPeopleJ2(RacePlayer2.Text);
