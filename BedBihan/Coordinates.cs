@@ -46,7 +46,7 @@ namespace BedBihan
             adjacentHexagons.Add(new Coordinates(this.x,     this.y-1));  // top right if x is even, top left if x is odd
 
 
-            if (this.x % 2 == 0)
+            if (this.y % 2 == 0)
             // x is even
             {
                 adjacentHexagons.Add(new Coordinates(this.x-1,   this.y-1));    // top left  
@@ -59,20 +59,20 @@ namespace BedBihan
                 adjacentHexagons.Add(new Coordinates(this.x+1,   this.y+1));    // bottom right
             }
             
-            // delete unauthorized coordinates
-            // ugly code
-            List<Coordinates> toDelete = new List<Coordinates>();
-            foreach(Coordinates coord in adjacentHexagons)
-            {
-                if (coord.x < 0 || coord.x >= mapSize || coord.y < 0 || coord.y >= mapSize)
-                {
-                    toDelete.Add(coord);
-                }
-            }
-            foreach (Coordinates coord in toDelete)
-            {
-                adjacentHexagons.Remove(coord);
-            }
+            //// delete unauthorized coordinates
+            //// ugly code
+            //List<Coordinates> toDelete = new List<Coordinates>();
+            //foreach(Coordinates coord in adjacentHexagons)
+            //{
+            //    if (coord.x < 0 || coord.x >= mapSize || coord.y < 0 || coord.y >= mapSize)
+            //    {
+            //        toDelete.Add(coord);
+            //    }
+            //}
+            //foreach (Coordinates coord in toDelete)
+            //{
+            //    adjacentHexagons.Remove(coord);
+            //}
 
             return adjacentHexagons;
         }

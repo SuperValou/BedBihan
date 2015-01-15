@@ -305,11 +305,10 @@ namespace BedBihanGUI
             // update the control panel
             unitTex.unitscore.select();
             parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/" + unitTex.unit.faction + ".png", UriKind.RelativeOrAbsolute));
+            parent.unitIcon.Visibility = Visibility.Visible;
             parent.unitName.Content = "Beautiful unit";
             parent.movementPoints.Content = unitTex.unit.movementPoints;
-
-            
-               
+      
         }
 
         /*
@@ -319,9 +318,13 @@ namespace BedBihanGUI
         {
             // highlight accessible hexagons
             List<Coordinates> adjacent = unitTex.unit.coordinates.getAdjacent();
+            //string res = " x " + adjacent.First<Coordinates>().x + "y : " +  adjacent.First<Coordinates>().y;
+            //MessageBoxResult mg = MessageBox.Show(res);
+            deselectEverything();
+
             foreach (Coordinates coord in adjacent)
             {
-                deselectEverything();
+            
                 // if korrigan, highlight mountains too
                 if (unitTex.unit.faction == Faction.korrigan)
                 {
@@ -357,7 +360,7 @@ namespace BedBihanGUI
          * */
         internal void deselectEverything()
         {
-            parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/blank.png", UriKind.RelativeOrAbsolute));
+            parent.unitIcon.Visibility = Visibility.Hidden;
             foreach(Hex hex in hexagons)
             {
                 hex.deselect();

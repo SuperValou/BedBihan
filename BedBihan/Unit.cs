@@ -98,6 +98,7 @@ namespace BedBihan
             this.attack = 1;
             this.defense = 1;
             this.maxMovementPoints = 1;
+            this.movementPoints = 1;
             costOfMovement = new float[Enum.GetNames(typeof(Field)).Length];
             for (int i =0; i<costOfMovement.Length;i++)
             {
