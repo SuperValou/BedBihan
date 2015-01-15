@@ -99,9 +99,9 @@ namespace BedBihan
          */
         public Unit()
         {
-            this.maxHP = 1;
-            this.currentHP = 1;
-            this.attack = 1;
+            this.maxHP = 10;
+            this.currentHP = 5;
+            this.attack = 2;
             this.defense = 1;
             this.maxMovementPoints = 1;
             this.movementPoints = 1;
@@ -147,8 +147,9 @@ namespace BedBihan
          * \fn 
          * \brief 
          * \param[in] 
+         * \ return 0 if it kill the defender, 1 if he died during the battle, else return 2
          */
-        public void fightAgainst(Unit defender)
+        public int fightAgainst(Unit defender)
         {
             int numberOfConfrontations = WrapperGate.access.numberOfConfrontations(this.currentHP, defender.currentHP);
             while (numberOfConfrontations > 0)
@@ -167,7 +168,7 @@ namespace BedBihan
                     {
                         numberOfConfrontations = 0;
                         defender.destroy();
-                        return;
+                        return 0;
                     } 
                 }
                 else
@@ -177,12 +178,13 @@ namespace BedBihan
                     if (this.isDead())
                     {
                         numberOfConfrontations = 0;
-                        this.destroy(); // ??
+                        return 1;
                     }
                 }
-                
                 numberOfConfrontations--;
             }
+            return 2;
+            
         }
 
 

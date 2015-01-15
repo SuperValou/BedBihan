@@ -62,12 +62,19 @@ namespace BedBihan
             set;
         }
 
-        public void playTurn()
+        public void remove(Unit delU)
         {
-            /*
-             * for each unit
-             * move
-             */
+            int tabsize = this.faction.troops.Length;
+            Unit[] newTroop = new Unit[tabsize];
+            int i = 0;
+            foreach(Unit u in this.faction.troops)
+            {
+                if (u != delU)
+                {
+                    newTroop[i] = u;
+                    i++;
+                }
+            }
         }
 
 

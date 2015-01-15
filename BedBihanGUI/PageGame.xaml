@@ -11,8 +11,7 @@
 	Title="PageGame">
 
 
-    <Grid x:Name="map"  >
-        <!--<ScrollViewer HorizontalScrollBarVisibility="Visible">-->
+    <Grid x:Name="map" Cursor="Hand"  >
  
 
     </Grid>

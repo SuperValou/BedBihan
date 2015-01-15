@@ -31,6 +31,7 @@ namespace BedBihanGUI
         private UnitTexture selectedUnit  = null;
 
         public static List<Hex> hexagons = new List<Hex>();
+
         public static List<UnitTexture> unitsInGame = new List<UnitTexture>();
 
 
@@ -394,9 +395,74 @@ namespace BedBihanGUI
         /*
          * \brief  Move unit to Hex
          * */
-        public void moveUnit(Hex hex)
+        public void tryToMoveUnit(Hex hex)
         {
             
+            List<UnitTexture> ListEnemies = PageGame.getUnitsOn(hex.coord);
+            
+            
+            if( ListEnemies.Count > 0 )
+            {
+                UnitTexture ennemie = ListEnemies.First<UnitTexture>();
+                int Atthp = this.selectedUnit.unit.currentHP;
+                int Deffhp = ennemie.unit.currentHP;
+                if (!game.currentPlayer.belongTo(ennemie.unit))
+                {
+                    
+                    int res = this.selectedUnit.unit.fightAgainst(ennemie.unit);
+                    int idyou = 0;
+                    if (game.currentPlayer == game.list_players[1])
+                    {
+                        idyou= 1;
+                    }
+                    int idEn = 1;
+                    if (idyou == 1)
+                    {
+                        idEn = 0;
+                    }
+                    
+                    switch(res)
+                    {
+                        case 0:
+                            MessageBox.Show("your unit kill your ennemie !");
+                            unitsInGame.Remove(ennemie);
+                            game.list_players[idEn].remove(ennemie.unit);
+                            this.RemoveUnitOnMap(ennemie);
+                            this.moveUnit(hex);
+                            ListEnemies = PageGame.getUnitsOn(hex.coord);
+                            if (ListEnemies.Count == 0)
+                            { 
+                                this.moveUnit(hex); 
+                            }
+                            break;
+                        case 1:
+                            MessageBox.Show("your unit has been killed !");
+                            unitsInGame.Remove(ennemie);
+                            game.list_players[1].remove(ennemie.unit);
+                            this.RemoveUnitOnMap(ennemie);
+                            this.moveUnit(hex);
+                            break;
+                        default:
+                            int looseAttHp = Atthp - this.selectedUnit.unit.currentHP;
+                            int looseDeffHp = Deffhp - ennemie.unit.currentHP;
+                            string msg = "RESULT OF THE BATTLE \n";
+                            msg += "******************** \n";
+                            msg += game.list_players[idyou].name + " loose " + looseAttHp + " HP \n";
+                            msg += game.list_players[idEn].name + " loose " + looseDeffHp + " HP";
+                            MessageBox.Show( msg );
+                            break;
+                    }
+                }
+            }
+            else 
+            {
+                moveUnit(hex);
+            }
+           
+        }
+
+        public void moveUnit(Hex hex)
+        {
             this.selectedUnit.unit.looseMovementPoints(hex.field);
             this.RemoveUnitOnMap(this.selectedUnit);
             this.selectedUnit.unit.coordinates = hex.coord;
@@ -407,7 +473,7 @@ namespace BedBihanGUI
 
       
   
-
+    
 
 
     }

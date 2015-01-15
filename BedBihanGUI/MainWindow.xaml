@@ -18,8 +18,8 @@
                     From="70" To="0" Duration="0:0:2" />
         </Storyboard>
     </Window.Resources>
-        
-        
+
+
     <Grid>
 
         <Grid.Background>
@@ -45,8 +45,7 @@
                 <TextBlock Grid.Column="1" 
                                Grid.Row="0" 
                                FontSize="20" 
-                               HorizontalAlignment="Left" 
-                               Height="31" Margin="26,10,0,0" 
+                               HorizontalAlignment="Center" 
                                TextWrapping="Wrap" 
                                Text="Bedbihan" 
                                VerticalAlignment="Top" 
@@ -54,7 +53,6 @@
                                FontWeight="Bold" 
                                TextAlignment="Center" 
                                FontFamily="Stonehenge" 
-                               Cursor="Wait" 
                                Foreground="White"/>
 
             </Viewbox>
@@ -74,23 +72,27 @@
 
 
         <!-- end turn button -->
-        <Grid Grid.Row="2" Grid.Column="2">
-            <Button x:Name="endTurnButton" Content="End turn" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top" Width="75" Click="endTurn"  Visibility="Hidden"/>
-            
+        <Grid Grid.Row="2" Grid.Column="1" Margin="5,0,5,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="59*"/>
+                <ColumnDefinition Width="290*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="endTurnButton" Content="End turn" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="endTurn"  Visibility="Hidden" Grid.ColumnSpan="2"/>
+
         </Grid>
 
 
         <!-- main -->
         <Grid Grid.Column="1" Grid.Row="1">
-         
+
 
             <Viewbox StretchDirection="Both" Stretch="Uniform">
-            <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
+                <Frame Name="center" Source="MainMenu.xaml" NavigationUIVisibility="Hidden"/>
             </Viewbox>
 
             <TextBlock x:Name="PlayerTurn" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="White" FontFamily="Arial Black" Opacity="0">
                 lol
-              </TextBlock>
+            </TextBlock>
 
         </Grid>
 
