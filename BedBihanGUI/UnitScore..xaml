@@ -7,11 +7,11 @@
             >
 
     <Grid Height="85">
-        <!--<Grid.Background>
+        <Grid.Background>
             <ImageBrush ImageSource="pack://application:,,,/textures/oldpaper.png"/>
-        </Grid.Background>-->
+        </Grid.Background>
 
-        <Grid Margin="43,8,43,11">
+        <Grid Margin="30,8,43,11">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30*"></RowDefinition>
                 <RowDefinition Height="31*"></RowDefinition>
@@ -23,10 +23,10 @@
                 <ColumnDefinition Width="22*"/>
             </Grid.ColumnDefinitions>
             <Label Content="Race" x:Name="Race" FontSize="22" FontFamily="Arial" FontWeight="Bold" Grid.RowSpan="2" Margin="-16,0,0.4,-0.4"  />
-            <Label Content="HP: " x:Name="labelHp" FontSize="18" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" Margin="0,3,0.4,-0.4" Width="62"  />
-            <Label Content="5" x:Name="HP" FontSize="18" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" Margin="39,3,30.8,-0.4" Grid.ColumnSpan="2" />
-            <Label Content="MovP: " x:Name="labelMp" FontSize="18" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" Margin="0,3,34.4,-0.4" Width="66" Grid.ColumnSpan="2" Grid.Column="1"  />
-            <Label Content="10" x:Name="MP" FontSize="18" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" Margin="0,3,-9.6,-0.4" Grid.Column="2" HorizontalAlignment="Right" Width="49" />
+            <Label Content="HP: " x:Name="labelHp" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" Margin="0,3,0.4,-0.4" Width="62"  />
+            <Label Content="5" x:Name="HP" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" Margin="0,3,0,0"  />
+            <Label Content="MovP: " x:Name="labelMp" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" Margin="0,3,34.4,-0.4" Width="66" Grid.ColumnSpan="2" Grid.Column="1"  />
+            <Label Content="10" x:Name="MP" FontSize="16" FontFamily="Arial" FontWeight="Bold" Grid.Row="1" Margin="0,3,-9.6,-0.4" Grid.Column="2" HorizontalAlignment="Right" Width="49" />
             <Label Content="[select]" x:Name="selected" FontSize="22" FontFamily="Arial" FontWeight="Bold" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="39.6,0,-10.2,27.6" Grid.RowSpan="2" />
         </Grid>
 
