@@ -41,6 +41,7 @@ namespace BedBihanGUI
             get;
             set;
         }
+        
         public Coordinates coord
         {
             get;
@@ -72,13 +73,15 @@ namespace BedBihanGUI
          */
         private void hex_down(object sender, MouseButtonEventArgs e)
         {
-            List<Unit> unitsHere = PageGame.getUnitsOn(this.coord);
+            List<UnitTexture> unitsHere = PageGame.getUnitsOn(this.coord);
 
             pg.selectHex(this,unitsHere);
+
                     
             this.select();
         }
 
+    
         public void SetWoods()
         {
             this.fond.ImageSource = imgWoods;

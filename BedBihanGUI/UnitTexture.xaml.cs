@@ -21,15 +21,15 @@ namespace BedBihanGUI
     /// </summary>
     public partial class UnitTexture : UserControl
     {
-        // coordinates of the texture
-        public Coordinates coordinates
+        // unit associated to the texture
+        public Unit unit
         {
             get;
             set;
         }
 
-        // faction of the texture
-        public Faction faction
+        // unitscore associated
+        public UnitScore unitscore
         {
             get;
             set;
@@ -43,13 +43,11 @@ namespace BedBihanGUI
         /**
          * \brief initialize a unit texture 
          */
-        public UnitTexture(BedBihan.Faction faction,Coordinates coord)
+        public UnitTexture(Unit unit)
         {
+            this.unit = unit;
             InitializeComponent();
-            this.faction = faction;
-            this.coordinates = coord;
-            this.background.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/"+faction+".png", UriKind.RelativeOrAbsolute));
-
+            this.background.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/"+this.unit.faction+".png", UriKind.RelativeOrAbsolute));
         }
 
         

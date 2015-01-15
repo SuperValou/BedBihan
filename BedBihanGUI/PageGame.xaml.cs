@@ -29,6 +29,8 @@ namespace BedBihanGUI
         private Hex selectedHex = null;
         private MainWindow parent;
 
+        public static List<UnitTexture> unitsInGame = new List<UnitTexture>();
+
 
         public PageGame()
         {
@@ -41,12 +43,17 @@ namespace BedBihanGUI
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            loadPanels();
             PrintMap();
             placeTroops();
             displayUnits();
         }
 
-
+        private void loadPanels()
+        {
+            parent.controlUnitBackground.Visibility = System.Windows.Visibility.Visible;
+            parent.moveUnitButton.Visibility = System.Windows.Visibility.Visible;
+        }
 
 
         /**
@@ -198,47 +205,50 @@ namespace BedBihanGUI
             }
         }
 
-
-
-
+        
         /**
-         * \brief display a unit on the map (i'm working on it)
+         * \brief display a unit on the map
          */
         private void displayUnitOnMap(Unit unit)
         {
-            UnitTexture unitTexture = new UnitTexture(unit.faction, unit.coordinates);
+            UnitTexture unitTexture = new UnitTexture(unit);
+            unitsInGame.Add(unitTexture);
             int x = unit.coordinates.x;
             int y = unit.coordinates.y;
 
             // if odd row
-            if (y % 2 != 0) { x++; }
+            if (y % 2 != 0)
+            {
+                x++;
+            }
 
             Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);
 
             Grid.SetColumn(unitTexture, x);
             SelectedRow.Children.Add(unitTexture);
-
-
         }
 
-        internal static List<Unit> getUnitsOn(Coordinates coordinates)
+        /*
+         * \brief return the list of the unit on the specified coordinates
+         * */
+        internal static List<UnitTexture> getUnitsOn(Coordinates coordinates)
         {
-            List<Unit> units = new List<Unit>();
-            foreach (Player p in game.list_players)
+            List<UnitTexture> units = new List<UnitTexture>();
+            foreach (UnitTexture unitTex in unitsInGame)
             {
-                foreach (Unit unit in p.faction.troops)
+                if (unitTex.unit.coordinates.x == coordinates.x && unitTex.unit.coordinates.y == coordinates.y)
                 {
-                    if (unit.coordinates.x == coordinates.x && unit.coordinates.y == coordinates.y)
-                    {
-                        units.Add(unit);
-                    }
+                    units.Add(unitTex);
                 }
+                
             }
             return units;
         }
 
-
-        public void selectHex(Hex h, List<Unit> ListUnit)
+        /*
+         * \brief 
+         * */
+        public void selectHex(Hex h, List<UnitTexture> ListUnit)
         {
             if (h != this.selectedHex)
             {
@@ -248,20 +258,32 @@ namespace BedBihanGUI
                     selectedHex.unselect();
                 }
                 selectedHex = h;
-                foreach (Unit u in ListUnit)
+                foreach (UnitTexture uTex in ListUnit)
                 {
-                    UnitScore Us = new UnitScore(u);
-                    parent.infoUnit.Children.Add(Us);
+                    UnitScore us = new UnitScore(uTex);
+                    us.pg = this;
+                    uTex.unitscore = us;
+                    parent.infoUnit.Children.Add(us);
                 }
-                selectUnit(ListUnit.First<Unit>());
+                if (ListUnit.Count > 0)
+                {
+                    selectUnit(ListUnit.First<UnitTexture>());
+                }
+
             }
 
         }
 
         // show unit statistics and highlight accessible hexagons
-        public void selectUnit(Unit unit)
+        internal void selectUnit(UnitTexture unitTex)
         {
+            foreach (UnitScore unitScore in parent.infoUnit.Children)
+            {
+                unitScore.unselect();
+            }
+            unitTex.unitscore.select();
         }
+
     }
 }
 

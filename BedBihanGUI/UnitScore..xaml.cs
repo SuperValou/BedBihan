@@ -21,14 +21,40 @@ namespace BedBihanGUI
     /// </summary>
     public partial class UnitScore : UserControl
     {
-        Unit unit;
-        public UnitScore(Unit u)
+        UnitTexture unitTex;
+        public PageGame pg
+        {
+            get;
+            set;
+        }
+        public UnitScore(UnitTexture u)
         {
             InitializeComponent();
-            unit = u;
-            Race.Content = u.faction.ToString();
-            HP.Content = u.currentHP;
-            HPMax.Content = "/ " + u.maxHP;
+            unitTex = u;
+            Race.Content = u.unit.faction.ToString();
+            HP.Content = u.unit.currentHP;
+            HPMax.Content = "/ " + u.unit.maxHP;
+        }
+
+        /*
+         * \brief print [selected] on the unit score to indicate that the unit is selected
+         * */
+        public void select()
+        {
+            selected.Content = "[selected]";
+        }
+
+        /*
+         * \brief erase the [selected] to unselect the unit
+         * */
+        public void unselect()
+        {
+            selected.Content = "";
+        }
+
+        private void mouseDown(object sender, MouseButtonEventArgs e)
+        {
+            pg.selectUnit(this.unitTex);
         }
     }
 }
