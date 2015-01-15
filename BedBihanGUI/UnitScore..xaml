@@ -7,9 +7,9 @@
             >
 
     <Grid Height="85">
-        <Grid.Background>
+        <!--<Grid.Background>
             <ImageBrush ImageSource="pack://application:,,,/textures/oldpaper.png"/>
-        </Grid.Background>
+        </Grid.Background>-->
 
         <Grid Margin="43,8,43,11">
             <Grid.RowDefinitions>
