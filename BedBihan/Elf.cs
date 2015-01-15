@@ -19,6 +19,7 @@ namespace BedBihan
         }
         public Elf(int maxLife, int att, int def, int maxMov, Coordinates spawningPoint) : base(maxLife, att, def, maxMov, spawningPoint)
         {
+            this.movementPoints = maxMov;
             setElfStandartCostOfMovement();
             faction = Faction.elf;
         }

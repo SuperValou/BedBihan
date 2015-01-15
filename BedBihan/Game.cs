@@ -70,10 +70,10 @@ namespace BedBihan
 
         public void endTurn()
         {
-            /*
-             * Compter les points
-             *
-             */
+            foreach (Player p in list_players)
+            {
+                p.restorePoint();
+            }
         }
 
         public void launchGame()

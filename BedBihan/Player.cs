@@ -24,6 +24,18 @@ namespace BedBihan
             } // add error for default ?
         }
 
+        public void restorePoint()
+        {
+            foreach(Unit u in faction.troops)
+            {
+                u.restoreMovementPoints();
+            }
+        }
+        public bool belongTo(Unit u)
+        {
+            return this.faction.troops.Contains<Unit>(u);
+        }
+
 
         public string name
         {

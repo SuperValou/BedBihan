@@ -141,7 +141,7 @@ namespace BedBihanGUI
         {
             if (this.highlighted)
             {
-                pg.moveUnit(this.coord);
+                pg.moveUnit(this);
             }
         }
 
