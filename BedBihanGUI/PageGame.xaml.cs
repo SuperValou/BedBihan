@@ -258,6 +258,10 @@ namespace BedBihanGUI
          * */
         public void selectHex(Hex h, List<UnitTexture> ListUnit)
         {
+            // debug
+            // show coordinates of the clicked hexagon
+            // debug
+
             if (h != this.selectedHex)
             {
                 if (selectedHex != null)
@@ -297,19 +301,20 @@ namespace BedBihanGUI
             {
                 unitScore.unselect();
             }
+
+            // update the control panel
             unitTex.unitscore.select();
             parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/" + unitTex.unit.faction + ".png", UriKind.RelativeOrAbsolute));
-            parent.unitName.Content = "to complete, use CTRL F";
+            parent.unitName.Content = "Beautiful unit";
             parent.movementPoints.Content = unitTex.unit.movementPoints;
 
             
                
         }
-         
-        /// <summary>
-        /// highlight the accessible hexagons for the specified unit
-        /// </summary>
-        /// <param name="unitTex"></param>
+
+        /*
+         * \brief highlight the accessible hexagons for the specified unit
+         * */
         private void highlightAccessibleHexagons(UnitTexture unitTex)
         {
             // highlight accessible hexagons

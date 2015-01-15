@@ -85,6 +85,7 @@ namespace BedBihanGUI
          */
         private void hex_down(object sender, MouseButtonEventArgs e)
         {
+            
             List<UnitTexture> unitsHere = PageGame.getUnitsOn(this.coord);
 
             pg.selectHex(this,unitsHere);
