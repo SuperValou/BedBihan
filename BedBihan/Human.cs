@@ -39,9 +39,15 @@ namespace BedBihan
         /*
          * \brief return number of points got
          * */
-        public override int getPoints()
+        public override int getPoints(Field f)
         {
-            return 1 + numberOfKills;
+            if (currentHP == 0) { return 0; }
+            int pt = 1;
+            if(f==Field.Woods)
+            {
+                pt = 0;
+            }
+            return pt + numberOfKills;
         }
 
 

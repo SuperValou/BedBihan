@@ -103,10 +103,7 @@ namespace BedBihan
             throw new System.NotImplementedException();
         }
 
-        public void updatePlayerPoints(Player player)
-        {
-            throw new System.NotImplementedException();
-        }
+
 
         public IEnumerable<Unit> getUnitsOn(Coordinates coord)
         {
@@ -119,6 +116,48 @@ namespace BedBihan
         {
             // TODO: Complete member initialization
             this.board = board;
+        }
+
+        public void updatePoint()
+        {
+            foreach(Player p in list_players)
+            {
+                int score = 0;
+                foreach(Unit u in p.faction.troops)
+                {
+                    Field f = this.board.grid[u.coordinates.x, u.coordinates.y].field;
+                    score += u.getPoints(f);
+                }
+                p.points = score;
+            }
+        }
+
+        public bool over()
+        {
+            bool bool1 = true;
+            bool bool2 = true;
+            foreach(Unit u in list_players[0].faction.troops)
+            {
+                bool1 &= ( u.currentHP == 0);
+            }
+            foreach (Unit u in list_players[1].faction.troops)
+            {
+                bool2 &= ( u.currentHP == 0);
+            }
+            return bool1 || bool2;
+        }
+
+        public Player getWinner()
+        {
+            this.updatePoint();
+            if (list_players[0].points > list_players[1].points)
+            {
+                return list_players[0];
+            }
+            else
+            {
+                return list_players[1];
+            }
         }
 
     }

@@ -7,6 +7,7 @@ namespace BedBihan
 {
     public class Korrigan : Unit
     {
+
         private void setKorriganStandartCostOfMovement()
         {
             costOfMovement[(int) Field.Plain] = 0.5F;
@@ -27,9 +28,14 @@ namespace BedBihan
         /*
          * \brief return number of points got
          * */
-        public override int getPoints()
+        public override int getPoints(Field f)
         {
-            throw new NotImplementedException();
+            if (currentHP == 0) { return 0; }
+            if (f == Field.Plain)
+            {
+                return 0;
+            }
+            else return 1;
         }
        
     }

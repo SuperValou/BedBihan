@@ -424,7 +424,23 @@ namespace BedBihanGUI
                     switch(res)
                     {
                         case 0:
-                            MessageBox.Show("your unit kill your ennemie !");
+                            if (ennemie.unit.faction == Faction.elf)
+                            {
+                                 Random r = new Random();
+                                int b = r.Next(2);
+                                b = b % 2;
+                                if (b == 0)
+                                {
+                                    MessageBox.Show("Enemy run away");
+                                    ennemie.unit.currentHP = 1;
+                                    return;
+                                }
+                            }
+                            if (selectedUnit.unit.faction == Faction.human)
+                            {
+                                selectedUnit.unit.addKill();
+                            }
+                            MessageBox.Show("your unit kill your enemy !");
                             unitsInGame.Remove(ennemie);
                             game.list_players[idEn].remove(ennemie.unit);
                             this.RemoveUnitOnMap(ennemie);
@@ -436,12 +452,24 @@ namespace BedBihanGUI
                             }
                             break;
                         case 1:
+                            if (selectedUnit.unit.faction == Faction.elf)
+                            {
+                                Random r = new Random();
+                                int b = r.Next(2);
+                                b = b % 2;
+                                if (b == 0)
+                                {
+                                    MessageBox.Show("your unit run away !");
+                                    this.selectedUnit.unit.currentHP = 1;
+                                    return;
+                                }
+                            }
                             MessageBox.Show("your unit has been killed !");
-                            unitsInGame.Remove(ennemie);
-                            game.list_players[1].remove(ennemie.unit);
-                            this.RemoveUnitOnMap(ennemie);
-                            this.moveUnit(hex);
+                            unitsInGame.Remove(selectedUnit);
+                            game.list_players[1].remove(selectedUnit.unit);
+                            this.RemoveUnitOnMap(selectedUnit);
                             break;
+
                         default:
                             int looseAttHp = Atthp - this.selectedUnit.unit.currentHP;
                             int looseDeffHp = Deffhp - ennemie.unit.currentHP;

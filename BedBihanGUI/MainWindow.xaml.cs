@@ -26,11 +26,13 @@ namespace BedBihanGUI
     public partial class MainWindow : Window
     {
 
+        public List<score> listScore;
         public Game game;
 
         public MainWindow()
         {
             InitializeComponent();
+            listScore = new List<score>();
                        
         }
 
@@ -56,6 +58,22 @@ namespace BedBihanGUI
             this.maxTurnNumber.Visibility = System.Windows.Visibility.Visible;
             this.currentPlayer.Visibility = System.Windows.Visibility.Visible;
             this.currentTurn.Visibility = System.Windows.Visibility.Visible;
+            this.newgame.Visibility = System.Windows.Visibility.Visible;
+        }
+
+        public void RemovePanels()
+        {
+            this.controlUnitBackground.Visibility = System.Windows.Visibility.Hidden;
+            this.movPoints.Visibility = System.Windows.Visibility.Hidden;
+            this.movementPoints.Visibility = System.Windows.Visibility.Hidden;
+            this.unitIcon.Visibility = System.Windows.Visibility.Hidden;
+            this.playerLabel.Visibility = System.Windows.Visibility.Hidden;
+            this.turnLabel.Visibility = System.Windows.Visibility.Hidden;
+            this.endTurnButton.Visibility = System.Windows.Visibility.Hidden;
+            this.maxTurnNumber.Visibility = System.Windows.Visibility.Hidden;
+            this.currentPlayer.Visibility = System.Windows.Visibility.Hidden;
+            this.currentTurn.Visibility = System.Windows.Visibility.Hidden;
+            this.newgame.Visibility = System.Windows.Visibility.Hidden;
         }
 
         /*
@@ -63,6 +81,12 @@ namespace BedBihanGUI
          * */
         private void endTurn(object sender, RoutedEventArgs e)
         {
+            if(game.over() || this.currentTurn == this.maxTurnNumber)
+            {
+                string winner = game.getWinner().name;
+                MessageBox.Show(winner + " WIN ! ");
+                this.newgame_Click(null,null);
+            }
             if (game.currentPlayer == game.list_players.Last<Player>())
             {
                 game.currentTurn++;
@@ -79,6 +103,11 @@ namespace BedBihanGUI
             game.endTurn();
             string msg = game.currentPlayer.name + "'s turn !";
             DisplayPlayerTurn(msg);
+            game.updatePoint();
+            foreach(score s in listScore)
+            {
+                s.poke();
+            }
         }
 
         /*
@@ -95,19 +124,19 @@ namespace BedBihanGUI
     /*
      * \brief update the scores
      * */
-        public void updateScores()
-        {
-            foreach (Player p in game.list_players)
-            {
-                int score = 0;
-                foreach (Unit u in p.faction.troops)
-                {
-                    //score += u.getPoints();
-                }
-                ScoreJ1.Content = "SWAG";
-            }
+       // public void updateScores()
+       // {
+       //     foreach (Player p in game.list_players)
+       //     {
+       //         int score = 0;
+       //         foreach (Unit u in p.faction.troops)
+       //         {
+       //             score += u.getPoints();
+       //         }
+                
+       //     }
             
-       }
+       //}
 
         public void DisplayPlayerTurn(string s) 
         {
@@ -119,9 +148,15 @@ namespace BedBihanGUI
             
             sb.Begin();
             sbSize.Begin();
-            
-        //    
+        }
 
+        public void newgame_Click(object sender, RoutedEventArgs e)
+        {
+            this.ScoreJ1.Visibility = Visibility.Hidden;
+            this.ScoreJ2.Visibility = Visibility.Hidden;
+            MainMenu m = new MainMenu();
+            this.RemovePanels();
+            this.center.Navigate(m);
         }
 
         

@@ -26,7 +26,12 @@ namespace BedBihan
         public int currentHP
         {
             get;
-            private set;
+            set;
+        }
+
+        public void addKill()
+        {
+
         }
 
         public Faction faction
@@ -99,7 +104,7 @@ namespace BedBihan
          */
         public Unit()
         {
-            this.maxHP = 10;
+            this.maxHP = 5;
             this.currentHP = 5;
             this.attack = 2;
             this.defense = 1;
@@ -206,6 +211,6 @@ namespace BedBihan
         /*
          * \brief return the number of points the unit got
          * */
-        public abstract int getPoints();
+        public abstract int getPoints(Field f);
     }
 }

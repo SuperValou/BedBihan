@@ -22,10 +22,19 @@ namespace BedBihanGUI
     public partial class score : Page
     {
 
+        Player j;
         public score(Player J)
         {
             InitializeComponent();
             this.Name.Content = J.name;
+            this.j = J;
+            poke();
+            
+        }
+
+        public void poke()
+        {
+            this.ScoreValue.Content = j.points;
         }
     }
 }

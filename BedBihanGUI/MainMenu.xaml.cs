@@ -69,6 +69,10 @@ namespace BedBihanGUI
             parent.center.Navigate(pg);
             parent.ScoreJ1.Navigate(scJ1);
             parent.ScoreJ2.Navigate(scJ2);
+            parent.ScoreJ1.Visibility = Visibility.Visible;
+            parent.ScoreJ2.Visibility = Visibility.Visible;
+            parent.listScore.Add(scJ1);
+            parent.listScore.Add(scJ2);
         }
 
         // TEST BUTTON 

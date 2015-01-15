@@ -27,9 +27,10 @@ namespace BedBihan
         /*
          * \brief return number of points got
          * */
-        public override int getPoints()
+        public override int getPoints(Field f)
         {
-            throw new NotImplementedException();
+            if (currentHP == 0) { return 0; }
+            return 1;
         }
         
     }

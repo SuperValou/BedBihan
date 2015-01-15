@@ -37,6 +37,12 @@
             <ColumnDefinition Width="469*" />
             <ColumnDefinition Width="261*" />
         </Grid.ColumnDefinitions>
+        
+        <Viewbox >
+            <Grid Margin="15,16,14,17">
+                <Button x:Name="newgame" Visibility="Hidden" Click="newgame_Click">Exit Game</Button>
+            </Grid>
+        </Viewbox>
 
 
         <!-- BedBihan -->
@@ -129,8 +135,12 @@
                 <Image x:Name="controlUnitBackground" Source="/textures/oakwood.png" HorizontalAlignment="Left" Height="528" Margin="10,10,0,-0.4" VerticalAlignment="Top" Width="242" Stretch="Fill" IsEnabled="False" Visibility="Hidden"/>
                 <Image x:Name="unitIcon" Source="/textures/blank.png" HorizontalAlignment="Left" Height="100" Margin="93,48,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
                 <Label x:Name="unitName" Content="Select a unitf" Height="31" Margin="93,153,0,0" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Visibility="Hidden"/>
-                <Label x:Name="movPoints" Content="Movement points" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="117" Visibility="Hidden"/>
-                <Label x:Name="movementPoints" Content="0" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" Visibility="Hidden"/>
+                
+                
+                    <Label x:Name="movPoints" Content="Movement points" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="117" Visibility="Hidden"/>
+                    <Label x:Name="movementPoints" Content="0" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" Visibility="Hidden"/>
+              
+               
             </Grid>
         </Viewbox>
 
