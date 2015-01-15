@@ -24,6 +24,13 @@ namespace BedBihan
             faction = Faction.korrigan;
         }
 
+        /*
+         * \brief return number of points got
+         * */
+        public override int getPoints()
+        {
+            throw new NotImplementedException();
+        }
        
     }
 }

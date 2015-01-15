@@ -42,8 +42,8 @@ namespace BedBihan
 
             adjacentHexagons.Add(new Coordinates(this.x-1,   this.y));    // left
             adjacentHexagons.Add(new Coordinates(this.x+1,   this.y));    // right
-            adjacentHexagons.Add(new Coordinates(this.x,     this.y+1));  // bottom right if x is even, bottom left if x is odd
-            adjacentHexagons.Add(new Coordinates(this.x,     this.y-1));  // top right if x is even, top left if x is odd
+            adjacentHexagons.Add(new Coordinates(this.x,     this.y+1));  // bottom right if y is even, bottom left if y is odd
+            adjacentHexagons.Add(new Coordinates(this.x,     this.y-1));  // top right if y is even, top left if y is odd
 
 
             if (this.y % 2 == 0)

@@ -45,22 +45,16 @@ namespace BedBihanGUI
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            loadPanels();
+            parent.loadPanels();
             PrintMap();
             placeTroops();
             displayUnits();
+            
         }
 
-        /*
-         * \ref load the panel displaying unit status and controls
-         * */
-        private void loadPanels()
-        {
-            parent.controlUnitBackground.Visibility = System.Windows.Visibility.Visible;
-            parent.moveUnitButton.Visibility = System.Windows.Visibility.Visible;
-            parent.movPoints.Visibility = System.Windows.Visibility.Visible;
-            parent.unitIcon.Visibility = System.Windows.Visibility.Visible;
-        }
+        
+
+        
 
 
         /**
@@ -240,6 +234,7 @@ namespace BedBihanGUI
 
         
 
+
         private void RemoveUnitOnMap(UnitTexture unitTexture)
         {
             int x = unitTexture.unit.coordinates.x;
@@ -284,36 +279,27 @@ namespace BedBihanGUI
          * */
         public void selectHex(Hex h, List<UnitTexture> ListUnit)
         {
-            // debug
-            // show coordinates of the clicked hexagon
-            // debug
-
-            if (h != this.selectedHex)
+            if (selectedHex != null)
             {
-                if (selectedHex != null)
-                {
-                    parent.infoUnit.Children.Clear();
-                    selectedHex.deselect();
-                }
-                selectedHex = h;
-                foreach (UnitTexture uTex in ListUnit)
-                {
-                    UnitScore us = new UnitScore(uTex);
-                    us.pg = this;
-                    uTex.unitscore = us;
-                    parent.infoUnit.Children.Add(us);
-                }
-                if (ListUnit.Count > 0)
-                {
-                    selectUnit(ListUnit.First<UnitTexture>());
-                }
-                else
-                {
-                    deselectEverything();
-                }
-
+                parent.infoUnit.Children.Clear();
+                selectedHex.deselect();
             }
-
+            selectedHex = h;
+            foreach (UnitTexture uTex in ListUnit)
+            {
+                UnitScore us = new UnitScore(uTex);
+                us.pg = this;
+                uTex.unitscore = us;
+                parent.infoUnit.Children.Add(us);
+            }
+            if (ListUnit.Count > 0 && ListUnit.First<UnitTexture>().unit.faction == parent.game.currentPlayer.faction.troops.First<Unit>().faction)
+            {
+                selectUnit(ListUnit.First<UnitTexture>());
+            }
+            else
+            {
+                deselectEverything();
+            }
         }
 
         /*
@@ -347,11 +333,11 @@ namespace BedBihanGUI
             List<Coordinates> adjacent = unitTex.unit.coordinates.getAdjacent();
             //string res = " x " + adjacent.First<Coordinates>().x + "y : " +  adjacent.First<Coordinates>().y;
             //MessageBoxResult mg = MessageBox.Show(res);
+
             deselectEverything();
 
             foreach (Coordinates coord in adjacent)
             {
-            
                 // if korrigan, highlight mountains too
                 if (unitTex.unit.faction == Faction.korrigan)
                 {
@@ -399,9 +385,20 @@ namespace BedBihanGUI
         public void moveUnit(Coordinates coord)
         {
 
+            
             this.RemoveUnitOnMap(this.selectedUnit);
             this.selectedUnit.unit.coordinates = coord;
             displayUnitOnMap(this.selectedUnit);
+            deselectEverything();
+            selectHex(this.selectedHex, PageGame.getUnitsOn(this.selectedHex.coord));
+        }
+
+        /*
+         * \brief update the panels showing wich units are on the selected hexagon
+         * */
+        private void updateUnitScores()
+        {
+            throw new NotImplementedException();
         }
     
 

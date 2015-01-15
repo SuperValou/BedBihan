@@ -23,6 +23,13 @@ namespace BedBihan
             faction = Faction.elf;
         }
 
+        /*
+         * \brief return number of points got
+         * */
+        public override int getPoints()
+        {
+            throw new NotImplementedException();
+        }
         
     }
 }

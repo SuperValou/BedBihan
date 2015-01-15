@@ -36,6 +36,14 @@ namespace BedBihan
             faction = Faction.human;
         }
 
+        /*
+         * \brief return number of points got
+         * */
+        public override int getPoints()
+        {
+            return 1 + numberOfKills;
+        }
+
 
 
 

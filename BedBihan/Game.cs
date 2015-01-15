@@ -21,13 +21,19 @@ namespace BedBihan
             protected set;
         }
 
+        public Player currentPlayer
+        {
+            get;
+            set;
+        }
+
         public int maxTurnNumber
         {
             get;
             private set;
         }
 
-        private int currentTurn
+        public int currentTurn
         {
             get;
             set;
@@ -48,9 +54,17 @@ namespace BedBihan
         }
 
         public void setBoard(Board b) { this.board = b;  }
-        public void setMaxTurnNumber(int mtn) { this.maxTurnNumber = mtn; }
-       // public void setCurrentTurn(int ct) { this.currentTurn = ct; }
-        public void setListplayers(List<Player> lplay) { this.list_players = lplay;  }
+        public void setMaxTurnNumber(int mtn) 
+        { 
+            this.maxTurnNumber = mtn;
+            this.currentTurn = 1;
+        }
+
+        public void setListplayers(List<Player> lplay) 
+        {
+            this.list_players = lplay;
+            this.currentPlayer = lplay.First<Player>();
+        }
 
 
 

@@ -26,7 +26,7 @@ namespace BedBihanGUI
         {
             InitializeComponent();
             parent = (Application.Current.MainWindow as MainWindow);
-
+            
         }
 
         private void LunchGame(object sender, RoutedEventArgs e)

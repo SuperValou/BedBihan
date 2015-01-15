@@ -87,7 +87,7 @@ namespace BedBihanGUI
         {
             
             List<UnitTexture> unitsHere = PageGame.getUnitsOn(this.coord);
-
+            
             pg.selectHex(this,unitsHere);
 
                     

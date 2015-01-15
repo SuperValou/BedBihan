@@ -200,8 +200,12 @@ namespace BedBihan
             return costOfMovement[(int) field];
         }
 
-        
 
 
+
+        /*
+         * \brief return the number of points the unit got
+         * */
+        public abstract int getPoints();
     }
 }
