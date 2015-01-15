@@ -28,6 +28,7 @@ namespace BedBihanGUI
         public static Game game;
         private Hex selectedHex = null;
         private MainWindow parent;
+        private UnitTexture selectedUnit  = null;
 
         public static List<Hex> hexagons = new List<Hex>();
         public static List<UnitTexture> unitsInGame = new List<UnitTexture>();
@@ -208,7 +209,9 @@ namespace BedBihanGUI
             {
                 foreach (Unit unit in player.faction.troops)
                 {
-                    displayUnitOnMap(unit);
+                    UnitTexture unitTexture = new UnitTexture(unit);
+                    unitsInGame.Add(unitTexture);
+                    displayUnitOnMap(unitTexture);
                 }
             }
         }
@@ -217,12 +220,10 @@ namespace BedBihanGUI
         /**
          * \brief display a unit on the map
          */
-        private void displayUnitOnMap(Unit unit)
+        private void displayUnitOnMap(UnitTexture unitTexture)
         {
-            UnitTexture unitTexture = new UnitTexture(unit);
-            unitsInGame.Add(unitTexture);
-            int x = unit.coordinates.x;
-            int y = unit.coordinates.y;
+            int x = unitTexture.unit.coordinates.x;
+            int y = unitTexture.unit.coordinates.y;
 
             // if odd row
             if (y % 2 != 0)
@@ -233,8 +234,33 @@ namespace BedBihanGUI
             Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);
 
             Grid.SetColumn(unitTexture, x);
+            
             SelectedRow.Children.Add(unitTexture);
         }
+
+        
+
+        private void RemoveUnitOnMap(UnitTexture unitTexture)
+        {
+            int x = unitTexture.unit.coordinates.x;
+            int y = unitTexture.unit.coordinates.y;
+
+            // if odd row
+            if (y % 2 != 0)
+            {
+                x++;
+            }
+
+            Grid SelectedRow = (Grid)VisualTreeHelper.GetChild(this.map, y);
+  
+            SelectedRow.Children.Remove(unitTexture);
+            // VisualTreeHelper.GetChild(SelectedRow, x).
+            
+
+            
+        }
+
+
 
         /*
          * \brief return the list of the unit on the specified coordinates
@@ -296,6 +322,7 @@ namespace BedBihanGUI
         internal void selectUnit(UnitTexture unitTex)
         {
             highlightAccessibleHexagons(unitTex);
+            this.selectedUnit = unitTex;
 
             foreach (UnitScore unitScore in parent.infoUnit.Children)
             {
@@ -366,6 +393,20 @@ namespace BedBihanGUI
                 hex.deselect();
             }
         }
+
+
+
+        public void moveUnit(Coordinates coord)
+        {
+
+            this.RemoveUnitOnMap(this.selectedUnit);
+            this.selectedUnit.unit.coordinates = coord;
+            displayUnitOnMap(this.selectedUnit);
+        }
+    
+
+
+
     }
 }
 

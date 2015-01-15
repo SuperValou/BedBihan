@@ -49,7 +49,8 @@ namespace BedBihanGUI
             InitializeComponent();
             this.background.ImageSource = new BitmapImage(new Uri("pack://application:,,,/textures/"+this.unit.faction+".png", UriKind.RelativeOrAbsolute));
         }
-
+        
+        
         
     }
 }

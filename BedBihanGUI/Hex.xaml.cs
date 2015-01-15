@@ -137,6 +137,14 @@ namespace BedBihanGUI
             }
         }
 
+        private void hex_down_right(object sender, MouseButtonEventArgs e)
+        {
+            if (this.highlighted)
+            {
+                pg.moveUnit(this.coord);
+            }
+        }
+
   
     }
 }

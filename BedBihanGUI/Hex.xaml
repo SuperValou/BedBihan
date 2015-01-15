@@ -6,7 +6,7 @@
              mc:Ignorable="d" >
     
     <Grid>
-        <Polygon x:Name="PolygonTile" Stroke="Black" Stretch="Uniform" MouseDown="hex_down" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,-29,0,0" MouseEnter="mouseEnter" MouseLeave="PolygonTile_MouseLeave" StrokeThickness="2"  >
+        <Polygon x:Name="PolygonTile" Stroke="Black" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,-29,0,0" MouseEnter="mouseEnter" MouseLeave="PolygonTile_MouseLeave" StrokeThickness="2" MouseLeftButtonDown="hex_down" MouseRightButtonDown="hex_down_right"  >
             <Polygon.Points>
                 <PointCollection>
                     <Point X="50" Y="0" />

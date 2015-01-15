@@ -18,8 +18,8 @@ namespace BedBihan
         public override void buildList_players(string pj1, string pj2)
         {
             List<Player> lplay = new List<Player>();
-            Player j1 = new Player(6, pj1);
-            Player j2 = new Player(6, pj2);
+            Player j1 = new Player(1, pj1);
+            Player j2 = new Player(1, pj2);
             lplay.Add(j1);
             lplay.Add(j2);
             this.game.setListplayers(lplay);

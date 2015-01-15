@@ -93,7 +93,8 @@
 
             <!-- panel where you can choose what to do with the current unit-->
         </Grid>
-        <Grid Grid.Row="1" Grid.Column="3">
+        <Viewbox Grid.Row="1" Grid.Column="3">
+        <Grid >
 
             <Image x:Name="controlUnitBackground" Source="/textures/oakwood.png" HorizontalAlignment="Left" Height="528" Margin="10,10,0,-0.4" VerticalAlignment="Top" Width="242" Stretch="Fill" IsEnabled="False" Visibility="Hidden"/>
             <Button x:Name="moveUnitButton" Content="Move" HorizontalAlignment="Left" Margin="93,447,0,0" VerticalAlignment="Top" Width="85" IsEnabled="False" Visibility="Hidden"/>
@@ -102,7 +103,7 @@
             <Label x:Name="movPoints" Content="Movement points" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="117" Visibility="Hidden"/>
             <Label x:Name="movementPoints" Content="" HorizontalAlignment="Left" Height="32" Margin="193,211,0,0" VerticalAlignment="Top" Width="36" Visibility="Hidden"/>
         </Grid>
-
+        </Viewbox>
 
 
 
