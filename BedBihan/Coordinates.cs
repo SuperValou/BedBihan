@@ -34,7 +34,7 @@ namespace BedBihan
         }
 
         /*
-         * return the list of coordinates adjacent to these coordinates
+         * \brief return the list of coordinates adjacent to these coordinates
          * */
         public List<Coordinates> getAdjacent()
         {

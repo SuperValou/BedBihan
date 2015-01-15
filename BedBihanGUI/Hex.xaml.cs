@@ -27,6 +27,7 @@ namespace BedBihanGUI
         static BitmapImage imgPlain = new BitmapImage(new Uri("pack://application:,,,/textures/plain.png", UriKind.RelativeOrAbsolute));
         static BitmapImage imgDesert = new BitmapImage(new Uri("pack://application:,,,/textures/desert.png", UriKind.RelativeOrAbsolute));
 
+        public Field field;
         private bool selected;
 
 
@@ -48,15 +49,25 @@ namespace BedBihanGUI
             set;
         }
 
+        public bool highlighted
+        {
+            get;
+            set;
+        }
+
         public void select()
         {
             selected = true;
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.Goldenrod);
         }
 
-        public void unselect()
+        
+
+        public void deselect()
         {
             this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
             selected = false;
+            highlighted = false;
         }
 
 
@@ -66,6 +77,7 @@ namespace BedBihanGUI
         public void highlight()
         {
             this.PolygonTile.Stroke = new SolidColorBrush(Colors.PaleGreen);
+            highlighted = true;
         }
 
         /**
@@ -85,24 +97,25 @@ namespace BedBihanGUI
         public void SetWoods()
         {
             this.fond.ImageSource = imgWoods;
+            this.field = Field.Woods;
         }
 
         public void SetMountain()
         {
             this.fond.ImageSource = imgMountains;
-
+            this.field = Field.Mountain;
         }
 
         public void SetPlain()
         {
             this.fond.ImageSource = imgPlain;
-
+            this.field = Field.Plain;
         }
 
         public void SetDesert()
         {
             this.fond.ImageSource = imgDesert;
-
+            this.field = Field.Desert;
         }
 
         private void mouseEnter(object sender, MouseEventArgs e)
@@ -112,9 +125,14 @@ namespace BedBihanGUI
 
         private void PolygonTile_MouseLeave(object sender, MouseEventArgs e)
         {
-            if (!selected)
+            this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
+            if (selected)
             {
-                this.PolygonTile.Stroke = new SolidColorBrush(Colors.Black);
+                this.PolygonTile.Stroke = new SolidColorBrush(Colors.Goldenrod);
+            }
+            if (highlighted)
+            {
+                this.PolygonTile.Stroke = new SolidColorBrush(Colors.PaleGreen);
             }
         }
 

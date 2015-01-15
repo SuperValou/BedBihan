@@ -29,6 +29,7 @@ namespace BedBihanGUI
         private Hex selectedHex = null;
         private MainWindow parent;
 
+        public static List<Hex> hexagons = new List<Hex>();
         public static List<UnitTexture> unitsInGame = new List<UnitTexture>();
 
 
@@ -49,10 +50,15 @@ namespace BedBihanGUI
             displayUnits();
         }
 
+        /*
+         * \ref load the panel displaying unit status and controls
+         * */
         private void loadPanels()
         {
             parent.controlUnitBackground.Visibility = System.Windows.Visibility.Visible;
             parent.moveUnitButton.Visibility = System.Windows.Visibility.Visible;
+            parent.movPoints.Visibility = System.Windows.Visibility.Visible;
+            parent.unitIcon.Visibility = System.Windows.Visibility.Visible;
         }
 
 
@@ -85,6 +91,7 @@ namespace BedBihanGUI
                         h.coord = new Coordinates(nbC, nbR);
                         Grid.SetColumn(h, nbC);
                         row.Children.Add(h);
+                        hexagons.Add(h);
 
                     }
 
@@ -112,6 +119,7 @@ namespace BedBihanGUI
                         h.coord = new Coordinates(nbC - 1, nbR);
                         Grid.SetColumn(h, nbC);
                         row.Children.Add(h);
+                        hexagons.Add(h);
                     }
 
                 }
@@ -255,7 +263,7 @@ namespace BedBihanGUI
                 if (selectedHex != null)
                 {
                     parent.infoUnit.Children.Clear();
-                    selectedHex.unselect();
+                    selectedHex.deselect();
                 }
                 selectedHex = h;
                 foreach (UnitTexture uTex in ListUnit)
@@ -269,21 +277,87 @@ namespace BedBihanGUI
                 {
                     selectUnit(ListUnit.First<UnitTexture>());
                 }
+                else
+                {
+                    deselectEverything();
+                }
 
             }
 
         }
 
-        // show unit statistics and highlight accessible hexagons
+        /*
+         * \brief show unit statistics and highlight accessible hexagons
+         * */
         internal void selectUnit(UnitTexture unitTex)
         {
+            highlightAccessibleHexagons(unitTex);
+
             foreach (UnitScore unitScore in parent.infoUnit.Children)
             {
                 unitScore.unselect();
             }
             unitTex.unitscore.select();
+            parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/" + unitTex.unit.faction + ".png", UriKind.RelativeOrAbsolute));
+            parent.unitName.Content = "to complete, use CTRL F";
+            parent.movementPoints.Content = unitTex.unit.movementPoints;
+
+            
+               
+        }
+         
+        /// <summary>
+        /// highlight the accessible hexagons for the specified unit
+        /// </summary>
+        /// <param name="unitTex"></param>
+        private void highlightAccessibleHexagons(UnitTexture unitTex)
+        {
+            // highlight accessible hexagons
+            List<Coordinates> adjacent = unitTex.unit.coordinates.getAdjacent();
+            foreach (Coordinates coord in adjacent)
+            {
+                deselectEverything();
+                // if korrigan, highlight mountains too
+                if (unitTex.unit.faction == Faction.korrigan)
+                {
+                    foreach (Hex hex in hexagons)
+                    {
+                        if (hex.field == Field.Mountain || (hex.coord.x == coord.x && hex.coord.y == coord.y))
+                        {
+                            hex.highlight();
+
+                        }
+                    }
+                }
+
+                // else just highlight accessible hexagons
+                else
+                {
+                    foreach (Hex hex in hexagons)
+                    {
+                        if (hex.coord.x == coord.x && hex.coord.y == coord.y)
+                        {
+                            hex.highlight();
+
+                        }
+                    }
+                }
+            }
+            
         }
 
+
+        /*
+         * \brief  deselect the current unit and reset the control panel
+         * */
+        internal void deselectEverything()
+        {
+            parent.unitIcon.Source = new BitmapImage(new Uri("pack://application:,,,/textures/blank.png", UriKind.RelativeOrAbsolute));
+            foreach(Hex hex in hexagons)
+            {
+                hex.deselect();
+            }
+        }
     }
 }
 

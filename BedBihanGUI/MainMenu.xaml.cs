@@ -64,10 +64,6 @@ namespace BedBihanGUI
             parent.center.Navigate(pg);
             parent.ScoreJ1.Navigate(scJ1);
             parent.ScoreJ2.Navigate(scJ2);
-            
-            
-
-
         }
 
         // TEST BUTTON 
