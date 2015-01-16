@@ -450,17 +450,18 @@ namespace BedBihanGUI
                             {
                                 selectedUnit.unit.addKill();
                             }
-                            MessageBox.Show("your unit kill your enemy !");
+                            MessageBox.Show("Your unit killed your unit's enemy !");
                             unitsInGame.Remove(ennemie);
                             game.list_players[idEn].remove(ennemie.unit);
                             this.RemoveUnitOnMap(ennemie);
-                            this.moveUnit(hex);
-                            ListEnemies = PageGame.getUnitsOn(hex.coord);
+                            unitsInGame.Remove(ennemie);
+                            ListEnemies = PageGame.getUnitsOn(hex.coord);       
                             if (ListEnemies.Count == 0)
-                            { 
+                            {
                                 this.moveUnit(hex); 
                             }
                             break;
+                            
                         case 1:
                             if (selectedUnit.unit.faction == Faction.elf)
                             {
@@ -490,6 +491,10 @@ namespace BedBihanGUI
                             MessageBox.Show( msg );
                             break;
                     }
+                }
+                else
+                {
+                    moveUnit(hex);
                 }
             }
             else 

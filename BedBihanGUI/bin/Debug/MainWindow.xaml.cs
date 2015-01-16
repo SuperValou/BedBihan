@@ -81,7 +81,7 @@ namespace BedBihanGUI
          * */
         private void endTurn(object sender, RoutedEventArgs e)
         {
-            if(game.over() || this.currentTurn == this.maxTurnNumber)
+            if(game.over() || game.currentTurn == game.maxTurnNumber)
             {
                 string winner = game.getWinner().name;
                 MessageBox.Show(winner + " WINS ! ");

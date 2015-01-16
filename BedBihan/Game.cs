@@ -138,11 +138,11 @@ namespace BedBihan
             bool bool2 = true;
             foreach(Unit u in list_players[0].faction.troops)
             {
-                bool1 &= ( u.currentHP == 0);
+                bool1 &= ( u.currentHP <= 0);
             }
             foreach (Unit u in list_players[1].faction.troops)
             {
-                bool2 &= ( u.currentHP == 0);
+                bool2 &= ( u.currentHP <= 0);
             }
             return bool1 || bool2;
         }
