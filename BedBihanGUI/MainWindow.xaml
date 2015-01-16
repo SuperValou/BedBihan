@@ -117,8 +117,8 @@
 
                 <!-- panel where player's score is displayed -->
                 <StackPanel Grid.Row="1" Margin="5,0,25,0">
-                    <Frame x:Name="ScoreJ1"></Frame>
-                    <Frame x:Name="ScoreJ2" Margin="0,10,0,0"></Frame>
+                    <Frame x:Name="ScoreJ1" NavigationUIVisibility="Hidden" ></Frame>
+                    <Frame x:Name="ScoreJ2" Margin="0,10,0,0" NavigationUIVisibility="Hidden"></Frame>
                 </StackPanel>
             </Viewbox>
 
