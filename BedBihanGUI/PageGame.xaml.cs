@@ -460,6 +460,10 @@ namespace BedBihanGUI
                             {
                                 this.moveUnit(hex); 
                             }
+                            else
+                            {
+                                this.selectedUnit.unit.movementPoints = 0;
+                            }
                             break;
                             
                         case 1:
@@ -489,6 +493,7 @@ namespace BedBihanGUI
                             msg += game.list_players[idyou].name + " looses " + looseAttHp + " HP \n";
                             msg += game.list_players[idEn].name + " looses " + looseDeffHp + " HP";
                             MessageBox.Show( msg );
+                            this.selectedUnit.unit.movementPoints = 0;
                             break;
                     }
                 }

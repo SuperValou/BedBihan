@@ -41,7 +41,7 @@ namespace BedBihan
          * */
         public override int getPoints(Field f)
         {
-            if (currentHP == 0) { return 0; }
+            if (currentHP <= 0) { return 0; }
             int pt = 1;
             if(f==Field.Woods)
             {
